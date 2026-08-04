@@ -168,13 +168,104 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/6b410f07a3a02e721a49d41795e84b56707ef28ac4d095d55f1fd1093760e134_8BitOperatorPlus8Regular_Edited.fnt",
           "name": "8BitOperatorPlus8Regular_Edited.fnt"
         }
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite.png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "MONTY",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 9
+                      },
+                      {
+                        "x": 44,
+                        "y": 9
+                      },
+                      {
+                        "x": 44,
+                        "y": 43
+                      },
+                      {
+                        "x": 19,
+                        "y": 43
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "MONTY"
+      }
+    ]
   },
   "objectsGroups": [],
   "variables": [],
@@ -467,6 +558,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -551,6 +646,23 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 722,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TUTORIAL_MAZE",
+          "persistentUuid": "56e3c1c4-6ebe-4113-b262-5b08e39c7493",
+          "width": 1071,
+          "x": 177,
+          "y": -1,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -589,6 +701,543 @@
             "HoveredFadeOutDuration": 0.25,
             "LabelText": "To Game"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "TUTORIAL_MAZE",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 58,
+                            "y": 63.5
+                          },
+                          {
+                            "x": 58.5,
+                            "y": 61
+                          },
+                          {
+                            "x": 61,
+                            "y": 60.5
+                          },
+                          {
+                            "x": 61,
+                            "y": 44
+                          },
+                          {
+                            "x": 56.5,
+                            "y": 44.5
+                          },
+                          {
+                            "x": 44.5,
+                            "y": 45
+                          },
+                          {
+                            "x": 40.5,
+                            "y": 46.5
+                          },
+                          {
+                            "x": 40,
+                            "y": 50
+                          },
+                          {
+                            "x": 11.5,
+                            "y": 51.5
+                          },
+                          {
+                            "x": 11,
+                            "y": 49.5
+                          },
+                          {
+                            "x": 37.5,
+                            "y": 48.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 44.5
+                          },
+                          {
+                            "x": 43.5,
+                            "y": 43
+                          },
+                          {
+                            "x": 54,
+                            "y": 43
+                          },
+                          {
+                            "x": 61.5,
+                            "y": 41.5
+                          },
+                          {
+                            "x": 61,
+                            "y": 33.5
+                          },
+                          {
+                            "x": 50.5,
+                            "y": 33
+                          },
+                          {
+                            "x": 29,
+                            "y": 35
+                          },
+                          {
+                            "x": 27.5,
+                            "y": 24
+                          },
+                          {
+                            "x": 23,
+                            "y": 23
+                          },
+                          {
+                            "x": 24,
+                            "y": 21.5
+                          },
+                          {
+                            "x": 28,
+                            "y": 22
+                          },
+                          {
+                            "x": 29,
+                            "y": 20
+                          },
+                          {
+                            "x": 30.5,
+                            "y": 21
+                          },
+                          {
+                            "x": 30,
+                            "y": 27
+                          },
+                          {
+                            "x": 31.5,
+                            "y": 33
+                          },
+                          {
+                            "x": 44,
+                            "y": 31.5
+                          },
+                          {
+                            "x": 61,
+                            "y": 30.5
+                          },
+                          {
+                            "x": 61,
+                            "y": 23
+                          },
+                          {
+                            "x": 48.5,
+                            "y": 23.5
+                          },
+                          {
+                            "x": 45.5,
+                            "y": 22.5
+                          },
+                          {
+                            "x": 43.5,
+                            "y": 24
+                          },
+                          {
+                            "x": 46,
+                            "y": 26.5
+                          },
+                          {
+                            "x": 41,
+                            "y": 26.5
+                          },
+                          {
+                            "x": 41,
+                            "y": 23.5
+                          },
+                          {
+                            "x": 35,
+                            "y": 24
+                          },
+                          {
+                            "x": 34.5,
+                            "y": 22
+                          },
+                          {
+                            "x": 36,
+                            "y": 21.5
+                          },
+                          {
+                            "x": 33.5,
+                            "y": 17
+                          },
+                          {
+                            "x": 29.5,
+                            "y": 16.5
+                          },
+                          {
+                            "x": 29.5,
+                            "y": 14.5
+                          },
+                          {
+                            "x": 37.5,
+                            "y": 15
+                          },
+                          {
+                            "x": 37,
+                            "y": 9
+                          },
+                          {
+                            "x": 35.5,
+                            "y": 8.5
+                          },
+                          {
+                            "x": 35.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 39,
+                            "y": 7
+                          },
+                          {
+                            "x": 39.5,
+                            "y": 16
+                          },
+                          {
+                            "x": 36,
+                            "y": 17
+                          },
+                          {
+                            "x": 37,
+                            "y": 18
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 21
+                          },
+                          {
+                            "x": 42,
+                            "y": 21
+                          },
+                          {
+                            "x": 46,
+                            "y": 10.5
+                          },
+                          {
+                            "x": 48,
+                            "y": 10.5
+                          },
+                          {
+                            "x": 47,
+                            "y": 15.5
+                          },
+                          {
+                            "x": 45.5,
+                            "y": 21.5
+                          },
+                          {
+                            "x": 52,
+                            "y": 21
+                          },
+                          {
+                            "x": 61,
+                            "y": 21
+                          },
+                          {
+                            "x": 60.5,
+                            "y": 17
+                          },
+                          {
+                            "x": 61,
+                            "y": 3.5
+                          },
+                          {
+                            "x": 56,
+                            "y": 3
+                          },
+                          {
+                            "x": 55.5,
+                            "y": 15.5
+                          },
+                          {
+                            "x": 53,
+                            "y": 16.5
+                          },
+                          {
+                            "x": 53.5,
+                            "y": 3.5
+                          },
+                          {
+                            "x": 28.5,
+                            "y": 3
+                          },
+                          {
+                            "x": 18.5,
+                            "y": 3
+                          },
+                          {
+                            "x": 18,
+                            "y": 0
+                          },
+                          {
+                            "x": 9,
+                            "y": 0
+                          },
+                          {
+                            "x": 9,
+                            "y": 2.5
+                          },
+                          {
+                            "x": 3,
+                            "y": 3
+                          },
+                          {
+                            "x": 3.5,
+                            "y": 7.5
+                          },
+                          {
+                            "x": 13,
+                            "y": 7.5
+                          },
+                          {
+                            "x": 15,
+                            "y": 5.5
+                          },
+                          {
+                            "x": 17,
+                            "y": 7.5
+                          },
+                          {
+                            "x": 27,
+                            "y": 7.5
+                          },
+                          {
+                            "x": 27,
+                            "y": 10
+                          },
+                          {
+                            "x": 18.5,
+                            "y": 9
+                          },
+                          {
+                            "x": 14.5,
+                            "y": 9.5
+                          },
+                          {
+                            "x": 3,
+                            "y": 10.5
+                          },
+                          {
+                            "x": 3,
+                            "y": 22.5
+                          },
+                          {
+                            "x": 3,
+                            "y": 31
+                          },
+                          {
+                            "x": 10,
+                            "y": 31
+                          },
+                          {
+                            "x": 9,
+                            "y": 33
+                          },
+                          {
+                            "x": 3,
+                            "y": 33.5
+                          },
+                          {
+                            "x": 4,
+                            "y": 40.5
+                          },
+                          {
+                            "x": 15,
+                            "y": 42
+                          },
+                          {
+                            "x": 17,
+                            "y": 37
+                          },
+                          {
+                            "x": 16.5,
+                            "y": 27.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 27
+                          },
+                          {
+                            "x": 9.5,
+                            "y": 13.5
+                          },
+                          {
+                            "x": 17,
+                            "y": 13.5
+                          },
+                          {
+                            "x": 17.5,
+                            "y": 16
+                          },
+                          {
+                            "x": 14.5,
+                            "y": 16
+                          },
+                          {
+                            "x": 12.5,
+                            "y": 16.5
+                          },
+                          {
+                            "x": 12,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 18.5,
+                            "y": 25.5
+                          },
+                          {
+                            "x": 20,
+                            "y": 27
+                          },
+                          {
+                            "x": 19.5,
+                            "y": 32.5
+                          },
+                          {
+                            "x": 20,
+                            "y": 36.5
+                          },
+                          {
+                            "x": 18.5,
+                            "y": 41.5
+                          },
+                          {
+                            "x": 25.5,
+                            "y": 43
+                          },
+                          {
+                            "x": 31.5,
+                            "y": 42
+                          },
+                          {
+                            "x": 31,
+                            "y": 44.5
+                          },
+                          {
+                            "x": 18.5,
+                            "y": 44.5
+                          },
+                          {
+                            "x": 3,
+                            "y": 43
+                          },
+                          {
+                            "x": 3,
+                            "y": 55.5
+                          },
+                          {
+                            "x": 8.5,
+                            "y": 55.5
+                          },
+                          {
+                            "x": 8,
+                            "y": 57.5
+                          },
+                          {
+                            "x": 3,
+                            "y": 58.5
+                          },
+                          {
+                            "x": 3,
+                            "y": 60.5
+                          },
+                          {
+                            "x": 26,
+                            "y": 61
+                          },
+                          {
+                            "x": 26.5,
+                            "y": 57.5
+                          },
+                          {
+                            "x": 29,
+                            "y": 57.5
+                          },
+                          {
+                            "x": 30,
+                            "y": 61
+                          },
+                          {
+                            "x": 43.5,
+                            "y": 61
+                          },
+                          {
+                            "x": 44,
+                            "y": 57.5
+                          },
+                          {
+                            "x": 45.5,
+                            "y": 57.5
+                          },
+                          {
+                            "x": 46,
+                            "y": 52
+                          },
+                          {
+                            "x": 49,
+                            "y": 52.5
+                          },
+                          {
+                            "x": 49.5,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -599,6 +1248,9 @@
           },
           {
             "objectName": "TO_GAME_BUTTON"
+          },
+          {
+            "objectName": "TUTORIAL_MAZE"
           }
         ]
       },
@@ -720,6 +1372,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -734,6 +1390,10 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
         }
       ]
     },
@@ -901,6 +1561,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -915,6 +1579,10 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
         }
       ]
     },
@@ -1206,6 +1874,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
         {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
@@ -1521,6 +2193,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -1710,6 +2386,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -1724,6 +2404,10 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
         }
       ]
     },
@@ -2015,6 +2699,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
         {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
@@ -2330,6 +3018,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -2519,6 +3211,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -2533,6 +3229,10 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
         }
       ]
     },
@@ -2824,6 +3524,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
         {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
@@ -3139,6 +3843,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -3328,6 +4036,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -3342,6 +4054,10 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
         }
       ]
     },
@@ -3633,6 +4349,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
         {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
@@ -3948,6 +4668,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -4137,6 +4861,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -4151,6 +4879,10 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
         }
       ]
     },
@@ -4442,6 +5174,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
         {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
@@ -4757,6 +5493,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -4946,6 +5686,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -4960,6 +5704,646 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "DIED_32LVL_326",
+      "name": "DIED LVL 6",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "DIED_LVL_6_TEXT",
+          "persistentUuid": "5a0db696-23a1-4087-9376-c17a7c555a6c",
+          "width": 0,
+          "x": 277,
+          "y": 118,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 90,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_BUTTON_LVL_6_DIED",
+          "persistentUuid": "49b59a12-0b93-4b01-b4ca-f2f3d6026a20",
+          "width": 207,
+          "x": 282,
+          "y": 282,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 91,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_BUTTON_LVL_6_DIED",
+          "persistentUuid": "c3ba0a38-b336-4648-813a-c7d206ca47b4",
+          "width": 219,
+          "x": 701,
+          "y": 279,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "DIED_LVL_6_TEXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Oh no! You died!\nRetry level or return to main menu",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Oh no! You died!\nRetry level or return to main menu",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "MAIN_MENU_BUTTON_LVL_6_DIED",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Main Menu"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "RETRY_BUTTON_LVL_6_DIED",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Retry"
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "DIED_LVL_6_TEXT"
+          },
+          {
+            "objectName": "MAIN_MENU_BUTTON_LVL_6_DIED"
+          },
+          {
+            "objectName": "RETRY_BUTTON_LVL_6_DIED"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "MAIN_MENU_BUTTON_LVL_6_DIED",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MAIN MENU\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "RETRY_BUTTON_LVL_6_DIED",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"LVL 6\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::AmbientLight",
+              "name": "3D Ammbient Light",
+              "doubleParameters": {
+                "intensity": 0.25
+              },
+              "stringParameters": {
+                "color": "255;255;255"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "COMPLETED_32LVL_326",
+      "name": "COMPLETED LVL 6",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TEXT_LVL_6_COMPLETED",
+          "persistentUuid": "a86a38fc-288c-4e6f-b547-bc5d6bbf9ad3",
+          "width": 0,
+          "x": 266,
+          "y": 158,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 93,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_BUTTON_LVL_6_COMPLETED_",
+          "persistentUuid": "4e6b32a0-2e7b-48ee-aef8-40b2b267e166",
+          "width": 216,
+          "x": 313,
+          "y": 279,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 88,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NEXT_LVL_BUTTON_LVL_6_COMPLETED",
+          "persistentUuid": "e047876b-7872-4800-9b14-3e502a8f9ea3",
+          "width": 210,
+          "x": 697,
+          "y": 277,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TEXT_LVL_6_COMPLETED",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Congrats! You completed Level 6!",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Congrats! You completed Level 6!",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "MAIN_MENU_BUTTON_LVL_6_COMPLETED_",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Main Menu"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "NEXT_LVL_BUTTON_LVL_6_COMPLETED",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Next Level"
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "TEXT_LVL_6_COMPLETED"
+          },
+          {
+            "objectName": "MAIN_MENU_BUTTON_LVL_6_COMPLETED_"
+          },
+          {
+            "objectName": "NEXT_LVL_BUTTON_LVL_6_COMPLETED"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "MAIN_MENU_BUTTON_LVL_6_COMPLETED_",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MAIN MENU\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "NEXT_LVL_BUTTON_LVL_6_COMPLETED",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"LVL 7\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::AmbientLight",
+              "name": "3D Ammbient Light",
+              "doubleParameters": {
+                "intensity": 0.25
+              },
+              "stringParameters": {
+                "color": "255;255;255"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
@@ -5127,6 +6511,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -5141,6 +6529,646 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "DIED_32LVL_327",
+      "name": "DIED LVL 7",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "DIED_LVL_7_TEXT",
+          "persistentUuid": "5db2ab6d-4be1-4572-a966-e7aed5def38f",
+          "width": 0,
+          "x": 278,
+          "y": 158,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 82,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_BUTTON_DIED_LVL_7",
+          "persistentUuid": "f75fa56b-06b0-4531-9812-5d9307798c76",
+          "width": 210,
+          "x": 300,
+          "y": 339,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 88,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_BUTTON_DIED_LVL_7",
+          "persistentUuid": "f3c4abbe-70f9-48f9-af99-a43e1c8aca61",
+          "width": 208,
+          "x": 725,
+          "y": 330,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "DIED_LVL_7_TEXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Oh no! You died!\nRetry level or return to main menu",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Oh no! You died!\nRetry level or return to main menu",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "MAIN_MENU_BUTTON_DIED_LVL_7",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Main Menu"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "RETRY_BUTTON_DIED_LVL_7",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Retry"
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "DIED_LVL_7_TEXT"
+          },
+          {
+            "objectName": "MAIN_MENU_BUTTON_DIED_LVL_7"
+          },
+          {
+            "objectName": "RETRY_BUTTON_DIED_LVL_7"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "MAIN_MENU_BUTTON_DIED_LVL_7",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MAIN MENU\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "RETRY_BUTTON_DIED_LVL_7",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"LVL 7\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::AmbientLight",
+              "name": "3D Ammbient Light",
+              "doubleParameters": {
+                "intensity": 0.25
+              },
+              "stringParameters": {
+                "color": "255;255;255"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "COMPLETED_32LVL_327",
+      "name": "COMPLETED LVL 7",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "COMPLETED_LVL_7_TEXT",
+          "persistentUuid": "3e27ef65-6cff-44f1-9888-c9a331adabc0",
+          "width": 0,
+          "x": 304,
+          "y": 171,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 73,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_BUTTON_LVL_7_COMPLETED",
+          "persistentUuid": "36c2c244-3eea-40da-8307-86c06c1523ed",
+          "width": 207,
+          "x": 304,
+          "y": 286,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 86,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NEXT_LVL_BUTTON_LVL_7_COMPLETED",
+          "persistentUuid": "53524943-b65a-4b46-b592-fca0246606ae",
+          "width": 207,
+          "x": 737,
+          "y": 275,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "COMPLETED_LVL_7_TEXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Congrats! You completed Level 7!",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Congrats! You completed Level 7!",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "MAIN_MENU_BUTTON_LVL_7_COMPLETED",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Main Menu"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "NEXT_LVL_BUTTON_LVL_7_COMPLETED",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Next Level"
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "COMPLETED_LVL_7_TEXT"
+          },
+          {
+            "objectName": "MAIN_MENU_BUTTON_LVL_7_COMPLETED"
+          },
+          {
+            "objectName": "NEXT_LVL_BUTTON_LVL_7_COMPLETED"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "MAIN_MENU_BUTTON_LVL_7_COMPLETED",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MAIN MENU\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "NEXT_LVL_BUTTON_LVL_7_COMPLETED",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"LVL 8\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::AmbientLight",
+              "name": "3D Ammbient Light",
+              "doubleParameters": {
+                "intensity": 0.25
+              },
+              "stringParameters": {
+                "color": "255;255;255"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
@@ -5308,6 +7336,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -5322,6 +7354,646 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "DIED_32LVL_328",
+      "name": "DIED LVL 8",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "DIED_TEXT_LVL_8",
+          "persistentUuid": "b9b781ee-a5db-4659-99f5-ddb953c086d1",
+          "width": 0,
+          "x": 236,
+          "y": 149,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 82,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_BUTTON_DIED_LVL_8",
+          "persistentUuid": "2abbc648-8d31-42e8-a707-7fdb157ffa57",
+          "width": 212,
+          "x": 335,
+          "y": 306,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 80,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_BUTTON_DIED_LVL_8",
+          "persistentUuid": "1040d20d-4ada-41a0-b5e9-639333309639",
+          "width": 199,
+          "x": 684,
+          "y": 304,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "DIED_TEXT_LVL_8",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Oh no! You died!\nRetry level or return to main menu",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Oh no! You died!\nRetry level or return to main menu",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "MAIN_MENU_BUTTON_DIED_LVL_8",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Main Menu"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "RETRY_BUTTON_DIED_LVL_8",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Retry"
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "DIED_TEXT_LVL_8"
+          },
+          {
+            "objectName": "MAIN_MENU_BUTTON_DIED_LVL_8"
+          },
+          {
+            "objectName": "RETRY_BUTTON_DIED_LVL_8"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "MAIN_MENU_BUTTON_DIED_LVL_8",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MAIN MENU\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "RETRY_BUTTON_DIED_LVL_8",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"LVL 8\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::AmbientLight",
+              "name": "3D Ammbient Light",
+              "doubleParameters": {
+                "intensity": 0.25
+              },
+              "stringParameters": {
+                "color": "255;255;255"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "COMPLETED_32LVL_328",
+      "name": "COMPLETED LVL 8",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TXT_LVL_8_COMPLETED",
+          "persistentUuid": "30d15e21-e15f-4e85-bbe1-b55aea51d3be",
+          "width": 0,
+          "x": 247,
+          "y": 147,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 82,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_BUTTON_LVL_8_COMPLETED",
+          "persistentUuid": "0e816c31-4ec3-4429-843a-6f05c8d18837",
+          "width": 210,
+          "x": 269,
+          "y": 269,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 77,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NEXT_LVL_BUTTON_LVL_8_COMPLETED",
+          "persistentUuid": "c07d032e-8c58-46af-9465-41efe7c31fa3",
+          "width": 205,
+          "x": 693,
+          "y": 266,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TXT_LVL_8_COMPLETED",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Congrats! You completed Level 8!",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Congrats! You completed Level 8!",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "MAIN_MENU_BUTTON_LVL_8_COMPLETED",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Main Menu"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "NEXT_LVL_BUTTON_LVL_8_COMPLETED",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Next Level"
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "TXT_LVL_8_COMPLETED"
+          },
+          {
+            "objectName": "MAIN_MENU_BUTTON_LVL_8_COMPLETED"
+          },
+          {
+            "objectName": "NEXT_LVL_BUTTON_LVL_8_COMPLETED"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "MAIN_MENU_BUTTON_LVL_8_COMPLETED",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MAIN MENU\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "NEXT_LVL_BUTTON_LVL_8_COMPLETED",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"LVL 9\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::AmbientLight",
+              "name": "3D Ammbient Light",
+              "doubleParameters": {
+                "intensity": 0.25
+              },
+              "stringParameters": {
+                "color": "255;255;255"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
@@ -5471,6 +8143,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -5485,14 +8161,18 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
         }
       ]
     },
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "LVL_3210",
-      "name": "LVL 10",
+      "mangledName": "DIED_32LVL_329",
+      "name": "DIED LVL 9",
       "r": 209,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -5516,17 +8196,50 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 64,
+          "customSize": false,
+          "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "QUIT_BUTTON",
-          "persistentUuid": "50f35989-1aa0-462b-881f-0483e25c0a44",
-          "width": 143,
-          "x": 12,
-          "y": 10,
+          "name": "DIED_LVL_9_TEXT",
+          "persistentUuid": "aededf00-b469-4270-8b79-803c7fd8ef81",
+          "width": 0,
+          "x": 272,
+          "y": 138,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 80,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_BUTTON_DIED_LVL_9",
+          "persistentUuid": "85797f72-3736-415f-a185-0708af27af4c",
+          "width": 212,
+          "x": 267,
+          "y": 306,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 88,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_BUTTON_LVL_9",
+          "persistentUuid": "4272e13e-b9de-44d9-bd3c-afbcc45184a8",
+          "width": 205,
+          "x": 720,
+          "y": 301,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5534,8 +8247,50 @@
       ],
       "objects": [
         {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "DIED_LVL_9_TEXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Oh no! You died!\nRetry level or return to main menu",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Oh no! You died!\nRetry level or return to main menu",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
           "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "QUIT_BUTTON",
+          "name": "MAIN_MENU_BUTTON_DIED_LVL_9",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variant": "Black Square Decorated Button",
           "variables": [],
@@ -5548,7 +8303,25 @@
             "BottomPadding": 24,
             "TopPadding": 24,
             "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Quit"
+            "LabelText": "Main Menu "
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "RETRY_BUTTON_LVL_9",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Retry"
           }
         }
       ],
@@ -5556,7 +8329,13 @@
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "QUIT_BUTTON"
+            "objectName": "DIED_LVL_9_TEXT"
+          },
+          {
+            "objectName": "MAIN_MENU_BUTTON_DIED_LVL_9"
+          },
+          {
+            "objectName": "RETRY_BUTTON_LVL_9"
           }
         ]
       },
@@ -5569,7 +8348,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "QUIT_BUTTON",
+                "MAIN_MENU_BUTTON_DIED_LVL_9",
                 ""
               ]
             }
@@ -5582,6 +8361,32 @@
               "parameters": [
                 "",
                 "\"MAIN MENU\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "RETRY_BUTTON_LVL_9",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"LVL 9\"",
                 ""
               ]
             }
@@ -5652,6 +8457,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -5666,14 +8475,22 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "LVL_3211",
-      "name": "LVL 11",
+      "mangledName": "COMPLTED_32LVL_329",
+      "name": "COMPLTED LVL 9",
       "r": 209,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -5697,17 +8514,50 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 64,
+          "customSize": false,
+          "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "QUIT_BUTTON",
-          "persistentUuid": "219695e9-17dc-4777-a7a3-13b90833b6c2",
-          "width": 128,
-          "x": 6,
-          "y": 6,
+          "name": "TEXT_COMPLETED_LVL_9",
+          "persistentUuid": "f931f8ee-bc6a-4fea-b8d1-67cf849b6197",
+          "width": 0,
+          "x": 261,
+          "y": 189,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 84,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_LVL_9",
+          "persistentUuid": "a4e4cfd7-f0f8-4200-a4ab-b0bd281507e5",
+          "width": 216,
+          "x": 263,
+          "y": 331,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 88,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NEXT_LVL_BUTTON_LVL_9",
+          "persistentUuid": "a8004e87-f7ff-4dbc-97cb-5d0c5f1bec1c",
+          "width": 210,
+          "x": 743,
+          "y": 327,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5715,8 +8565,50 @@
       ],
       "objects": [
         {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TEXT_COMPLETED_LVL_9",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Congrats! You completed Level 9!\nTime for the final level!",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Congrats! You completed Level 9!\nTime for the final level!",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
           "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "QUIT_BUTTON",
+          "name": "MAIN_MENU_LVL_9",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variant": "Black Square Decorated Button",
           "variables": [],
@@ -5729,7 +8621,25 @@
             "BottomPadding": 24,
             "TopPadding": 24,
             "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Quit"
+            "LabelText": "Main Menu"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "NEXT_LVL_BUTTON_LVL_9",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Next Level"
           }
         }
       ],
@@ -5737,7 +8647,13 @@
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "QUIT_BUTTON"
+            "objectName": "TEXT_COMPLETED_LVL_9"
+          },
+          {
+            "objectName": "MAIN_MENU_LVL_9"
+          },
+          {
+            "objectName": "NEXT_LVL_BUTTON_LVL_9"
           }
         ]
       },
@@ -5750,7 +8666,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "QUIT_BUTTON",
+                "MAIN_MENU_LVL_9",
                 ""
               ]
             }
@@ -5763,6 +8679,32 @@
               "parameters": [
                 "",
                 "\"MAIN MENU\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "NEXT_LVL_BUTTON_LVL_9",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"FINAL LVL\"",
                 ""
               ]
             }
@@ -5833,6 +8775,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -5847,14 +8793,22 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "FINAL_32LEVEL",
-      "name": "FINAL LEVEL",
+      "mangledName": "FINAL_32LVL",
+      "name": "FINAL LVL",
       "r": 209,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -6014,6 +8968,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -6028,14 +8986,18 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
         }
       ]
     },
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "WON_32GAME",
-      "name": "WON GAME",
+      "mangledName": "DIED_32FINAL_32LVL",
+      "name": "DIED FINAL LVL",
       "r": 209,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -6056,12 +9018,206 @@
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
-      "objects": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FINAL_LEVEL_DIED_TEXT",
+          "persistentUuid": "6d91801c-9ee7-4d3a-8c48-2e8a41dc3d6a",
+          "width": 0,
+          "x": 254,
+          "y": 123,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 88,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_BUTTON_DIED_FINAL_LEVEL",
+          "persistentUuid": "313edb4e-a3e5-464a-98d3-15ff1dc54c8c",
+          "width": 212,
+          "x": 293,
+          "y": 292,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 77,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_LEVEL_BUTTON_DIED_FINAL_LEVEL",
+          "persistentUuid": "3fcd671f-1599-460b-bd04-640502cb6385",
+          "width": 199,
+          "x": 678,
+          "y": 291,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "FINAL_LEVEL_DIED_TEXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Oh no! You died!\nRetry level or return to main menu",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Oh no! You died!\nRetry level or return to main menu",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "MAIN_MENU_BUTTON_DIED_FINAL_LEVEL",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Main Menu"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "RETRY_LEVEL_BUTTON_DIED_FINAL_LEVEL",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Retry"
+          }
+        }
+      ],
       "objectsFolderStructure": {
-        "folderName": "__ROOT"
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "FINAL_LEVEL_DIED_TEXT"
+          },
+          {
+            "objectName": "MAIN_MENU_BUTTON_DIED_FINAL_LEVEL"
+          },
+          {
+            "objectName": "RETRY_LEVEL_BUTTON_DIED_FINAL_LEVEL"
+          }
+        ]
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "MAIN_MENU_BUTTON_DIED_FINAL_LEVEL",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MAIN MENU\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "RETRY_LEVEL_BUTTON_DIED_FINAL_LEVEL",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"FINAL LVL\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -6124,7 +9280,290 @@
           ]
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "COMPLETED_32GAME_47FINAL_32LVL",
+      "name": "COMPLETED GAME/FINAL LVL",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "COMPLETED_GAME_FINAL_LVL_TEXT",
+          "persistentUuid": "46e031f5-8159-42d8-8ab9-4362b2a32be2",
+          "width": 0,
+          "x": 170,
+          "y": 140,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 93,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETURN_TO_MAIN_MENU_COMPLETED_GAME_FINAL_LEVEL",
+          "persistentUuid": "f119dbad-5765-45f0-9ec4-5b7ba4386a2a",
+          "width": 218,
+          "x": 516,
+          "y": 326,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "COMPLETED_GAME_FINAL_LVL_TEXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Congrats! You have completed Mole Run!\nMonty's home is now saved thanks to you!\n",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Congrats! You have completed Mole Run!\nMonty's home is now saved thanks to you!\n",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "RETURN_TO_MAIN_MENU_COMPLETED_GAME_FINAL_LEVEL",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Black Square Decorated Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": "Return to Main Menu"
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "COMPLETED_GAME_FINAL_LVL_TEXT"
+          },
+          {
+            "objectName": "RETURN_TO_MAIN_MENU_COMPLETED_GAME_FINAL_LEVEL"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "RETURN_TO_MAIN_MENU_COMPLETED_GAME_FINAL_LEVEL",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MAIN MENU\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::AmbientLight",
+              "name": "3D Ammbient Light",
+              "doubleParameters": {
+                "intensity": 0.25
+              },
+              "stringParameters": {
+                "color": "255;255;255"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        }
+      ]
     }
   ],
   "externalEvents": [],
