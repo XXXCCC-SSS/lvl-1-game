@@ -208,6 +208,14 @@
         "name": "NewSprite4",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite2",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -223,6 +231,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -232,9 +242,7 @@
           "ignoreDefaultControls": false,
           "maxSpeed": 200,
           "movementAngleOffset": 0,
-          "name": "TopDownMovement",
           "rotateObject": true,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "useLegacyTurnBack": false,
           "viewpoint": "TopDown"
         }
@@ -302,10 +310,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ]
@@ -370,6 +378,17 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "WATER",
+      "texture": "NewTiledSprite2",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -383,6 +402,9 @@
       },
       {
         "objectName": "PORTAL"
+      },
+      {
+        "objectName": "WATER"
       }
     ]
   },
@@ -715,15 +737,15 @@
       ]
     },
     {
-      "b": 209,
+      "b": 102,
       "disableInputWhenNotFocused": true,
       "mangledName": "TUTORIAL_32LEVEL",
       "name": "TUTORIAL LEVEL",
-      "r": 209,
+      "r": 175,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 135,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -734,7 +756,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8416428125373111,
+        "zoomFactor": 0.47893418845352553,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1492,8 +1514,8 @@
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "7163a7e4-b01c-40c6-be14-14be09522d29",
           "width": 93,
-          "x": 390,
-          "y": 76,
+          "x": 389,
+          "y": 83,
           "zOrder": 46,
           "numberProperties": [],
           "stringProperties": [],
@@ -1510,7 +1532,7 @@
           "persistentUuid": "5d823580-f173-44f5-9009-94ebccb09241",
           "width": 44,
           "x": 409,
-          "y": 65,
+          "y": 72,
           "zOrder": 47,
           "numberProperties": [],
           "stringProperties": [],
@@ -1713,8 +1735,8 @@
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "1d218943-515e-4372-bbc0-c07d99ac3962",
           "width": 127,
-          "x": 674,
-          "y": 164,
+          "x": 694,
+          "y": 151,
           "zOrder": 59,
           "numberProperties": [],
           "stringProperties": [],
@@ -1730,8 +1752,8 @@
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "c2031284-57cb-440f-b6db-2c3a630cfb99",
           "width": 108,
-          "x": 741,
-          "y": 242,
+          "x": 761,
+          "y": 240,
           "zOrder": 60,
           "numberProperties": [],
           "stringProperties": [],
@@ -1764,7 +1786,7 @@
           "persistentUuid": "ace4cbe3-a4d7-4864-b605-750699637e49",
           "width": 0,
           "x": 754,
-          "y": 152,
+          "y": 140,
           "zOrder": 62,
           "numberProperties": [],
           "stringProperties": [],
@@ -1780,8 +1802,8 @@
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "07bc2ad3-e839-454f-ba3e-46b3f652c058",
           "width": 81,
-          "x": 720,
-          "y": 177,
+          "x": 730,
+          "y": 169,
           "zOrder": 63,
           "numberProperties": [],
           "stringProperties": [],
@@ -1797,8 +1819,8 @@
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "49cea4fd-9701-41e1-9238-58d26bc67205",
           "width": 74,
-          "x": 742,
-          "y": 193,
+          "x": 759,
+          "y": 187,
           "zOrder": 64,
           "numberProperties": [],
           "stringProperties": [],
@@ -1814,8 +1836,8 @@
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "a3e604ad-3b19-4112-a720-309f9b0d698f",
           "width": 32,
-          "x": 719,
-          "y": 256,
+          "x": 749,
+          "y": 250,
           "zOrder": 65,
           "numberProperties": [],
           "stringProperties": [],
@@ -1925,23 +1947,6 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAZE_WALLS_TUTORIAL",
-          "persistentUuid": "7ea2d2e4-c0d6-4c12-8740-b7ea80a7d24c",
-          "width": 83,
-          "x": 922,
-          "y": 246,
-          "zOrder": 72,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
           "height": 32,
           "keepRatio": true,
           "layer": "",
@@ -2032,8 +2037,8 @@
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "aa664482-eec7-4621-b06b-3e4f33c89119",
           "width": 0,
-          "x": 960,
-          "y": 166,
+          "x": 955,
+          "y": 159,
           "zOrder": 78,
           "numberProperties": [],
           "stringProperties": [],
@@ -2041,15 +2046,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 84,
           "keepRatio": true,
           "layer": "",
           "name": "MONTY",
           "persistentUuid": "4217a21c-2dfe-46a2-9c14-34cbf2c513e1",
-          "width": 0,
-          "x": 1053,
-          "y": 660,
+          "width": 79,
+          "x": 1035,
+          "y": 662,
           "zOrder": 79,
           "numberProperties": [],
           "stringProperties": [],
@@ -2065,9 +2071,43 @@
           "name": "PORTAL",
           "persistentUuid": "110c2ebb-bdb2-4035-9fea-021d7035895d",
           "width": 101,
-          "x": 209,
-          "y": 21,
+          "x": 1096,
+          "y": 153,
           "zOrder": 80,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 721,
+          "keepRatio": true,
+          "layer": "",
+          "name": "WATER",
+          "persistentUuid": "b914dc7f-09fe-404b-8ebc-7ca76ef9cde9",
+          "width": 1064,
+          "x": 183,
+          "y": 738,
+          "zOrder": -10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 121,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewText",
+          "persistentUuid": "804b8c37-b694-4355-9a87-7ea0970e847b",
+          "width": 134,
+          "x": 35,
+          "y": 219,
+          "zOrder": 81,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2109,6 +2149,48 @@
             "HoveredFadeOutDuration": 0.25,
             "LabelText": "To Game"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "NewText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "monty water problem fix ",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "monty water problem fix ",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -2119,6 +2201,9 @@
           },
           {
             "objectName": "TO_GAME_BUTTON"
+          },
+          {
+            "objectName": "NewText"
           }
         ]
       },
@@ -2232,6 +2317,60 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "WATER",
+                "-90",
+                "5",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "WATER",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"DIED TUTORIAL LVL\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -2324,6 +2463,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         },
         {
           "name": "TopDownMovement",
