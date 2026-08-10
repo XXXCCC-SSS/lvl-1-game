@@ -222,7 +222,7 @@
   },
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "MONTY",
       "type": "Sprite",
@@ -275,20 +275,48 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 19,
+                        "x": 18,
+                        "y": 29
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 10.5
+                      },
+                      {
+                        "x": 30,
+                        "y": 8.5
+                      },
+                      {
+                        "x": 39,
                         "y": 9
                       },
                       {
-                        "x": 44,
-                        "y": 9
+                        "x": 41.5,
+                        "y": 16.5
                       },
                       {
-                        "x": 44,
+                        "x": 36.5,
+                        "y": 21.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 23.5
+                      },
+                      {
+                        "x": 45.5,
+                        "y": 28
+                      },
+                      {
+                        "x": 38.5,
+                        "y": 34
+                      },
+                      {
+                        "x": 40.5,
                         "y": 43
                       },
                       {
-                        "x": 19,
-                        "y": 43
+                        "x": 20,
+                        "y": 43.5
                       }
                     ]
                   ]
@@ -756,11 +784,17 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.47893418845352553,
+        "zoomFactor": 0.5290357402156849,
         "windowMask": false
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "water",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -2105,8 +2139,8 @@
           "name": "NewText",
           "persistentUuid": "804b8c37-b694-4355-9a87-7ea0970e847b",
           "width": 134,
-          "x": 35,
-          "y": 219,
+          "x": 26,
+          "y": 285,
           "zOrder": 81,
           "numberProperties": [],
           "stringProperties": [],
@@ -2161,7 +2195,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "monty water problem fix ",
+          "string": "timer: 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -2184,7 +2218,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "monty water problem fix ",
+            "text": "timer: 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -2336,6 +2370,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2368,6 +2403,175 @@
                 "",
                 "\"DIED TUTORIAL LVL\"",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "disabled": true,
+          "infiniteLoopWarning": true,
+          "type": "BuiltinCommonInstructions::While",
+          "whileConditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "WATER",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"DIED TUTORIAL LVL\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "WATER",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"watertimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "water",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "WATER",
+                "",
+                "",
+                "no"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"watertimer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "WATER",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"watertimer\"",
+                ">",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"DIED TUTORIAL LVL\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "NewText",
+                "Text",
+                "=",
+                "\"Timer: \" + ToString (Variable(water))"
               ]
             }
           ]
