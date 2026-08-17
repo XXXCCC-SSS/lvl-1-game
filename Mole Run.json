@@ -256,11 +256,11 @@
           "Topdown": "TopDownMovement"
         },
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "deceleration": 50,
           "maxSpeed": 75,
-          "name": "TopDownMovement",
           "rotateObject": false,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 50,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -2109,8 +2109,8 @@
           "name": "PORTAL",
           "persistentUuid": "110c2ebb-bdb2-4035-9fea-021d7035895d",
           "width": 101,
-          "x": 1096,
-          "y": 153,
+          "x": 1098,
+          "y": 38,
           "zOrder": 80,
           "numberProperties": [],
           "stringProperties": [],
@@ -2359,6 +2359,14 @@
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
             {
               "type": {
                 "value": "AddForceAL"
@@ -3240,8 +3248,8 @@
           "name": "LAVA",
           "persistentUuid": "e8188157-17fe-4158-beb7-362542d97e2d",
           "width": 1056,
-          "x": 191,
-          "y": 728,
+          "x": 196,
+          "y": 740,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -4179,6 +4187,14 @@
           "actions": [
             {
               "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
                 "value": "AddForceAL"
               },
               "parameters": [
@@ -4221,7 +4237,7 @@
               },
               "parameters": [
                 "",
-                "\"DIED TUTORIAL LVL\"",
+                "\"DIED LVL 1\"",
                 ""
               ]
             }
@@ -5021,7 +5037,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.41943397827590595,
+        "zoomFactor": 0.7619362677197606,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5040,6 +5056,669 @@
           "x": 10,
           "y": 12,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 732,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "1d84f934-2dc9-4e22-9830-953f69c95759",
+          "width": 55,
+          "x": 1196,
+          "y": -3,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 48,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "a9b77a02-ec82-428e-beea-6b349b4e0885",
+          "width": 772,
+          "x": 430,
+          "y": 679,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 732,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "ddfae0f3-638a-4a61-8c26-5d2d95e8c21e",
+          "width": 50,
+          "x": 189,
+          "y": -3,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 47,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "2e34c226-00e0-4e66-a4b1-8d27ddb27e42",
+          "width": 68,
+          "x": 228,
+          "y": 683,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 47,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "1e91585a-8849-4338-b10a-12a76dbda043",
+          "width": 68,
+          "x": 1162,
+          "y": -2,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "85d1f06f-f40b-4cd3-a562-c01716276e33",
+          "width": 172,
+          "x": 237,
+          "y": 562,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 172,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "9b8947c6-f8ea-4e73-bbcf-1c9d047606b4",
+          "width": 32,
+          "x": 403,
+          "y": 409,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "51376bf8-75e5-4839-bba4-0829a3773478",
+          "width": 117,
+          "x": 304,
+          "y": 403,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 13,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "588c0942-6a42-41cb-8a47-bf87a7a0bca5",
+          "width": 98,
+          "x": 239,
+          "y": 466,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 45,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "991372e4-87df-4b74-b2ec-5936118e38c8",
+          "width": 9,
+          "x": 329,
+          "y": 473,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "afc3dc06-31f4-4f06-877a-cb6b1b4518b4",
+          "width": 202,
+          "x": 432,
+          "y": 479,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "671d944c-40cd-4b65-a437-3b22ce81b190",
+          "width": 103,
+          "x": 634,
+          "y": 311,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 279,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "fc242a7c-37cd-4ae4-8965-aaf41f3cb053",
+          "width": 33,
+          "x": 619,
+          "y": 298,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "4ca41151-2d6f-4b78-8f32-358fcc174997",
+          "width": 322,
+          "x": 613,
+          "y": 556,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "ed61756d-806a-4e57-a6b7-38058d346729",
+          "width": 407,
+          "x": 798,
+          "y": 392,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 79,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "f86b384b-1579-46c8-8564-738bf21b9100",
+          "width": 32,
+          "x": 776,
+          "y": 409,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 82,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "e05dd9d0-6918-4474-8fd7-58f96dee7d06",
+          "width": 32,
+          "x": 504,
+          "y": 598,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "9e7b6b3c-02df-4002-bb8c-39d53003decb",
+          "width": 35,
+          "x": 1099,
+          "y": 595,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 88,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "477aafdf-7051-448b-858d-41af63286c2d",
+          "width": 32,
+          "x": 925,
+          "y": 513,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 198,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "57884a77-444c-42c7-81ae-46549c854086",
+          "width": 32,
+          "x": 933,
+          "y": 196,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "a5354e29-b7e4-4133-8413-95c424f16bf8",
+          "width": 586,
+          "x": 353,
+          "y": 203,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 158,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "01e0e9a8-ce40-43bb-a66d-89dd5e88174a",
+          "width": 32,
+          "x": 485,
+          "y": 230,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 109,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "a0ab6163-c80e-4524-b6dd-e5cf4abdaf0e",
+          "width": 32,
+          "x": 706,
+          "y": 97,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "fcdec9fb-6633-462e-9aac-f1ef3ef52b8a",
+          "width": 117,
+          "x": 1133,
+          "y": 138,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 175,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "8384677a-10b6-4eb5-8502-adf163ba79ab",
+          "width": 32,
+          "x": 1029,
+          "y": 32,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 47,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "1046755d-af5c-44f1-8407-5521bfb11f6e",
+          "width": 928,
+          "x": 237,
+          "y": -1,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 93,
+          "customSize": true,
+          "depth": 1,
+          "height": 99,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PORTAL",
+          "persistentUuid": "ce95306c-2488-41cf-96c6-6bcdf370930c",
+          "width": 89,
+          "x": 1088,
+          "y": 30,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 93,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "6cbef758-f561-4369-bdd3-f63254aca4d1",
+          "width": 32,
+          "x": 309,
+          "y": 41,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "49747586-05ac-40f4-a778-71c671a8fd16",
+          "width": 146,
+          "x": 320,
+          "y": 111,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "83e2de9a-5de9-4864-9b5e-e8caa7e07cfb",
+          "width": 111,
+          "x": 1029,
+          "y": 287,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "8b6ab854-d42e-437c-8a55-f33c76a6b4c2",
+          "width": 165,
+          "x": 226,
+          "y": 298,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 92,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "8c5db0b9-5bf5-489d-b893-1bffe857f191",
+          "width": 32,
+          "x": 856,
+          "y": 42,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 91,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MONTY",
+          "persistentUuid": "a17801f8-b480-4333-9f22-fcd58599594b",
+          "width": 87,
+          "x": 314,
+          "y": 650,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 758,
+          "keepRatio": true,
+          "layer": "",
+          "name": "LAVA",
+          "persistentUuid": "f2d6f2a9-3c03-46d2-a319-a97458960b81",
+          "width": 1053,
+          "x": 196,
+          "y": 741,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "769c24c4-8704-4e1a-a27f-8746cd88ed74",
+          "width": 142,
+          "x": 792,
+          "y": 260,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 99,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "6d1630ce-717b-4fe4-b2de-603ea2f28801",
+          "width": 32,
+          "x": 549,
+          "y": 41,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 85,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "da954476-603d-4ae0-8cb9-a115c4f24da4",
+          "width": 32,
+          "x": 1003,
+          "y": 599,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 120,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "7340a627-9276-4d65-8cff-1c738e2d7111",
+          "width": 32,
+          "x": 1100,
+          "y": 480,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "dd03928f-3d7b-4f89-a1eb-3122ddd03418",
+          "width": 153,
+          "x": 950,
+          "y": 514,
+          "zOrder": 40,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5099,6 +5778,131 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "PORTAL",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"COMPLETED LVL 2\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "MAZE_WALLS_TUTORIAL",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "MONTY",
+                "MAZE_WALLS_TUTORIAL",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "LAVA",
+                "-90",
+                "5",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "LAVA",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"DIED LVL 2\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
