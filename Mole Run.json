@@ -6679,15 +6679,15 @@
       ]
     },
     {
-      "b": 209,
+      "b": 102,
       "disableInputWhenNotFocused": true,
       "mangledName": "LVL_323",
       "name": "LVL 3",
-      "r": 209,
+      "r": 175,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 135,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
