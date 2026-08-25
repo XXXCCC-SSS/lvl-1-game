@@ -256,9 +256,9 @@
           "Topdown": "TopDownMovement"
         },
         {
-          "deceleration": 200,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "deceleration": 200,
           "maxSpeed": 75,
           "rotateObject": false,
           "acceleration": 50,
@@ -430,6 +430,132 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "QUIT_TEXT",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "QUIT",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "QUIT",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 30,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "MAIN_MENU_TEXT",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "MAIN MENU",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "MAIN MENU",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 30,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "RETRY_TEXT",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "RETRY",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "RETRY",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 30,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -446,6 +572,15 @@
       },
       {
         "objectName": "LAVA"
+      },
+      {
+        "objectName": "QUIT_TEXT"
+      },
+      {
+        "objectName": "MAIN_MENU_TEXT"
+      },
+      {
+        "objectName": "RETRY_TEXT"
       }
     ]
   },
@@ -523,6 +658,39 @@
           "x": 709,
           "y": 274,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 41,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PLAY_TEXT",
+          "persistentUuid": "2b933076-85f8-4557-b982-3448d5e0771f",
+          "width": 106,
+          "x": 749,
+          "y": 289,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TUTORIAL_TEXT",
+          "persistentUuid": "c637a05b-953c-4165-91ea-1d001b2b0fbe",
+          "width": 0,
+          "x": 361,
+          "y": 294,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -606,6 +774,90 @@
             "HoveredFadeOutDuration": 0.25,
             "LabelText": "Play"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "PLAY_TEXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "PLAY",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "PLAY",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TUTORIAL_TEXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "TUTORIAL",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "TUTORIAL",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -619,6 +871,12 @@
           },
           {
             "objectName": "PLAY_BUTTON"
+          },
+          {
+            "objectName": "PLAY_TEXT"
+          },
+          {
+            "objectName": "TUTORIAL_TEXT"
           }
         ]
       },
@@ -2092,8 +2350,8 @@
           "name": "MONTY",
           "persistentUuid": "4217a21c-2dfe-46a2-9c14-34cbf2c513e1",
           "width": 79,
-          "x": 559,
-          "y": 384,
+          "x": 1039,
+          "y": 650,
           "zOrder": 79,
           "numberProperties": [],
           "stringProperties": [],
@@ -2145,6 +2403,38 @@
           "x": 880,
           "y": 253,
           "zOrder": 81,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "QUIT_TEXT",
+          "persistentUuid": "58324b1b-85d7-4f46-8948-9784884ff314",
+          "width": 0,
+          "x": 41,
+          "y": 26,
+          "zOrder": 82,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TO_GAME_TEXT",
+          "persistentUuid": "edfadb6f-13fd-435e-99c4-658cc6858113",
+          "width": 0,
+          "x": 29,
+          "y": 110,
+          "zOrder": 83,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2228,6 +2518,48 @@
             "characterSize": 20,
             "color": "0;0;0"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TO_GAME_TEXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "TO GAME",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "TO GAME",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -2241,6 +2573,9 @@
           },
           {
             "objectName": "TUTORIAL_TEXT"
+          },
+          {
+            "objectName": "TO_GAME_TEXT"
           }
         ]
       },
@@ -2602,6 +2937,38 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "a9f17d06-d608-4c3b-ab29-a0464d46c1c0",
+          "width": 0,
+          "x": 304,
+          "y": 317,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_TEXT",
+          "persistentUuid": "080e03b7-917a-4503-b4e6-d8c4ea83b5a7",
+          "width": 0,
+          "x": 784,
+          "y": 303,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -2933,6 +3300,22 @@
           "x": 732,
           "y": 304,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "3dc4d839-a3ca-45ee-92b4-226528b5bdc8",
+          "width": 0,
+          "x": 306,
+          "y": 332,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4066,6 +4449,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "QUIT_TEXT",
+          "persistentUuid": "45ebd792-f0a5-4b8c-9dd1-50586c5bdb06",
+          "width": 0,
+          "x": 52,
+          "y": 36,
+          "zOrder": 58,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -4345,6 +4744,10 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         },
@@ -4426,6 +4829,38 @@
           "x": 739,
           "y": 305,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "f539d892-2c3a-4b52-883d-f72fcfbd9e20",
+          "width": 0,
+          "x": 248,
+          "y": 347,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_TEXT",
+          "persistentUuid": "534626ec-6fde-487c-9a5b-02f3b05f253f",
+          "width": 0,
+          "x": 815,
+          "y": 343,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4760,6 +5195,22 @@
           "x": 290,
           "y": 308,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "81c8ecb4-e83a-4ef8-b1dc-649076ddcfb0",
+          "width": 0,
+          "x": 308,
+          "y": 332,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5727,6 +6178,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "QUIT_TEXT",
+          "persistentUuid": "b895838e-2142-4db8-8a8a-e841a9a5d83c",
+          "width": 0,
+          "x": 41,
+          "y": 29,
+          "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -6006,6 +6473,10 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         },
@@ -6087,6 +6558,38 @@
           "x": 691,
           "y": 339,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "c2649f9b-794f-488c-986f-e56692a0088a",
+          "width": 0,
+          "x": 272,
+          "y": 374,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_TEXT",
+          "persistentUuid": "21ed80d0-ba9d-45b1-ae21-bf9eeb6f3441",
+          "width": 0,
+          "x": 758,
+          "y": 372,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6421,6 +6924,22 @@
           "x": 737,
           "y": 324,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "0fc3a099-a42e-4c91-9d93-4a0939a065c4",
+          "width": 0,
+          "x": 261,
+          "y": 362,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7297,8 +7816,8 @@
           "name": "MONTY",
           "persistentUuid": "29603a08-c929-4315-ab59-75a23e9381b0",
           "width": 95,
-          "x": 187,
-          "y": 239,
+          "x": 1042,
+          "y": 651,
           "zOrder": 32,
           "numberProperties": [],
           "stringProperties": [],
@@ -7334,6 +7853,22 @@
           "x": 170,
           "y": 742,
           "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "QUIT_TEXT",
+          "persistentUuid": "c202e28d-1d2c-41b8-bbb4-9929dfbe6c72",
+          "width": 0,
+          "x": 43,
+          "y": 32,
+          "zOrder": 34,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7616,6 +8151,10 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         },
@@ -7697,6 +8236,38 @@
           "x": 764,
           "y": 350,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "b4de42c9-fbc5-4f10-9b2d-d344ef89795f",
+          "width": 0,
+          "x": 250,
+          "y": 382,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_TEXT",
+          "persistentUuid": "c7792347-80db-4319-ac1c-2cc1df000843",
+          "width": 0,
+          "x": 827,
+          "y": 374,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8005,14 +8576,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 64,
-          "height": 71,
+          "height": 84,
           "keepRatio": true,
           "layer": "",
           "name": "MAIN_MENU_BUTTON_LVL_3",
           "persistentUuid": "3fd0c735-ccfa-472e-9d47-2b32fc7a2b38",
-          "width": 212,
-          "x": 249,
-          "y": 341,
+          "width": 228,
+          "x": 295,
+          "y": 322,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -8031,6 +8602,22 @@
           "x": 726,
           "y": 324,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "5832a8a8-d10d-48e9-8ddf-edd08ac32f5b",
+          "width": 0,
+          "x": 319,
+          "y": 345,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8313,7 +8900,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.7370816317994028,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -8340,14 +8927,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 288,
+          "height": 353,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "d644a9c0-d910-41e6-ba87-8b22f351865a",
           "width": 32,
-          "x": 330,
-          "y": 180,
+          "x": 260,
+          "y": 190,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -8362,9 +8949,9 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "3c464263-d78f-460e-9dd2-fae1b35a6c37",
-          "width": 186,
-          "x": 262,
-          "y": 168,
+          "width": 382,
+          "x": 193,
+          "y": 179,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -8391,14 +8978,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 58,
+          "height": 173,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "28df2970-9d82-4a4b-b47a-3d94ee6a8829",
           "width": 32,
-          "x": 520,
-          "y": 292,
+          "x": 484,
+          "y": 201,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -8413,9 +9000,9 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "5f1263e8-4c9d-46b6-9d05-c292129cf226",
-          "width": 80,
-          "x": 466,
-          "y": 346,
+          "width": 11,
+          "x": 421,
+          "y": 352,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -8431,8 +9018,8 @@
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "838f971e-681c-4c5a-9d80-05bb0b724db1",
           "width": 32,
-          "x": 433,
-          "y": 302,
+          "x": 390,
+          "y": 306,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -8448,8 +9035,8 @@
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "306ca7cd-251c-47b9-8ab2-75f46c1863cf",
           "width": 32,
-          "x": 429,
-          "y": 354,
+          "x": 390,
+          "y": 353,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -8464,9 +9051,9 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "4325c3eb-727c-4245-b68f-7065561c07da",
-          "width": 80,
-          "x": 447,
-          "y": 422,
+          "width": 59,
+          "x": 395,
+          "y": 418,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -8476,14 +9063,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 138,
+          "height": 211,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "0a70a42b-1e9c-4785-bd1d-7634597e4995",
           "width": 32,
           "x": 672,
-          "y": 318,
+          "y": 283,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -8493,7 +9080,7 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 133,
+          "height": 122,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
@@ -8510,31 +9097,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 32,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAZE_WALLS_TUTORIAL",
-          "persistentUuid": "7a39f63b-f614-49e1-b7f1-5bea2c4c304d",
-          "width": 80,
-          "x": 466,
-          "y": 293,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
           "height": 87,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "938fa21d-d44a-4fed-8404-8c215c764acc",
           "width": 32,
-          "x": 738,
-          "y": 309,
+          "x": 776,
+          "y": 302,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -8550,8 +9120,8 @@
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "19c31d49-2584-4496-8202-fdc349a4cd2a",
           "width": 96,
-          "x": 763,
-          "y": 367,
+          "x": 781,
+          "y": 363,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -8561,14 +9131,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 180,
+          "height": 261,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "f71505cc-21e9-48e2-942b-9c7cf34d2942",
           "width": 32,
-          "x": 827,
-          "y": 299,
+          "x": 855,
+          "y": 218,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -8584,8 +9154,8 @@
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "a686ae98-1a39-4d52-9daa-5700889cec1a",
           "width": 91,
-          "x": 765,
-          "y": 451,
+          "x": 779,
+          "y": 459,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -8600,27 +9170,10 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "76ec9505-4ca0-4356-b6e9-9f20bcb0c300",
-          "width": 32,
-          "x": 993,
-          "y": 312,
+          "width": 52,
+          "x": 1069,
+          "y": 311,
           "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAZE_WALLS_TUTORIAL",
-          "persistentUuid": "fe9ddcba-4a6a-4759-a124-3386e387c0e7",
-          "width": 83,
-          "x": 939,
-          "y": 305,
-          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8634,9 +9187,9 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "b452737f-a0d1-4fdc-884b-886153e70081",
-          "width": 101,
-          "x": 917,
-          "y": 404,
+          "width": 38,
+          "x": 964,
+          "y": 400,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -8646,15 +9199,571 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 98,
+          "height": 186,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "da78e0a6-5e6e-4680-b45d-8e122fa0f7b1",
           "width": 28,
-          "x": 923,
-          "y": 320,
+          "x": 965,
+          "y": 228,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 754,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "81f6f15b-3109-4094-83ad-e06bc9d86023",
+          "width": 54,
+          "x": 176,
+          "y": -15,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 804,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "0d65fad7-0d9a-4a62-b269-67f6c88474ea",
+          "width": 54,
+          "x": 717,
+          "y": 297,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 733,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "2deeec19-ba8a-4554-9b33-8301488e07d2",
+          "width": 54,
+          "x": 1110,
+          "y": 3,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 954,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "51be10f8-e36a-46c9-95fb-7fe870f18123",
+          "width": 54,
+          "x": 662,
+          "y": -458,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "f57fd9aa-e70f-4942-add6-b3f1b4040f41",
+          "width": 74,
+          "x": 226,
+          "y": 596,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 275,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "a724b8c4-9fb9-4a6d-800e-8ebbfccd2d72",
+          "width": 32,
+          "x": 378,
+          "y": 402,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "a322796e-4437-407b-91ac-703ac16cd7ec",
+          "width": 67,
+          "x": 334,
+          "y": 310,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 88,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "14a39098-5f67-46ab-84ad-24b48a5af8ed",
+          "width": 32,
+          "x": 528,
+          "y": 431,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 19,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "9dd69e89-caca-450d-9b3c-52dd18f49a7d",
+          "width": 32,
+          "x": 557,
+          "y": 426,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "25484ec7-62da-49d5-981a-b8c4d569a34e",
+          "width": 216,
+          "x": 618,
+          "y": 491,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 120,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "0f07278a-6edf-4713-9324-e824aa3a4f36",
+          "width": 32,
+          "x": 812,
+          "y": 501,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "743ea126-b2ca-4d56-b10b-2f2dd4ba44bd",
+          "width": 112,
+          "x": 719,
+          "y": 582,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 109,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "1ee8c59a-b5ab-4b4a-a941-f9e01f9dca5f",
+          "width": 32,
+          "x": 617,
+          "y": 580,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 1,
+          "height": 172,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "23791ff1-1a07-4953-98d3-9719c1d9f0ac",
+          "width": 32,
+          "x": 1010,
+          "y": 455,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 197,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "6ec26dac-7de1-4268-bb4f-e4627809c8e0",
+          "width": 32,
+          "x": 670,
+          "y": 34,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 80,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "b9f402b7-76d6-4c1c-984e-b819bf131c3c",
+          "width": 32,
+          "x": 357,
+          "y": 100,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 95,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "f1ac7276-f0ad-4a61-97b2-a8071b174ecc",
+          "width": 32,
+          "x": 520,
+          "y": 38,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "44f3aa07-5e91-4d7a-96c6-7a74f95cf021",
+          "width": 135,
+          "x": 871,
+          "y": 200,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "08049788-bcd4-4dd7-ab0c-5cfafa4e34d1",
+          "width": 97,
+          "x": 758,
+          "y": 150,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 84,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MONTY",
+          "persistentUuid": "b23ceb82-abb4-41ae-9c7c-e65c92b9b11e",
+          "width": 77,
+          "x": 244,
+          "y": 655,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "dac3c50b-0a96-44c4-91d8-1be3130ec1f6",
+          "width": 47,
+          "x": 840,
+          "y": 167,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 92,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "e84448a0-9433-4203-90e7-deb0a39c14c8",
+          "width": 32,
+          "x": 1001,
+          "y": 40,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "2f06fdd4-7f6b-4773-8974-2a25fd69892b",
+          "width": 0,
+          "x": 496,
+          "y": 353,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "c358f0c0-f180-41d9-95b1-1215ce0ce7d4",
+          "width": 0,
+          "x": 511,
+          "y": 371,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "ac1ed5c2-b2a3-4e53-b34a-83f77ed2c627",
+          "width": 0,
+          "x": 522,
+          "y": 377,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "acd86e98-bf9f-4b55-9310-f339719d5970",
+          "width": 0,
+          "x": 539,
+          "y": 397,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "f720b4a4-25ac-470a-a9ab-564fbb7e5d74",
+          "width": 111,
+          "x": 760,
+          "y": 221,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "7a9034a2-9cc2-46d6-a94f-bcde096b6603",
+          "width": 132,
+          "x": 402,
+          "y": 574,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "15bcc509-047c-45e4-ae24-48270871134a",
+          "width": 248,
+          "x": 694,
+          "y": 71,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 67,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "72ac2061-6488-4c84-bb32-a3dba0ffb04c",
+          "width": 32,
+          "x": 284,
+          "y": 42,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 84,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PORTAL",
+          "persistentUuid": "3dbf45c2-cc5b-4ca3-a21d-36500b4eacc4",
+          "width": 88,
+          "x": 209,
+          "y": 31,
+          "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 747,
+          "keepRatio": true,
+          "layer": "",
+          "name": "LAVA",
+          "persistentUuid": "392130cf-e3e2-4802-a939-201f9ec295f5",
+          "width": 937,
+          "x": 197,
+          "y": 759,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "QUIT_TEXT",
+          "persistentUuid": "b91bc4b8-15aa-4cf9-b1fb-b1217098bfb6",
+          "width": 0,
+          "x": 39,
+          "y": 26,
+          "zOrder": 42,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8937,6 +10046,10 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         },
@@ -9018,6 +10131,38 @@
           "x": 711,
           "y": 355,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "4713ae3b-d754-47fa-b148-a9d66578e11c",
+          "width": 0,
+          "x": 248,
+          "y": 390,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_TEXT",
+          "persistentUuid": "f8a3643f-cc1b-4690-90c6-804e6617a90a",
+          "width": 0,
+          "x": 774,
+          "y": 378,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9355,6 +10500,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "56b6c295-a23b-44e5-a0cc-d61d28929d9c",
+          "width": 0,
+          "x": 288,
+          "y": 334,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -9615,15 +10776,15 @@
       ]
     },
     {
-      "b": 209,
+      "b": 102,
       "disableInputWhenNotFocused": true,
       "mangledName": "LVL_325",
       "name": "LVL 5",
-      "r": 209,
+      "r": 175,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 135,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -9653,6 +10814,22 @@
           "x": 12,
           "y": 15,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "QUIT_TEXT",
+          "persistentUuid": "19f86b95-60d8-452c-929d-d01165dcee8f",
+          "width": 0,
+          "x": 49,
+          "y": 32,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9810,6 +10987,10 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         },
@@ -9891,6 +11072,38 @@
           "x": 715,
           "y": 302,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "f4f91a97-f77b-49e0-8f34-b4c556ec5a94",
+          "width": 0,
+          "x": 239,
+          "y": 340,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_TEXT",
+          "persistentUuid": "5252655a-0d03-4b1e-adbe-458cf12e3a04",
+          "width": 0,
+          "x": 769,
+          "y": 327,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10228,6 +11441,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "6110c40f-b82f-432c-a35e-6a9f89387046",
+          "width": 0,
+          "x": 297,
+          "y": 329,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -10488,15 +11717,15 @@
       ]
     },
     {
-      "b": 209,
+      "b": 102,
       "disableInputWhenNotFocused": true,
       "mangledName": "LVL_326",
       "name": "LVL 6",
-      "r": 209,
+      "r": 175,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 135,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -10683,6 +11912,10 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         },
@@ -10764,6 +11997,38 @@
           "x": 701,
           "y": 279,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "9db461bc-c044-4afe-a71a-fdceb4590597",
+          "width": 0,
+          "x": 300,
+          "y": 310,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_TEXT",
+          "persistentUuid": "bc43c9fd-fbd1-4cab-b42e-308975344f99",
+          "width": 0,
+          "x": 762,
+          "y": 312,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11101,6 +12366,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "5d573ba0-d4eb-4fd9-bf98-dd24f3f75c17",
+          "width": 0,
+          "x": 337,
+          "y": 314,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -11361,15 +12642,15 @@
       ]
     },
     {
-      "b": 209,
+      "b": 102,
       "disableInputWhenNotFocused": true,
       "mangledName": "LVL_327",
       "name": "LVL 7",
-      "r": 209,
+      "r": 175,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 135,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -11556,6 +12837,10 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         },
@@ -11637,6 +12922,38 @@
           "x": 725,
           "y": 330,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "d3772c80-d89c-4be0-9552-64fbc95b9c38",
+          "width": 0,
+          "x": 319,
+          "y": 367,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_TEXT",
+          "persistentUuid": "eca30c93-2c4d-40d6-b51f-0dbd535cf3a9",
+          "width": 0,
+          "x": 776,
+          "y": 362,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11974,6 +13291,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "67cfd507-8ff1-4f5c-b3f5-15d85ff5d4a3",
+          "width": 0,
+          "x": 319,
+          "y": 301,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -12234,1743 +13567,15 @@
       ]
     },
     {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "LVL_328",
-      "name": "LVL 8",
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.546875,
-        "windowMask": false
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "QUIT_BUTTON",
-          "persistentUuid": "db1ecf20-1037-4834-a950-adfe291fb394",
-          "width": 139,
-          "x": 8,
-          "y": 10,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "QUIT_BUTTON",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Black Square Decorated Button",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 6,
-            "BottomPadding": 24,
-            "TopPadding": 24,
-            "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Quit"
-          }
-        }
-      ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "QUIT_BUTTON"
-          }
-        ]
-      },
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "QUIT_BUTTON",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"MAIN MENU\"",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": [
-            {
-              "effectType": "Scene3D::AmbientLight",
-              "name": "3D Ammbient Light",
-              "doubleParameters": {
-                "intensity": 0.25
-              },
-              "stringParameters": {
-                "color": "255;255;255"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
-        },
-        {
-          "name": "Effect",
-          "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Opacity",
-          "type": "OpacityCapability::OpacityBehavior"
-        },
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior"
-        },
-        {
-          "name": "RemapForTopdown",
-          "type": "BehaviorRemapper::RemapForTopdown"
-        },
-        {
-          "name": "Resizable",
-          "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        },
-        {
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
-        }
-      ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "DIED_32LVL_328",
-      "name": "DIED LVL 8",
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.546875,
-        "windowMask": false
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "DIED_TEXT_LVL_8",
-          "persistentUuid": "b9b781ee-a5db-4659-99f5-ddb953c086d1",
-          "width": 0,
-          "x": 236,
-          "y": 149,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 82,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAIN_MENU_BUTTON_DIED_LVL_8",
-          "persistentUuid": "2abbc648-8d31-42e8-a707-7fdb157ffa57",
-          "width": 212,
-          "x": 335,
-          "y": 306,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 80,
-          "keepRatio": true,
-          "layer": "",
-          "name": "RETRY_BUTTON_DIED_LVL_8",
-          "persistentUuid": "1040d20d-4ada-41a0-b5e9-639333309639",
-          "width": 199,
-          "x": 684,
-          "y": 304,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "DIED_TEXT_LVL_8",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Oh no! You died!\nRetry level or return to main menu",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 50,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Oh no! You died!\nRetry level or return to main menu",
-            "font": "",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 50,
-            "color": "0;0;0"
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "MAIN_MENU_BUTTON_DIED_LVL_8",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Black Square Decorated Button",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 6,
-            "BottomPadding": 24,
-            "TopPadding": 24,
-            "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Main Menu"
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "RETRY_BUTTON_DIED_LVL_8",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Black Square Decorated Button",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 6,
-            "BottomPadding": 24,
-            "TopPadding": 24,
-            "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Retry"
-          }
-        }
-      ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "DIED_TEXT_LVL_8"
-          },
-          {
-            "objectName": "MAIN_MENU_BUTTON_DIED_LVL_8"
-          },
-          {
-            "objectName": "RETRY_BUTTON_DIED_LVL_8"
-          }
-        ]
-      },
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "MAIN_MENU_BUTTON_DIED_LVL_8",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"MAIN MENU\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "RETRY_BUTTON_DIED_LVL_8",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"LVL 8\"",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": [
-            {
-              "effectType": "Scene3D::AmbientLight",
-              "name": "3D Ammbient Light",
-              "doubleParameters": {
-                "intensity": 0.25
-              },
-              "stringParameters": {
-                "color": "255;255;255"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
-        },
-        {
-          "name": "Effect",
-          "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Opacity",
-          "type": "OpacityCapability::OpacityBehavior"
-        },
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior"
-        },
-        {
-          "name": "RemapForTopdown",
-          "type": "BehaviorRemapper::RemapForTopdown"
-        },
-        {
-          "name": "Resizable",
-          "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "Text",
-          "type": "TextContainerCapability::TextContainerBehavior"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        },
-        {
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
-        }
-      ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "COMPLETED_32LVL_328",
-      "name": "COMPLETED LVL 8",
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.546875,
-        "windowMask": false
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "TXT_LVL_8_COMPLETED",
-          "persistentUuid": "30d15e21-e15f-4e85-bbe1-b55aea51d3be",
-          "width": 0,
-          "x": 247,
-          "y": 147,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 82,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAIN_MENU_BUTTON_LVL_8_COMPLETED",
-          "persistentUuid": "0e816c31-4ec3-4429-843a-6f05c8d18837",
-          "width": 210,
-          "x": 269,
-          "y": 269,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 77,
-          "keepRatio": true,
-          "layer": "",
-          "name": "NEXT_LVL_BUTTON_LVL_8_COMPLETED",
-          "persistentUuid": "c07d032e-8c58-46af-9465-41efe7c31fa3",
-          "width": 205,
-          "x": 693,
-          "y": 266,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "TXT_LVL_8_COMPLETED",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Congrats! You completed Level 8!",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 50,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Congrats! You completed Level 8!",
-            "font": "",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 50,
-            "color": "0;0;0"
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "MAIN_MENU_BUTTON_LVL_8_COMPLETED",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Black Square Decorated Button",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 6,
-            "BottomPadding": 24,
-            "TopPadding": 24,
-            "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Main Menu"
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "NEXT_LVL_BUTTON_LVL_8_COMPLETED",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Black Square Decorated Button",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 6,
-            "BottomPadding": 24,
-            "TopPadding": 24,
-            "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Next Level"
-          }
-        }
-      ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "TXT_LVL_8_COMPLETED"
-          },
-          {
-            "objectName": "MAIN_MENU_BUTTON_LVL_8_COMPLETED"
-          },
-          {
-            "objectName": "NEXT_LVL_BUTTON_LVL_8_COMPLETED"
-          }
-        ]
-      },
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "MAIN_MENU_BUTTON_LVL_8_COMPLETED",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"MAIN MENU\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "NEXT_LVL_BUTTON_LVL_8_COMPLETED",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"LVL 9\"",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": [
-            {
-              "effectType": "Scene3D::AmbientLight",
-              "name": "3D Ammbient Light",
-              "doubleParameters": {
-                "intensity": 0.25
-              },
-              "stringParameters": {
-                "color": "255;255;255"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
-        },
-        {
-          "name": "Effect",
-          "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Opacity",
-          "type": "OpacityCapability::OpacityBehavior"
-        },
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior"
-        },
-        {
-          "name": "RemapForTopdown",
-          "type": "BehaviorRemapper::RemapForTopdown"
-        },
-        {
-          "name": "Resizable",
-          "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "Text",
-          "type": "TextContainerCapability::TextContainerBehavior"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        },
-        {
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
-        }
-      ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "LVL_329",
-      "name": "LVL 9",
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.546875,
-        "windowMask": false
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [],
-      "objects": [
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "QUIT_BUTTON",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Black Square Decorated Button",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 6,
-            "BottomPadding": 24,
-            "TopPadding": 24,
-            "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Quit"
-          }
-        }
-      ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "QUIT_BUTTON"
-          }
-        ]
-      },
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "QUIT_BUTTON",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"MAIN MENU\"",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": [
-            {
-              "effectType": "Scene3D::AmbientLight",
-              "name": "3D Ammbient Light",
-              "doubleParameters": {
-                "intensity": 0.25
-              },
-              "stringParameters": {
-                "color": "255;255;255"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
-        },
-        {
-          "name": "Effect",
-          "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Opacity",
-          "type": "OpacityCapability::OpacityBehavior"
-        },
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior"
-        },
-        {
-          "name": "RemapForTopdown",
-          "type": "BehaviorRemapper::RemapForTopdown"
-        },
-        {
-          "name": "Resizable",
-          "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        },
-        {
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
-        }
-      ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "DIED_32LVL_329",
-      "name": "DIED LVL 9",
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.546875,
-        "windowMask": false
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "DIED_LVL_9_TEXT",
-          "persistentUuid": "aededf00-b469-4270-8b79-803c7fd8ef81",
-          "width": 0,
-          "x": 272,
-          "y": 138,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 80,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAIN_MENU_BUTTON_DIED_LVL_9",
-          "persistentUuid": "85797f72-3736-415f-a185-0708af27af4c",
-          "width": 212,
-          "x": 267,
-          "y": 306,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 88,
-          "keepRatio": true,
-          "layer": "",
-          "name": "RETRY_BUTTON_LVL_9",
-          "persistentUuid": "4272e13e-b9de-44d9-bd3c-afbcc45184a8",
-          "width": 205,
-          "x": 720,
-          "y": 301,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "DIED_LVL_9_TEXT",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Oh no! You died!\nRetry level or return to main menu",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 50,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Oh no! You died!\nRetry level or return to main menu",
-            "font": "",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 50,
-            "color": "0;0;0"
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "MAIN_MENU_BUTTON_DIED_LVL_9",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Black Square Decorated Button",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 6,
-            "BottomPadding": 24,
-            "TopPadding": 24,
-            "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Main Menu "
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "RETRY_BUTTON_LVL_9",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Black Square Decorated Button",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 6,
-            "BottomPadding": 24,
-            "TopPadding": 24,
-            "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Retry"
-          }
-        }
-      ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "DIED_LVL_9_TEXT"
-          },
-          {
-            "objectName": "MAIN_MENU_BUTTON_DIED_LVL_9"
-          },
-          {
-            "objectName": "RETRY_BUTTON_LVL_9"
-          }
-        ]
-      },
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "MAIN_MENU_BUTTON_DIED_LVL_9",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"MAIN MENU\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "RETRY_BUTTON_LVL_9",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"LVL 9\"",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": [
-            {
-              "effectType": "Scene3D::AmbientLight",
-              "name": "3D Ammbient Light",
-              "doubleParameters": {
-                "intensity": 0.25
-              },
-              "stringParameters": {
-                "color": "255;255;255"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
-        },
-        {
-          "name": "Effect",
-          "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Opacity",
-          "type": "OpacityCapability::OpacityBehavior"
-        },
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior"
-        },
-        {
-          "name": "RemapForTopdown",
-          "type": "BehaviorRemapper::RemapForTopdown"
-        },
-        {
-          "name": "Resizable",
-          "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "Text",
-          "type": "TextContainerCapability::TextContainerBehavior"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        },
-        {
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
-        }
-      ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "COMPLTED_32LVL_329",
-      "name": "COMPLTED LVL 9",
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.546875,
-        "windowMask": false
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "TEXT_COMPLETED_LVL_9",
-          "persistentUuid": "f931f8ee-bc6a-4fea-b8d1-67cf849b6197",
-          "width": 0,
-          "x": 261,
-          "y": 189,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 84,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAIN_MENU_LVL_9",
-          "persistentUuid": "a4e4cfd7-f0f8-4200-a4ab-b0bd281507e5",
-          "width": 216,
-          "x": 263,
-          "y": 331,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 88,
-          "keepRatio": true,
-          "layer": "",
-          "name": "NEXT_LVL_BUTTON_LVL_9",
-          "persistentUuid": "a8004e87-f7ff-4dbc-97cb-5d0c5f1bec1c",
-          "width": 210,
-          "x": 743,
-          "y": 327,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "TEXT_COMPLETED_LVL_9",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Congrats! You completed Level 9!\nTime for the final level!",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 50,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Congrats! You completed Level 9!\nTime for the final level!",
-            "font": "",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 50,
-            "color": "0;0;0"
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "MAIN_MENU_LVL_9",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Black Square Decorated Button",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 6,
-            "BottomPadding": 24,
-            "TopPadding": 24,
-            "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Main Menu"
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "NEXT_LVL_BUTTON_LVL_9",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Black Square Decorated Button",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 6,
-            "BottomPadding": 24,
-            "TopPadding": 24,
-            "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Next Level"
-          }
-        }
-      ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "TEXT_COMPLETED_LVL_9"
-          },
-          {
-            "objectName": "MAIN_MENU_LVL_9"
-          },
-          {
-            "objectName": "NEXT_LVL_BUTTON_LVL_9"
-          }
-        ]
-      },
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "MAIN_MENU_LVL_9",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"MAIN MENU\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "NEXT_LVL_BUTTON_LVL_9",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"FINAL LVL\"",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": [
-            {
-              "effectType": "Scene3D::AmbientLight",
-              "name": "3D Ammbient Light",
-              "doubleParameters": {
-                "intensity": 0.25
-              },
-              "stringParameters": {
-                "color": "255;255;255"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
-        },
-        {
-          "name": "Effect",
-          "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Opacity",
-          "type": "OpacityCapability::OpacityBehavior"
-        },
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior"
-        },
-        {
-          "name": "RemapForTopdown",
-          "type": "BehaviorRemapper::RemapForTopdown"
-        },
-        {
-          "name": "Resizable",
-          "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "Text",
-          "type": "TextContainerCapability::TextContainerBehavior"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        },
-        {
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
-        }
-      ]
-    },
-    {
-      "b": 209,
+      "b": 102,
       "disableInputWhenNotFocused": true,
       "mangledName": "FINAL_32LVL",
       "name": "FINAL LVL",
-      "r": 209,
+      "r": 175,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 135,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -14157,6 +13762,10 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         },
@@ -14238,6 +13847,38 @@
           "x": 678,
           "y": 291,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "c12a2777-a392-4c02-9858-f3ccfb0f2b68",
+          "width": 0,
+          "x": 312,
+          "y": 318,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RETRY_TEXT",
+          "persistentUuid": "b5bb2da6-ffd4-447d-993b-65186b153550",
+          "width": 0,
+          "x": 721,
+          "y": 312,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14555,6 +14196,22 @@
           "x": 516,
           "y": 326,
           "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_TEXT",
+          "persistentUuid": "4c997e0c-5acc-4d96-b6be-0e7a3967a05e",
+          "width": 0,
+          "x": 540,
+          "y": 352,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
