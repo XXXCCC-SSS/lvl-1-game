@@ -272,6 +272,30 @@
         "name": "NewSprite8",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite11",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2523,6 +2547,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TUTORIAL_TEXT2",
+          "persistentUuid": "d19cf7e8-9266-4c81-93fe-0374a4a024ad",
+          "width": 0,
+          "x": 6,
+          "y": 231,
+          "zOrder": 84,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -2645,6 +2685,48 @@
             "characterSize": 20,
             "color": "255;255;255"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "TUTORIAL_TEXT2",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "TO PLAY: \nArrow keys OR\nW, A, S, D\n\nReach blue \nportal to \nescape level!\n\nBe aware of \nthe rising \nlava and go \nsave Monty the \nMole!",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 23,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "TO PLAY: \nArrow keys OR\nW, A, S, D\n\nReach blue \nportal to \nescape level!\n\nBe aware of \nthe rising \nlava and go \nsave Monty the \nMole!",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 23,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -2661,6 +2743,9 @@
           },
           {
             "objectName": "TO_GAME_TEXT"
+          },
+          {
+            "objectName": "TUTORIAL_TEXT2"
           }
         ]
       },
@@ -2784,7 +2869,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "2"
+                "20"
               ]
             },
             {
@@ -12778,7 +12863,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.7130377630690397,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -12797,6 +12882,780 @@
           "x": 10,
           "y": 10,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 736,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "16295b56-ff6c-4188-9ae7-e7b486806f5b",
+          "width": 58,
+          "x": 182,
+          "y": -8,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 1012,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "126a8747-1166-4f11-b667-4708f73bc54b",
+          "width": 58,
+          "x": 710,
+          "y": -485,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 736,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "b1447b79-59a4-4767-8175-1e4ff0352040",
+          "width": 111,
+          "x": 1168,
+          "y": -6,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 113,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "3aeaed9a-7f5b-4f1c-a452-cf14116367c5",
+          "width": 58,
+          "x": 234,
+          "y": 649,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 834,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "1863a38e-48ea-4c5c-b112-8b552525e2b1",
+          "width": 58,
+          "x": 815,
+          "y": 285,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "QUIT_TEXT",
+          "persistentUuid": "793eba92-1772-4435-ad74-f02df04fbe28",
+          "width": 0,
+          "x": 47,
+          "y": 25,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 89,
+          "customSize": true,
+          "depth": 1,
+          "height": 100,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PORTAL",
+          "persistentUuid": "b688e78a-c5d7-4634-bffa-cbc8557831bf",
+          "width": 110,
+          "x": 1078,
+          "y": 281,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 105,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "d7f37076-6568-463f-a7f8-ff2f31a645bd",
+          "width": 32,
+          "x": 444,
+          "y": 609,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "a0a2f1ab-41a2-49c9-862d-385d1ae8bd29",
+          "width": 339,
+          "x": 458,
+          "y": 598,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 153,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "f3fe41a9-81f5-4f39-af18-6ba8c781dcd1",
+          "width": 32,
+          "x": 777,
+          "y": 460,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "ed6b831d-dcd3-44c3-b641-6912d73e122c",
+          "width": 450,
+          "x": 365,
+          "y": 448,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "486e7311-e9ae-418c-8e58-fcc5898ad6d7",
+          "width": 573,
+          "x": 358,
+          "y": 349,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 249,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "ac28a965-40e4-4b84-a6f6-c8aa935e7594",
+          "width": 32,
+          "x": 921,
+          "y": 364,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 495,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "d043d587-2bf1-4335-a406-e49616a35b0e",
+          "width": 32,
+          "x": 1069,
+          "y": 195,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "5cd2d0b7-266e-40b0-8b41-6e1ce90498bd",
+          "width": 795,
+          "x": 227,
+          "y": 259,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 106,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "edc3141b-2e1e-4511-8953-34793dde89ae",
+          "width": 45,
+          "x": 297,
+          "y": 107,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 42,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "36b8b48a-45c1-4f89-a2b9-b9453294e270",
+          "width": 226,
+          "x": 545,
+          "y": 89,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "8336c6fd-cd7c-4291-b968-8de4191c541c",
+          "width": 133,
+          "x": 328,
+          "y": 122,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "0b3f9cef-190b-45ba-b47b-1b5c8f12d15a",
+          "width": 133,
+          "x": 841,
+          "y": 117,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 68,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "18cbc527-43c4-43a0-b072-d2cc9100eeb5",
+          "width": 32,
+          "x": 449,
+          "y": 135,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 105,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "18397648-19c9-4cc3-af96-14d14e428d17",
+          "width": 27,
+          "x": 772,
+          "y": 148,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 68,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "d062f878-3936-4d25-a19f-832e781d5360",
+          "width": 32,
+          "x": 833,
+          "y": 146,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 80,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "0ab4cb6c-46bd-4558-89c6-7f76ffd26f0c",
+          "width": 32,
+          "x": 1072,
+          "y": 114,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 127,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "e990b877-ace2-42af-8ce0-c52eab57c35b",
+          "width": 30,
+          "x": 636,
+          "y": 135,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 113,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "58703b8e-35f9-4c7c-b055-09ea23d889ef",
+          "width": 32,
+          "x": 1038,
+          "y": 127,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 68,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "82e3c567-6cd7-4020-b329-7c7e4197b301",
+          "width": 32,
+          "x": 969,
+          "y": 136,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 106,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "3524052e-295c-4077-85ba-6f1c67da47e9",
+          "width": 32,
+          "x": 292,
+          "y": 580,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "f81c3adb-ba90-4e4c-8577-4c97a8b3305f",
+          "width": 77,
+          "x": 237,
+          "y": 566,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 19,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "b8033814-8707-45a7-84b7-83275b2678d6",
+          "width": 430,
+          "x": 233,
+          "y": 530,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 91,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "52201a9e-eb06-4097-90a4-cdf4676e06c1",
+          "width": 32,
+          "x": 278,
+          "y": 333,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 263,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "aa3ed1a8-ab90-4f64-99f3-cbac47094aef",
+          "width": 32,
+          "x": 997,
+          "y": 258,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 270,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "24c1dd96-85df-4491-8cb0-f25f1b44de14",
+          "width": 28,
+          "x": 602,
+          "y": 64,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 972,
+          "keepRatio": true,
+          "layer": "",
+          "name": "LAVA",
+          "persistentUuid": "5eb1fd31-d470-4551-86b6-b8f4159464f1",
+          "width": 1038,
+          "x": 196,
+          "y": 748,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 77,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MONTY",
+          "persistentUuid": "60a9f7a0-eab1-4e44-b78e-78e9c2da1ea6",
+          "width": 74,
+          "x": 342,
+          "y": 659,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 68,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "27a7777f-8b12-4cfc-92a2-6402424de2fd",
+          "width": 32,
+          "x": 995,
+          "y": 613,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "14522456-1439-4558-bd19-94dde03fc8f6",
+          "width": 0,
+          "x": 280,
+          "y": 473,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "cfbfa07d-688d-4eaa-a166-f65b0746b2a2",
+          "width": 0,
+          "x": 261,
+          "y": 596,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "185b6a60-6082-44ca-9090-0e39fbf460a0",
+          "width": 0,
+          "x": 1049,
+          "y": 141,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "2a3cd31e-feb2-493d-a3ea-9a876d1b58fd",
+          "width": 0,
+          "x": 336,
+          "y": 141,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "043160c1-79aa-4dbe-95bd-ea9128e1d9ee",
+          "width": 0,
+          "x": 229,
+          "y": 38,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "d0502c18-30a7-4e2a-8879-85db9f101fd1",
+          "width": 0,
+          "x": 799,
+          "y": 471,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 23,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "79577346-5857-4cd0-b35b-f778e4a8ce22",
+          "width": 32,
+          "x": 976,
+          "y": 289,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "87008b51-759e-464d-a57d-fa8d2cfc1ca5",
+          "width": 188,
+          "x": 478,
+          "y": 436,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "762f850b-344a-4cd0-acff-6e5852fe987f",
+          "width": 0,
+          "x": 862,
+          "y": 143,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 33,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "e1be9f16-31eb-43c4-9cf7-5427d080374e",
+          "width": 103,
+          "x": 494,
+          "y": 57,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 42,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "2c891830-d460-45d4-bc10-5fb6be0e218b",
+          "width": 103,
+          "x": 717,
+          "y": 49,
+          "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12856,6 +13715,131 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "PORTAL",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"COMPLETED LVL 6\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "LAVA",
+                "-90",
+                "5",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "MAZE_WALLS_TUTORIAL",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "MONTY",
+                "MAZE_WALLS_TUTORIAL",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "LAVA",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"DIED LVL 6\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -13741,6 +14725,91 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 747,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "e120098b-54f9-43aa-b280-e0b196c3222a",
+          "width": 76,
+          "x": 1172,
+          "y": -11,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 747,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "8e6b122f-a6e7-41e1-9e7c-29a9c4185030",
+          "width": 76,
+          "x": 182,
+          "y": -10,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 968,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "243e56cb-7fc7-42f3-be54-e9830008ed99",
+          "width": 76,
+          "x": 689,
+          "y": -452,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 968,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "f5f2c8b7-90c9-48d8-94d2-c2181bba4d65",
+          "width": 76,
+          "x": 692,
+          "y": 211,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 838,
+          "keepRatio": true,
+          "layer": "",
+          "name": "LAVA",
+          "persistentUuid": "972ebce2-6b83-4978-811e-cee6a3f72fb8",
+          "width": 994,
+          "x": 223,
+          "y": 749,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -13797,6 +14866,131 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "PORTAL",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"COMPLETED LVL 7\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "LAVA",
+                "-90",
+                "5",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "MAZE_WALLS_TUTORIAL",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "MONTY",
+                "MAZE_WALLS_TUTORIAL",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "LAVA",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"DIED LVL 7\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -15235,7 +16429,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7370816317994032,
+        "zoomFactor": 0.8141881203709916,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -15389,7 +16583,7 @@
           "width": 126,
           "x": 584,
           "y": 376,
-          "zOrder": 10,
+          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15407,6 +16601,363 @@
           "x": 334,
           "y": 381,
           "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 145,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_1",
+          "persistentUuid": "4a28cc26-5054-40f6-a6dd-80afd62788d9",
+          "width": 149,
+          "x": 872,
+          "y": 383,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 145,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_1",
+          "persistentUuid": "24a0066d-b6cd-4080-9a64-a9464f3a152b",
+          "width": 149,
+          "x": 991,
+          "y": 383,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 145,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_1",
+          "persistentUuid": "5ed65331-8133-4976-8cc6-49444f600074",
+          "width": 149,
+          "x": 441,
+          "y": 384,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 145,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_1",
+          "persistentUuid": "9a0215ce-ca2a-4283-be3e-df6b08ad693f",
+          "width": 149,
+          "x": 11,
+          "y": 376,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 145,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_1",
+          "persistentUuid": "234efa20-b638-4eee-a1be-bdf50e9f17a3",
+          "width": 149,
+          "x": 822,
+          "y": 513,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 145,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_1",
+          "persistentUuid": "ba61a13c-67ef-4182-8945-5f1da91a6901",
+          "width": 149,
+          "x": 322,
+          "y": 598,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 145,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_1",
+          "persistentUuid": "38c3e5a0-9b53-4733-ad5e-aaf371fcb14c",
+          "width": 149,
+          "x": 39,
+          "y": 504,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 145,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_1",
+          "persistentUuid": "fa051a1e-7166-4054-ab01-e65dedb1b1c8",
+          "width": 149,
+          "x": 525,
+          "y": 498,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 149,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_2",
+          "persistentUuid": "fa9aca07-daf4-4b42-a9ba-4ba8ac2ff21d",
+          "width": 155,
+          "x": 723,
+          "y": 372,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 149,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_2",
+          "persistentUuid": "a7deb501-8fe1-43c5-9fbe-1ae8932b3c3f",
+          "width": 155,
+          "x": 121,
+          "y": 375,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 149,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_2",
+          "persistentUuid": "8b886f78-f466-4634-a83b-0c75d6c21cc6",
+          "width": 155,
+          "x": 1082,
+          "y": 424,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 149,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_2",
+          "persistentUuid": "fcc4abc1-11c4-449c-98d6-91d82f3934a4",
+          "width": 155,
+          "x": 657,
+          "y": 526,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 149,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_2",
+          "persistentUuid": "40b3c6f6-6ec2-4752-ad51-8838392e0768",
+          "width": 155,
+          "x": -49,
+          "y": 584,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 149,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_2",
+          "persistentUuid": "e4c63d3d-0be5-4962-90ba-1265992deb3c",
+          "width": 155,
+          "x": 302,
+          "y": 397,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 111,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_3",
+          "persistentUuid": "279930a0-4ba0-4f77-a932-d3cda7c22c63",
+          "width": 119,
+          "x": 963,
+          "y": 520,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 111,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_3",
+          "persistentUuid": "178eb90c-d910-4cae-b0e9-032935b159d6",
+          "width": 119,
+          "x": 221,
+          "y": 488,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 111,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_3",
+          "persistentUuid": "e584845c-387a-48dd-bca2-0b33ca433c37",
+          "width": 119,
+          "x": 559,
+          "y": 606,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 111,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_3",
+          "persistentUuid": "66766161-4568-43a5-8f96-cbfcd7fee411",
+          "width": 119,
+          "x": 1181,
+          "y": 391,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 111,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_3",
+          "persistentUuid": "34d19062-5d5d-4a28-a2a6-66d8d9a46dd0",
+          "width": 119,
+          "x": 679,
+          "y": 459,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 111,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_3",
+          "persistentUuid": "c2fb2ebf-8f3e-4654-b086-f552b1c7a087",
+          "width": 119,
+          "x": 1163,
+          "y": 599,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 111,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FLOWER_3",
+          "persistentUuid": "ec0a939a-ebf7-4f63-9eda-8d714a36c2b1",
+          "width": 119,
+          "x": 66,
+          "y": 594,
+          "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15546,24 +17097,10 @@
           "effects": [],
           "behaviors": [
             {
-              "acceleration": 1500,
-              "canGoDownFromJumpthru": true,
-              "canGrabPlatforms": false,
-              "canGrabWithoutMoving": true,
-              "deceleration": 1500,
-              "gravity": 1000,
-              "ignoreDefaultControls": false,
-              "jumpSpeed": 600,
-              "jumpSustainTime": 0.2,
-              "ladderClimbingSpeed": 150,
-              "maxFallingSpeed": 700,
-              "maxSpeed": 250,
-              "name": "PlatformerObject",
-              "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "useLegacyTrajectory": false,
-              "useRepeatedJump": false,
-              "xGrabTolerance": 10,
+              "canBeGrabbed": false,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
               "yGrabOffset": 0
             }
           ]
@@ -15628,6 +17165,189 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "FLOWER_1",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite9",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 28,
+                            "y": 20
+                          },
+                          {
+                            "x": 39,
+                            "y": 20
+                          },
+                          {
+                            "x": 39,
+                            "y": 40
+                          },
+                          {
+                            "x": 28,
+                            "y": 40
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "FLOWER_2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite10",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 24,
+                            "y": 31
+                          },
+                          {
+                            "x": 36,
+                            "y": 31
+                          },
+                          {
+                            "x": 36,
+                            "y": 41
+                          },
+                          {
+                            "x": 24,
+                            "y": 41
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "FLOWER_3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite11",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 23
+                          },
+                          {
+                            "x": 34,
+                            "y": 23
+                          },
+                          {
+                            "x": 34,
+                            "y": 48
+                          },
+                          {
+                            "x": 21,
+                            "y": 48
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -15644,10 +17364,44 @@
           },
           {
             "objectName": "MOUND"
+          },
+          {
+            "objectName": "FLOWER_1"
+          },
+          {
+            "objectName": "FLOWER_2"
+          },
+          {
+            "objectName": "FLOWER_3"
           }
         ]
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"COMPLETED GAME/FINAL LVL\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -15730,10 +17484,6 @@
         {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
-        },
-        {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior"
         },
         {
           "name": "RemapForTopdown",
