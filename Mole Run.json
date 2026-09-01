@@ -304,6 +304,54 @@
         "name": "NewSprite12",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/MONTY DIES.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MONTY DIES",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY DIES2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/MONTY DIES2.png\"}",
+        "name": "MONTY DIES2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY DIES3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MONTY DIES3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY DIES4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MONTY DIES4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY DIES5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MONTY DIES5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY DIES6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MONTY DIES6",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -365,6 +413,107 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "NewSprite3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18.5,
+                        "y": 32
+                      },
+                      {
+                        "x": 20,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 41,
+                        "y": 7.5
+                      },
+                      {
+                        "x": 43.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 45,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 19,
+                        "y": 44.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MONTY DIES",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY DIES5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18.5,
+                        "y": 32
+                      },
+                      {
+                        "x": 20,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 41,
+                        "y": 7.5
+                      },
+                      {
+                        "x": 43.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 45,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 19,
+                        "y": 44.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY DIES6",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2929,6 +3078,36 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY",
+                "LAVA",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -3792,7 +3971,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5843784410740948,
+        "zoomFactor": 0.7130377630690421,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3826,7 +4005,7 @@
           "persistentUuid": "e8188157-17fe-4158-beb7-362542d97e2d",
           "width": 1056,
           "x": 196,
-          "y": 740,
+          "y": 753,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -4604,8 +4783,8 @@
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "b388fbc1-1425-4cf7-96bf-170c88711eb8",
           "width": 0,
-          "x": 459,
-          "y": 409,
+          "x": 458,
+          "y": 401,
           "zOrder": 55,
           "numberProperties": [],
           "stringProperties": [],
@@ -4783,7 +4962,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "2"
+                "3.5"
               ]
             },
             {
@@ -14711,7 +14890,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7130377630690395,
+        "zoomFactor": 0.9296874999999999,
         "windowMask": false
       },
       "objectsGroups": [],
