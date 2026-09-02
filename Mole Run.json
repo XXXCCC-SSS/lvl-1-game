@@ -352,6 +352,22 @@
         "name": "MONTY DIES6",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/MONTY DIES7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MONTY DIES7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY DIES8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MONTY DIES8",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -469,7 +485,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "MONTY DIES5",
+                  "image": "MONTY DIES7",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -513,7 +529,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "MONTY DIES6",
+                  "image": "MONTY DIES8",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -636,6 +652,17 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "PORTAL MOVEMENT",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": []
             }
           ]
         }
@@ -1329,7 +1356,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.49508400737488983,
+        "zoomFactor": 0.5468750000000014,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3061,10 +3088,31 @@
           "actions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY DIES\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "0.5"
+                "1"
               ]
             },
             {
@@ -3074,36 +3122,6 @@
               "parameters": [
                 "",
                 "\"DIED TUTORIAL LVL\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "MONTY",
-                "LAVA",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "MONTY",
-                "Animation",
-                "=",
                 ""
               ]
             }
@@ -3971,7 +3989,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7130377630690421,
+        "zoomFactor": 0.6672773998329999,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -4997,10 +5015,31 @@
           "actions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY DIES\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "0.5"
+                "1"
               ]
             },
             {
@@ -5009,7 +5048,7 @@
               },
               "parameters": [
                 "",
-                "\"DIED LVL 3\"",
+                "\"DIED LVL 1\"",
                 ""
               ]
             }
@@ -6583,6 +6622,183 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 149,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "01914222-ce4b-4699-a8a5-87223f1acea5",
+          "width": 32,
+          "x": 232,
+          "y": 154,
+          "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "c45c4911-35c5-47ae-9fa9-2423da1a6392",
+          "width": 0,
+          "x": 650,
+          "y": 332,
+          "zOrder": 43,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "ce5d7d8b-2ee3-48ce-87ad-189572148d2f",
+          "width": 0,
+          "x": 261,
+          "y": 370,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "694f67e6-6bd1-4996-a03b-b9f93387e952",
+          "width": 0,
+          "x": 917,
+          "y": 70,
+          "zOrder": 45,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "b2a107c6-020e-40a7-a0e2-159dd2dc70e0",
+          "width": 0,
+          "x": 1022,
+          "y": 656,
+          "zOrder": 46,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "4149d49c-69f8-482a-ae24-80cf54772411",
+          "width": 0,
+          "x": 1136,
+          "y": 256,
+          "zOrder": 47,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "9cdf8d80-03d4-4b90-aa09-950df55fe75d",
+          "width": 0,
+          "x": 307,
+          "y": 478,
+          "zOrder": 48,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "faf33879-ed0c-4aed-9265-40554ddedd87",
+          "width": 0,
+          "x": 427,
+          "y": 508,
+          "zOrder": 49,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "c8bedc63-5d36-460e-b1a0-7ae9c62699a8",
+          "width": 0,
+          "x": 679,
+          "y": 179,
+          "zOrder": 50,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "0847902b-3de6-44e4-8a6d-49f7030f3c05",
+          "width": 0,
+          "x": 509,
+          "y": 231,
+          "zOrder": 51,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "51d40dcc-c747-4e68-af43-d01382202895",
+          "width": 0,
+          "x": 654,
+          "y": 414,
+          "zOrder": 52,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -6742,10 +6958,31 @@
           "actions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY DIES\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "0.5"
+                "1"
               ]
             },
             {
@@ -8221,8 +8458,8 @@
           "name": "MONTY",
           "persistentUuid": "29603a08-c929-4315-ab59-75a23e9381b0",
           "width": 95,
-          "x": 1042,
-          "y": 651,
+          "x": 1049,
+          "y": 640,
           "zOrder": 32,
           "numberProperties": [],
           "stringProperties": [],
@@ -8274,6 +8511,119 @@
           "x": 43,
           "y": 32,
           "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "d2dc3590-91bf-4b78-ae1b-ddf8af193739",
+          "width": 0,
+          "x": 1065,
+          "y": 108,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "d95cfdda-567e-422c-8153-968ff2571e81",
+          "width": 0,
+          "x": 611,
+          "y": 200,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "2fed779e-4824-475e-80ff-138d317c56b5",
+          "width": 0,
+          "x": 367,
+          "y": 373,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "cf82e0fd-cdd8-44e6-97a7-ebba6ced5ade",
+          "width": 0,
+          "x": 250,
+          "y": 624,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "398bcd68-64c6-4f41-bb49-0b0de7599147",
+          "width": 0,
+          "x": 734,
+          "y": 644,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "264c2ebb-3507-410f-8910-0556efc96152",
+          "width": 0,
+          "x": 1055,
+          "y": 235,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "5a084bc7-d53f-4ea3-af3d-db1c6de12134",
+          "width": 174,
+          "x": 462,
+          "y": 26,
+          "zOrder": 41,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8436,10 +8786,31 @@
           "actions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY DIES\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "0.5"
+                "1"
               ]
             },
             {
@@ -10188,6 +10559,118 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "b9ac0c73-812a-47d8-968a-289555bef03e",
+          "width": 0,
+          "x": 693,
+          "y": 90,
+          "zOrder": 43,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "300579be-231f-48c4-b822-86f33ddd5f9f",
+          "width": 0,
+          "x": 617,
+          "y": 64,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "d5c230ed-5a26-47f2-8728-71bf8343b84d",
+          "width": 0,
+          "x": 428,
+          "y": 512,
+          "zOrder": 45,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "26bb7b8c-7273-4696-aea4-9aa04db942a9",
+          "width": 0,
+          "x": 1067,
+          "y": 616,
+          "zOrder": 46,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "137ebf7b-0eb2-4574-89e7-1ec049942d3a",
+          "width": 0,
+          "x": 967,
+          "y": 576,
+          "zOrder": 47,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "aac3b86a-3476-484d-b7e3-b6dea2f7dbe0",
+          "width": 0,
+          "x": 229,
+          "y": 201,
+          "zOrder": 48,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "4fed270b-e269-439d-9d75-fe2854f349b6",
+          "width": 0,
+          "x": 438,
+          "y": 220,
+          "zOrder": 49,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -10347,10 +10830,31 @@
           "actions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY DIES\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "0.5"
+                "1"
               ]
             },
             {
@@ -11960,14 +12464,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "c7187ca9-2959-4959-811b-ed9ad146a600",
-          "width": 0,
-          "x": 695,
+          "width": 311,
+          "x": 416,
           "y": 48,
           "zOrder": 39,
           "numberProperties": [],
@@ -12165,10 +12670,31 @@
           "actions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY DIES\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "0.5"
+                "1"
               ]
             },
             {
@@ -13846,6 +14372,38 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "261e785e-0343-453c-8593-9e0ab81d969c",
+          "width": 0,
+          "x": 937,
+          "y": 144,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "de6cd702-a876-4bd5-bcc6-2cb7d4a97b0f",
+          "width": 0,
+          "x": 257,
+          "y": 632,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -14005,10 +14563,31 @@
           "actions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY DIES\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "0.5"
+                "1"
               ]
             },
             {
@@ -16089,10 +16668,31 @@
           "actions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY DIES\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "0.5"
+                "1"
               ]
             },
             {
@@ -16974,7 +17574,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6040838749988867,
+        "zoomFactor": 0.5843784410740933,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -17218,34 +17818,17 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 339,
-          "keepRatio": true,
-          "layer": "",
-          "name": "EXIT_HOLE",
-          "persistentUuid": "bd15b0fe-3dc4-4a52-aa47-efcefada487b",
-          "width": 241,
-          "x": 139,
-          "y": -9,
-          "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
           "angle": 170,
           "customSize": true,
-          "depth": 1,
-          "height": 47,
+          "depth": 2,
+          "height": 82,
           "keepRatio": true,
           "layer": "",
           "name": "PORTAL",
           "persistentUuid": "b3b94dcf-2c9b-44b5-9882-88c3cbf958b1",
-          "width": 55,
-          "x": 225,
-          "y": 13,
+          "width": 96,
+          "x": 213,
+          "y": 14,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -17426,7 +18009,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "2"
+                "5"
               ]
             },
             {
@@ -17436,7 +18019,7 @@
               "parameters": [
                 "LAVA",
                 "-90",
-                "4.5",
+                "6",
                 ""
               ]
             }
@@ -17490,10 +18073,31 @@
           "actions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY DIES\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "0.5"
+                "1"
               ]
             },
             {
@@ -18966,7 +19570,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "5"
+                "3"
               ]
             },
             {
@@ -18977,6 +19581,22 @@
                 "",
                 "\"COMPLETED GAME/FINAL LVL\"",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "no"
               ]
             }
           ]
@@ -19165,6 +19785,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "CREDIT_TEXT",
+          "persistentUuid": "ab4235d6-8b16-4f96-bb4e-416df243ffc1",
+          "width": 0,
+          "x": 11,
+          "y": 656,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -19227,6 +19863,48 @@
             "HoveredFadeOutDuration": 0.25,
             "LabelText": "Return to Main Menu"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "CREDIT_TEXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Credits:\nXanthe Campbell-Smart (Annimation, Art, Design, Ideas, Code)\n",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Credits:\nXanthe Campbell-Smart (Annimation, Art, Design, Ideas, Code)\n",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -19237,6 +19915,9 @@
           },
           {
             "objectName": "RETURN_TO_MAIN_MENU_COMPLETED_GAME_FINAL_LEVEL"
+          },
+          {
+            "objectName": "CREDIT_TEXT"
           }
         ]
       },
