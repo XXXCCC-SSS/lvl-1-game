@@ -368,6 +368,62 @@
         "name": "MONTY DIES8",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/MONTY WALKING.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/MONTY WALKING.png\"}",
+        "name": "MONTY WALKING",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY WALKING2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/MONTY WALKING2.png\"}",
+        "name": "MONTY WALKING2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY WALKING3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MONTY WALKING3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY WALKING4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MONTY WALKING4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY WALKING5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MONTY WALKING5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite14",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -444,27 +500,31 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 18.5,
-                        "y": 32
+                        "x": 16.5,
+                        "y": 24.5
                       },
                       {
-                        "x": 20,
-                        "y": 9.5
+                        "x": 22,
+                        "y": 8.5
                       },
                       {
-                        "x": 41,
+                        "x": 35,
                         "y": 7.5
                       },
                       {
-                        "x": 43.5,
-                        "y": 20.5
+                        "x": 46,
+                        "y": 22.5
                       },
                       {
-                        "x": 45,
+                        "x": 40,
                         "y": 42.5
                       },
                       {
-                        "x": 19,
+                        "x": 36.5,
+                        "y": 45
+                      },
+                      {
+                        "x": 21.5,
                         "y": 44.5
                       }
                     ]
@@ -501,28 +561,36 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 18.5,
-                        "y": 32
+                        "x": 13,
+                        "y": 33
                       },
                       {
-                        "x": 20,
-                        "y": 9.5
-                      },
-                      {
-                        "x": 41,
-                        "y": 7.5
-                      },
-                      {
-                        "x": 43.5,
-                        "y": 20.5
-                      },
-                      {
-                        "x": 45,
-                        "y": 42.5
+                        "x": 14.5,
+                        "y": 19
                       },
                       {
                         "x": 19,
-                        "y": 44.5
+                        "y": 13.5
+                      },
+                      {
+                        "x": 30,
+                        "y": 13
+                      },
+                      {
+                        "x": 36,
+                        "y": 20
+                      },
+                      {
+                        "x": 36.5,
+                        "y": 36.5
+                      },
+                      {
+                        "x": 34,
+                        "y": 46.5
+                      },
+                      {
+                        "x": 14.5,
+                        "y": 47
                       }
                     ]
                   ]
@@ -545,28 +613,205 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 18.5,
-                        "y": 32
+                        "x": 13,
+                        "y": 33
                       },
                       {
-                        "x": 20,
-                        "y": 9.5
-                      },
-                      {
-                        "x": 41,
-                        "y": 7.5
-                      },
-                      {
-                        "x": 43.5,
-                        "y": 20.5
-                      },
-                      {
-                        "x": 45,
-                        "y": 42.5
+                        "x": 14.5,
+                        "y": 19
                       },
                       {
                         "x": 19,
-                        "y": 44.5
+                        "y": 13.5
+                      },
+                      {
+                        "x": 30,
+                        "y": 13
+                      },
+                      {
+                        "x": 36,
+                        "y": 20
+                      },
+                      {
+                        "x": 36.5,
+                        "y": 36.5
+                      },
+                      {
+                        "x": 34,
+                        "y": 46.5
+                      },
+                      {
+                        "x": 14.5,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MONTY WALKING",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY WALKING3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14.5,
+                        "y": 32.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 27,
+                        "y": 21
+                      },
+                      {
+                        "x": 38,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 39,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY WALKING4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14.5,
+                        "y": 32.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 27,
+                        "y": 21
+                      },
+                      {
+                        "x": 38,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 39,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY WALKING5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14.5,
+                        "y": 32.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 27,
+                        "y": 21
+                      },
+                      {
+                        "x": 38,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 39,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 57
                       }
                     ]
                   ]
@@ -3989,7 +4234,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6672773998329999,
+        "zoomFactor": 0.5117784035210196,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -4033,14 +4278,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 103,
+          "height": 88,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "a5c423b7-da15-4c4b-9ec5-6fb282b2416e",
           "width": 39,
           "x": 417,
-          "y": 595,
+          "y": 610,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -4515,8 +4760,8 @@
           "name": "MONTY",
           "persistentUuid": "1c49ac8b-b67a-4654-bd73-2dff9251bcd1",
           "width": 85,
-          "x": 273,
-          "y": 654,
+          "x": 276,
+          "y": 635,
           "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
@@ -4769,7 +5014,7 @@
           "persistentUuid": "692d50b2-14f6-4418-87e3-6bca65cffd0d",
           "width": 32,
           "x": 437,
-          "y": 579,
+          "y": 597,
           "zOrder": 53,
           "numberProperties": [],
           "stringProperties": [],
@@ -5056,8 +5301,31 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
