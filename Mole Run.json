@@ -388,7 +388,7 @@
       {
         "file": "assets/MONTY WALKING3.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/MONTY WALKING3.png\"}",
         "name": "MONTY WALKING3",
         "smoothed": true,
         "userAdded": false
@@ -396,7 +396,7 @@
       {
         "file": "assets/MONTY WALKING4.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/MONTY WALKING4.png\"}",
         "name": "MONTY WALKING4",
         "smoothed": true,
         "userAdded": false
@@ -404,7 +404,7 @@
       {
         "file": "assets/MONTY WALKING5.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/MONTY WALKING5.png\"}",
         "name": "MONTY WALKING5",
         "smoothed": true,
         "userAdded": false
@@ -422,6 +422,14 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MONTY",
         "smoothed": true,
         "userAdded": false
       }
@@ -474,7 +482,7 @@
       ],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -815,6 +823,36 @@
                       }
                     ]
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MONTY STATIONAL",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
                 }
               ]
             }
@@ -3371,6 +3409,231 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -4234,7 +4497,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210196,
+        "zoomFactor": 0.5117784035210198,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5326,6 +5589,203 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -7267,6 +7727,226 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": []
         }
@@ -9089,6 +9769,226 @@
                 "",
                 "\"DIED LVL 3\"",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
               ]
             }
           ]
@@ -11133,6 +12033,226 @@
                 "",
                 "\"DIED LVL 4\"",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY STATIONARY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "\"MONTY WALKING\""
               ]
             }
           ]
