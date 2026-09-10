@@ -484,6 +484,49 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini Square.ttf",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "assets/Silkscreen-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "758a5ad5d3131fef02a270e9ab7ab030db457b06730add8a0b31581a76b93470_Silkscreen-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/758a5ad5d3131fef02a270e9ab7ab030db457b06730add8a0b31581a76b93470_Silkscreen-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/MONTY STATIONAL.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MONTY STATIONAL",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY STATIONAL2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/MONTY STATIONAL2.png\"}",
+        "name": "MONTY STATIONAL2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MONTY STATIONAL3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/MONTY STATIONAL3.png\"}",
+        "name": "MONTY STATIONAL3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite16",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -508,9 +551,9 @@
           "Topdown": "TopDownMovement"
         },
         {
+          "deceleration": 500,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "deceleration": 200,
           "maxSpeed": 75,
           "rotateObject": false,
           "acceleration": 50,
@@ -881,17 +924,17 @@
           ]
         },
         {
-          "name": "MONTY STATIONAL",
+          "name": "MONTY STATIONARY",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "MONTY",
+                  "image": "MONTY STATIONAL3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -952,7 +995,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite4",
+                  "image": "NewSprite16",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -968,19 +1011,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 19,
-                        "y": 15
+                        "x": 12,
+                        "y": 11
                       },
                       {
-                        "x": 52,
-                        "y": 15
+                        "x": 50,
+                        "y": 11
                       },
                       {
-                        "x": 52,
+                        "x": 50,
                         "y": 48
                       },
                       {
-                        "x": 19,
+                        "x": 12,
                         "y": 48
                       }
                     ]
@@ -14605,15 +14648,15 @@
       ]
     },
     {
-      "b": 209,
+      "b": 212,
       "disableInputWhenNotFocused": true,
       "mangledName": "COMPLETED_32LVL_324",
       "name": "COMPLETED LVL 4",
-      "r": 209,
+      "r": 160,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 184,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -14639,43 +14682,9 @@
           "name": "LVL_4_COMPLETED_TEXT",
           "persistentUuid": "f75c3fa0-be3e-4ed4-a32e-382680ff239f",
           "width": 0,
-          "x": 249,
-          "y": 200,
+          "x": 200,
+          "y": 178,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 73,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAIN_MENU_LVL_4_BUTTON",
-          "persistentUuid": "9d587725-50fd-42c0-ad04-2af0d0b77f11",
-          "width": 218,
-          "x": 265,
-          "y": 317,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 78,
-          "keepRatio": true,
-          "layer": "",
-          "name": "NEXT_LVL_BUTTON_LVL_4",
-          "persistentUuid": "4c85edae-1f3b-4ef6-92b2-aa5bbcec1bb9",
-          "width": 208,
-          "x": 700,
-          "y": 310,
-          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14689,9 +14698,9 @@
           "name": "MAIN_MENU_TEXT",
           "persistentUuid": "56b6c295-a23b-44e5-a0cc-d61d28929d9c",
           "width": 0,
-          "x": 288,
-          "y": 334,
-          "zOrder": 4,
+          "x": 332,
+          "y": 369,
+          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14705,9 +14714,111 @@
           "name": "NEXT_LEVEL_TEXT",
           "persistentUuid": "244d4106-d8e1-461a-88da-bdeeffcc4b02",
           "width": 0,
-          "x": 714,
-          "y": 334,
-          "zOrder": 5,
+          "x": 727,
+          "y": 366,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 541,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_DECORATION",
+          "persistentUuid": "8fe6a84e-cd13-49c2-a3ca-28f3a4c640fc",
+          "width": 572,
+          "x": -103,
+          "y": -111,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 91,
+          "customSize": true,
+          "depth": 1,
+          "height": 541,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_DECORATION",
+          "persistentUuid": "504f10ed-761e-45e7-9aee-b84f163ce2dc",
+          "width": 572,
+          "x": 804,
+          "y": -89,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 1,
+          "height": 541,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_DECORATION",
+          "persistentUuid": "f8adecfa-cbb1-4943-b118-7b63b741c3a3",
+          "width": 572,
+          "x": -128,
+          "y": 270,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 179,
+          "customSize": true,
+          "depth": 1,
+          "height": 541,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_DECORATION",
+          "persistentUuid": "f551db16-1b23-452f-9d36-23326fd4360f",
+          "width": 572,
+          "x": 779,
+          "y": 296,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 108,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_LVL_4_BUTTON",
+          "persistentUuid": "31bfe887-0717-4439-998c-4cac295bb6a3",
+          "width": 254,
+          "x": 290,
+          "y": 327,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 104,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NEXT_LVL_BUTTON_LVL_4",
+          "persistentUuid": "a2ef9eb5-1305-4982-8d79-bea51f122230",
+          "width": 249,
+          "x": 692,
+          "y": 327,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14725,10 +14836,10 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Congrats! You completed Level 4!",
-          "font": "",
+          "string": "Congratulations! \nYou completed Level 4!",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
           "textAlignment": "center",
-          "characterSize": 50,
+          "characterSize": 40,
           "color": {
             "b": 0,
             "g": 0,
@@ -14748,11 +14859,11 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Congrats! You completed Level 4!",
-            "font": "",
+            "text": "Congratulations! \nYou completed Level 4!",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
-            "characterSize": 50,
+            "characterSize": 40,
             "color": "0;0;0"
           }
         },
@@ -16665,15 +16776,15 @@
       ]
     },
     {
-      "b": 209,
+      "b": 212,
       "disableInputWhenNotFocused": true,
       "mangledName": "COMPLETED_32LVL_325",
       "name": "COMPLETED LVL 5",
-      "r": 209,
+      "r": 160,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 184,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -16699,43 +16810,9 @@
           "name": "COMPLETED_LVL_5_TEXT",
           "persistentUuid": "414ac885-30a2-4d05-baf5-51bd6833f1a9",
           "width": 0,
-          "x": 247,
+          "x": 181,
           "y": 180,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 71,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAIN_MENU_BUTTON_LVL_5",
-          "persistentUuid": "02eb96ff-6c54-4416-9330-9d1dab7dcea8",
-          "width": 230,
-          "x": 269,
-          "y": 312,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 82,
-          "keepRatio": true,
-          "layer": "",
-          "name": "NEXT_LVL_BUTTON_LVL_5",
-          "persistentUuid": "17a48d1c-76cd-4e74-bd83-355fcfc88589",
-          "width": 214,
-          "x": 701,
-          "y": 302,
-          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -16749,9 +16826,9 @@
           "name": "MAIN_MENU_TEXT",
           "persistentUuid": "6110c40f-b82f-432c-a35e-6a9f89387046",
           "width": 0,
-          "x": 297,
-          "y": 329,
-          "zOrder": 4,
+          "x": 303,
+          "y": 382,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -16765,9 +16842,111 @@
           "name": "NEXT_LEVEL_TEXT",
           "persistentUuid": "c7dbf0eb-e6c9-481f-b197-3dc5ef47f64d",
           "width": 0,
-          "x": 718,
-          "y": 329,
-          "zOrder": 5,
+          "x": 733,
+          "y": 382,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 588,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_DECORATION",
+          "persistentUuid": "547bdb70-1543-4264-bf8a-ce23a2b24847",
+          "width": 730,
+          "x": -128,
+          "y": -124,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 588,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_DECORATION",
+          "persistentUuid": "de49789b-f300-4433-b644-565e31f8f967",
+          "width": 730,
+          "x": 711,
+          "y": -59,
+          "zOrder": -3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "depth": 1,
+          "height": 588,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_DECORATION",
+          "persistentUuid": "244d29d5-a410-4dbf-8995-ab67345e0fdc",
+          "width": 730,
+          "x": 644,
+          "y": 256,
+          "zOrder": -2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 1,
+          "height": 588,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_DECORATION",
+          "persistentUuid": "2ffcc9a1-2092-480d-9851-f5234f2ea03a",
+          "width": 730,
+          "x": -195,
+          "y": 193,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 101,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAIN_MENU_BUTTON_LVL_5",
+          "persistentUuid": "21c44dd4-89ad-4568-9bed-8911e12e6c8f",
+          "width": 269,
+          "x": 254,
+          "y": 343,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 102,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NEXT_LVL_BUTTON_LVL_5",
+          "persistentUuid": "05478f11-4353-4f1e-921a-4323b2fea898",
+          "width": 269,
+          "x": 684,
+          "y": 343,
+          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -16785,10 +16964,10 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Congrats! You completed Level 5!",
-          "font": "",
+          "string": "Congratulations! \nYou completed Level 5!",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
           "textAlignment": "center",
-          "characterSize": 50,
+          "characterSize": 40,
           "color": {
             "b": 0,
             "g": 0,
@@ -16808,11 +16987,11 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Congrats! You completed Level 5!",
-            "font": "",
+            "text": "Congratulations! \nYou completed Level 5!",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
-            "characterSize": 50,
+            "characterSize": 40,
             "color": "0;0;0"
           }
         },
@@ -19163,7 +19342,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.9296874999999999,
+        "zoomFactor": 0.6455105703311483,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -19305,17 +19484,17 @@
           "initialVariables": []
         },
         {
-          "angle": 105,
+          "angle": 176,
           "customSize": true,
           "depth": 1,
-          "height": 81,
+          "height": 92,
           "keepRatio": true,
           "layer": "",
           "name": "PORTAL",
           "persistentUuid": "615434b9-2e28-4541-94f5-0046b1cc98c6",
-          "width": 89,
-          "x": 221,
-          "y": 269,
+          "width": 101,
+          "x": 218,
+          "y": 266,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -20362,13 +20541,13 @@
           "actions": [
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
               },
               "parameters": [
                 "MONTY",
                 "Animation",
                 "=",
-                "\"MONTY DIES\""
+                "1"
               ]
             },
             {
@@ -21488,7 +21667,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5843784410740933,
+        "zoomFactor": 0.41943397827590645,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -21732,17 +21911,17 @@
           "initialVariables": []
         },
         {
-          "angle": 170,
+          "angle": 185,
           "customSize": true,
-          "depth": 2,
-          "height": 82,
+          "depth": 3,
+          "height": 103,
           "keepRatio": true,
           "layer": "",
           "name": "PORTAL",
           "persistentUuid": "b3b94dcf-2c9b-44b5-9882-88c3cbf958b1",
-          "width": 96,
-          "x": 213,
-          "y": 14,
+          "width": 120,
+          "x": 196,
+          "y": 8,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -21987,13 +22166,13 @@
           "actions": [
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
               },
               "parameters": [
                 "MONTY",
                 "Animation",
                 "=",
-                "\"MONTY DIES\""
+                "1"
               ]
             },
             {
