@@ -1369,31 +1369,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 64,
-          "height": 86,
-          "keepRatio": true,
-          "layer": "",
-          "name": "TUTORIAL_BUTTON",
-          "persistentUuid": "e7286005-acc4-4318-89d0-5c5dcd9c7617",
-          "width": 222,
-          "x": 364,
-          "y": 346,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 84,
+          "height": 102,
           "keepRatio": true,
           "layer": "",
           "name": "PLAY_BUTTON",
           "persistentUuid": "127ac389-48f4-4a81-9175-afb965443c8e",
-          "width": 220,
-          "x": 681,
-          "y": 345,
+          "width": 242,
+          "x": 519,
+          "y": 320,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -1403,31 +1386,15 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 41,
+          "height": 54,
           "keepRatio": true,
           "layer": "",
           "name": "PLAY_TEXT",
           "persistentUuid": "2b933076-85f8-4557-b982-3448d5e0771f",
-          "width": 106,
-          "x": 742,
-          "y": 376,
+          "width": 152,
+          "x": 562,
+          "y": 356,
           "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "TUTORIAL_TEXT",
-          "persistentUuid": "c637a05b-953c-4165-91ea-1d001b2b0fbe",
-          "width": 0,
-          "x": 383,
-          "y": 379,
-          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1563,24 +1530,6 @@
         },
         {
           "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "TUTORIAL_BUTTON",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Black Square Decorated Button",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 6,
-            "BottomPadding": 24,
-            "TopPadding": 24,
-            "HoveredFadeOutDuration": 0.25,
-            "LabelText": "Tutorial"
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
           "name": "PLAY_BUTTON",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variant": "Black Square Decorated Button",
@@ -1611,7 +1560,7 @@
           "string": "PLAY",
           "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
           "textAlignment": "center",
-          "characterSize": 25,
+          "characterSize": 30,
           "color": {
             "b": 255,
             "g": 255,
@@ -1635,7 +1584,7 @@
             "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
-            "characterSize": 25,
+            "characterSize": 30,
             "color": "255;255;255"
           }
         },
@@ -1687,9 +1636,6 @@
         "children": [
           {
             "objectName": "TITLE_TEXT"
-          },
-          {
-            "objectName": "TUTORIAL_BUTTON"
           },
           {
             "objectName": "PLAY_BUTTON"
@@ -5237,6 +5183,16 @@
                 "=",
                 "\"MONTY WALKING\""
               ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "yes"
+              ]
             }
           ]
         },
@@ -5264,6 +5220,16 @@
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "no"
               ]
             }
           ]
@@ -5868,7 +5834,7 @@
           "layer": "",
           "name": "MAIN_MENU_BUTTON_COMPLETED_TUTORIAL_LEVEL",
           "persistentUuid": "7b2b6c94-0da4-49ad-9c87-2f862e3e4d08",
-          "width": 210,
+          "width": 264,
           "x": 281,
           "y": 381,
           "zOrder": 2,
@@ -5885,7 +5851,7 @@
           "layer": "",
           "name": "TO_LEVEL_1_BUTTON_COMPLETED_TUTORAL_LEVEL",
           "persistentUuid": "3c76bf3b-98f1-4936-8d2a-8152ef749dba",
-          "width": 207,
+          "width": 258,
           "x": 710,
           "y": 381,
           "zOrder": 3,
@@ -5918,8 +5884,8 @@
           "name": "NEXT_LEVEL_TEXT",
           "persistentUuid": "71f6b9a3-d217-4847-b0e2-c399fd408e23",
           "width": 0,
-          "x": 725,
-          "y": 406,
+          "x": 728,
+          "y": 411,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -6271,7 +6237,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210198,
+        "zoomFactor": 1.6337626779315089,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -6286,7 +6252,7 @@
           "layer": "",
           "name": "QUIT_BUTTON",
           "persistentUuid": "7fe827a2-db53-4558-87ae-dd8bce594771",
-          "width": 144,
+          "width": 162,
           "x": 17,
           "y": 19,
           "zOrder": 1,
@@ -6712,8 +6678,8 @@
           "name": "PORTAL",
           "persistentUuid": "4e30bdc3-b977-4812-b897-9bf56b17694b",
           "width": 88,
-          "x": 202,
-          "y": 17,
+          "x": 211,
+          "y": 20,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -7132,8 +7098,8 @@
           "name": "QUIT_TEXT",
           "persistentUuid": "45ebd792-f0a5-4b8c-9dd1-50586c5bdb06",
           "width": 0,
-          "x": 52,
-          "y": 36,
+          "x": 51,
+          "y": 41,
           "zOrder": 58,
           "numberProperties": [],
           "stringProperties": [],
@@ -7497,6 +7463,16 @@
                 "=",
                 "\"MONTY WALKING\""
               ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "yes"
+              ]
             }
           ]
         },
@@ -7524,6 +7500,16 @@
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                ""
               ]
             }
           ]
@@ -7722,7 +7708,7 @@
           "layer": "",
           "name": "MAIN_MENU_BUTTON",
           "persistentUuid": "88732c14-683e-4e58-b9ad-699c32a3a292",
-          "width": 262,
+          "width": 317,
           "x": 225,
           "y": 322,
           "zOrder": 2,
@@ -7739,7 +7725,7 @@
           "layer": "",
           "name": "DIED_RETRY_BUTTON_LVL_1",
           "persistentUuid": "f094fec4-1822-451b-91de-3f95b042fe1a",
-          "width": 263,
+          "width": 307,
           "x": 724,
           "y": 323,
           "zOrder": 3,
@@ -8157,7 +8143,7 @@
           "persistentUuid": "81c8ecb4-e83a-4ef8-b1dc-649076ddcfb0",
           "width": 0,
           "x": 297,
-          "y": 350,
+          "y": 354,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -8172,8 +8158,8 @@
           "name": "NEXT_LEVEL_TEXT",
           "persistentUuid": "193afba8-cdcd-4b81-bb75-c0debaf70c73",
           "width": 0,
-          "x": 814,
-          "y": 352,
+          "x": 772,
+          "y": 354,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -8242,7 +8228,7 @@
           "width": 556,
           "x": 785,
           "y": 329,
-          "zOrder": 6,
+          "zOrder": -2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8257,8 +8243,8 @@
           "name": "NEXT_LVL_BUTTON",
           "persistentUuid": "ad034f9c-36f1-4b6c-ab94-33ad00350494",
           "width": 267,
-          "x": 765,
-          "y": 319,
+          "x": 745,
+          "y": 314,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -8273,7 +8259,7 @@
           "layer": "",
           "name": "MAIN_MENU_BUTTON",
           "persistentUuid": "6ad1617b-a505-4b5c-b0a3-d15c4fea5d76",
-          "width": 263,
+          "width": 309,
           "x": 252,
           "y": 318,
           "zOrder": -1,
@@ -8574,7 +8560,7 @@
           "layer": "",
           "name": "QUIT_BUTTON",
           "persistentUuid": "50bf41e3-317d-4ad9-9f0a-e403bcbaf935",
-          "width": 143,
+          "width": 156,
           "x": 10,
           "y": 12,
           "zOrder": 1,
@@ -9034,7 +9020,7 @@
           "name": "PORTAL",
           "persistentUuid": "ce95306c-2488-41cf-96c6-6bcdf370930c",
           "width": 89,
-          "x": 1088,
+          "x": 1113,
           "y": 30,
           "zOrder": 28,
           "numberProperties": [],
@@ -9154,7 +9140,7 @@
           "persistentUuid": "f2d6f2a9-3c03-46d2-a319-a97458960b81",
           "width": 1053,
           "x": 196,
-          "y": 741,
+          "y": 759,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -9255,7 +9241,7 @@
           "persistentUuid": "b895838e-2142-4db8-8a8a-e841a9a5d83c",
           "width": 0,
           "x": 41,
-          "y": 29,
+          "y": 33,
           "zOrder": 41,
           "numberProperties": [],
           "stringProperties": [],
@@ -9824,6 +9810,16 @@
                 "=",
                 "\"MONTY WALKING\""
               ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "no"
+              ]
             }
           ]
         },
@@ -9851,6 +9847,16 @@
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "yes"
               ]
             }
           ]
@@ -10021,7 +10027,7 @@
           "layer": "",
           "name": "MAIN_MENU_BUTTON_LVL_2",
           "persistentUuid": "73c4ecb8-c4d3-41af-9f4c-b822090562a9",
-          "width": 250,
+          "width": 292,
           "x": 276,
           "y": 346,
           "zOrder": 2,
@@ -10038,9 +10044,9 @@
           "layer": "",
           "name": "RETRY_BUTTON_LVL_2",
           "persistentUuid": "9a1c3fd6-92c2-4bad-aebb-9d57fee4253c",
-          "width": 250,
-          "x": 729,
-          "y": 346,
+          "width": 276,
+          "x": 711,
+          "y": 341,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -10071,8 +10077,8 @@
           "name": "RETRY_TEXT",
           "persistentUuid": "21ed80d0-ba9d-45b1-ae21-bf9eeb6f3441",
           "width": 0,
-          "x": 802,
-          "y": 388,
+          "x": 782,
+          "y": 381,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -11844,6 +11850,16 @@
                 "=",
                 "\"MONTY WALKING\""
               ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "yes"
+              ]
             }
           ]
         },
@@ -11871,6 +11887,16 @@
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                ""
               ]
             }
           ]
@@ -14409,6 +14435,16 @@
                 "=",
                 "\"MONTY WALKING\""
               ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "no"
+              ]
             }
           ]
         },
@@ -14436,6 +14472,16 @@
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "yes"
               ]
             }
           ]
@@ -15443,7 +15489,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210173,
+        "zoomFactor": 0.6244537826599988,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -15453,12 +15499,12 @@
           "angle": 0,
           "customSize": true,
           "depth": 64,
-          "height": 64,
+          "height": 72,
           "keepRatio": true,
           "layer": "",
           "name": "QUIT_BUTTON",
           "persistentUuid": "a82130bd-22f3-4e8c-8566-8633f2197957",
-          "width": 150,
+          "width": 177,
           "x": 12,
           "y": 15,
           "zOrder": 1,
@@ -15475,8 +15521,8 @@
           "name": "QUIT_TEXT",
           "persistentUuid": "19f86b95-60d8-452c-929d-d01165dcee8f",
           "width": 0,
-          "x": 49,
-          "y": 32,
+          "x": 51,
+          "y": 39,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -15594,8 +15640,8 @@
           "name": "PORTAL",
           "persistentUuid": "79e03e52-5231-443f-9c3b-9355f28421dd",
           "width": 90,
-          "x": 632,
-          "y": 244,
+          "x": 636,
+          "y": 250,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -16441,6 +16487,16 @@
                 "=",
                 "\"MONTY WALKING\""
               ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "yes"
+              ]
             }
           ]
         },
@@ -16468,6 +16524,16 @@
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                ""
               ]
             }
           ]
@@ -17639,7 +17705,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7130377630690397,
+        "zoomFactor": 0.8416428125373109,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -17707,7 +17773,7 @@
           "persistentUuid": "b1447b79-59a4-4767-8175-1e4ff0352040",
           "width": 111,
           "x": 1168,
-          "y": -6,
+          "y": -4,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -17756,8 +17822,8 @@
           "name": "QUIT_TEXT",
           "persistentUuid": "793eba92-1772-4435-ad74-f02df04fbe28",
           "width": 0,
-          "x": 47,
-          "y": 25,
+          "x": 30,
+          "y": 32,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -17767,14 +17833,14 @@
           "angle": 89,
           "customSize": true,
           "depth": 1,
-          "height": 100,
+          "height": 104,
           "keepRatio": true,
           "layer": "",
           "name": "PORTAL",
           "persistentUuid": "b688e78a-c5d7-4634-bffa-cbc8557831bf",
-          "width": 110,
-          "x": 1078,
-          "y": 281,
+          "width": 116,
+          "x": 1073,
+          "y": 294,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -18854,6 +18920,16 @@
                 "=",
                 "\"MONTY WALKING\""
               ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                ""
+              ]
             }
           ]
         },
@@ -18881,6 +18957,16 @@
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "yes"
               ]
             }
           ]
@@ -19898,12 +19984,12 @@
           "angle": 0,
           "customSize": true,
           "depth": 64,
-          "height": 64,
+          "height": 69,
           "keepRatio": true,
           "layer": "",
           "name": "QUIT_BUTTON",
           "persistentUuid": "e3b13b4f-7cd9-4eb9-b92a-18f21263b11f",
-          "width": 141,
+          "width": 155,
           "x": 8,
           "y": 12,
           "zOrder": 1,
@@ -20005,8 +20091,8 @@
           "name": "QUIT_TEXT",
           "persistentUuid": "6f4aeece-e0a9-42ed-be89-0888217659c1",
           "width": 0,
-          "x": 33,
-          "y": 30,
+          "x": 36,
+          "y": 34,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -21151,6 +21237,16 @@
                 "=",
                 "\"MONTY WALKING\""
               ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "yes"
+              ]
             }
           ]
         },
@@ -21178,6 +21274,16 @@
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                ""
               ]
             }
           ]
@@ -22834,6 +22940,15 @@
           "conditions": [
             {
               "type": {
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -22848,6 +22963,16 @@
           "actions": [
             {
               "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
               },
               "parameters": [
@@ -22855,16 +22980,6 @@
                 "Animation",
                 "=",
                 "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "MONTY",
-                "TopDownMovement",
-                "no"
               ]
             },
             {
@@ -23076,6 +23191,16 @@
                 "=",
                 "\"MONTY WALKING\""
               ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "no"
+              ]
             }
           ]
         },
@@ -23103,6 +23228,16 @@
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY",
+                "Flippable",
+                "yes"
               ]
             }
           ]
