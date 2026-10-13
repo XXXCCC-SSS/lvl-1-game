@@ -1375,7 +1375,7 @@
           "name": "PLAY_BUTTON",
           "persistentUuid": "127ac389-48f4-4a81-9175-afb965443c8e",
           "width": 242,
-          "x": 519,
+          "x": 509,
           "y": 320,
           "zOrder": 3,
           "numberProperties": [],
@@ -1392,7 +1392,7 @@
           "name": "PLAY_TEXT",
           "persistentUuid": "2b933076-85f8-4557-b982-3448d5e0771f",
           "width": 152,
-          "x": 562,
+          "x": 555,
           "y": 356,
           "zOrder": 4,
           "numberProperties": [],
@@ -3222,7 +3222,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5468750000000014,
+        "zoomFactor": 0.7130377630690412,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -4611,6 +4611,23 @@
           "x": 8,
           "y": 182,
           "zOrder": 84,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "1a58c8df-d882-42ee-8f78-5878fada2f0c",
+          "width": 160,
+          "x": 995,
+          "y": 716,
+          "zOrder": 85,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6237,7 +6254,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.6337626779315089,
+        "zoomFactor": 0.8141881203709952,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -7101,6 +7118,23 @@
           "x": 51,
           "y": 41,
           "zOrder": 58,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "1fc4e96f-6d0e-4526-b148-6295012182fd",
+          "width": 109,
+          "x": 266,
+          "y": 719,
+          "zOrder": 59,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8545,7 +8579,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7619362677197606,
+        "zoomFactor": 0.787629010167377,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -9122,8 +9156,8 @@
           "name": "MONTY",
           "persistentUuid": "a17801f8-b480-4333-9f22-fcd58599594b",
           "width": 87,
-          "x": 314,
-          "y": 650,
+          "x": 306,
+          "y": 635,
           "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
@@ -9420,6 +9454,23 @@
           "x": 654,
           "y": 414,
           "zOrder": 52,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "e88897e7-3b5f-4cbb-b8d4-3ac677239eba",
+          "width": 148,
+          "x": 288,
+          "y": 714,
+          "zOrder": 53,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10864,7 +10915,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6897782140104497,
+        "zoomFactor": 0.7130377630690404,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -11203,8 +11254,8 @@
           "name": "PORTAL",
           "persistentUuid": "2ab44862-7ac8-4cea-a102-b7f48609340f",
           "width": 89,
-          "x": 196,
-          "y": 31,
+          "x": 199,
+          "y": 35,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -11493,7 +11544,7 @@
           "persistentUuid": "cc911c79-4a9e-48e5-8717-d0de9c90c3ed",
           "width": 1085,
           "x": 170,
-          "y": 742,
+          "y": 777,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -11624,6 +11675,23 @@
           "x": 462,
           "y": 26,
           "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "4ac4a131-6203-4df4-80b6-fc56cf450943",
+          "width": 139,
+          "x": 1023,
+          "y": 713,
+          "zOrder": 42,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11786,6 +11854,16 @@
           "actions": [
             {
               "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "MONTY",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
@@ -11793,16 +11871,6 @@
                 "Animation",
                 "=",
                 "\"MONTY DIES\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "MONTY",
-                "TopDownMovement",
-                "no"
               ]
             },
             {
@@ -14048,6 +14116,23 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "adfb1aff-1cab-4d86-89e9-cfc7b8fc5506",
+          "width": 131,
+          "x": 223,
+          "y": 717,
+          "zOrder": 50,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -15186,7 +15271,7 @@
           "layer": "",
           "name": "MAIN_MENU_LVL_4_BUTTON",
           "persistentUuid": "31bfe887-0717-4439-998c-4cac295bb6a3",
-          "width": 254,
+          "width": 294,
           "x": 290,
           "y": 327,
           "zOrder": 7,
@@ -15203,7 +15288,7 @@
           "layer": "",
           "name": "NEXT_LVL_BUTTON_LVL_4",
           "persistentUuid": "a2ef9eb5-1305-4982-8d79-bea51f122230",
-          "width": 249,
+          "width": 293,
           "x": 692,
           "y": 327,
           "zOrder": 9,
@@ -15489,7 +15574,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6244537826599988,
+        "zoomFactor": 0.6897782140104501,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -15634,14 +15719,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 82,
+          "height": 77,
           "keepRatio": true,
           "layer": "",
           "name": "PORTAL",
           "persistentUuid": "79e03e52-5231-443f-9c3b-9355f28421dd",
-          "width": 90,
-          "x": 636,
-          "y": 250,
+          "width": 82,
+          "x": 643,
+          "y": 252,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -16261,6 +16346,23 @@
           "x": 821,
           "y": 167,
           "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "c1ee61e9-c016-4e94-9d6f-4af6a040133e",
+          "width": 156,
+          "x": 926,
+          "y": 718,
+          "zOrder": 42,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18533,6 +18635,23 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "d0743f33-1c81-45d3-99bf-4b75d906edeb",
+          "width": 186,
+          "x": 304,
+          "y": 720,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -19540,7 +19659,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.6897782140104495,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -19671,7 +19790,7 @@
           "layer": "",
           "name": "MAIN_MENU_BUTTON_LVL_6_COMPLETED_",
           "persistentUuid": "ed2b13e6-e643-4925-bf9c-92b434b07bf0",
-          "width": 256,
+          "width": 308,
           "x": 252,
           "y": 347,
           "zOrder": 6,
@@ -19688,7 +19807,7 @@
           "layer": "",
           "name": "NEXT_LVL_BUTTON_LVL_6_COMPLETED",
           "persistentUuid": "15cdd01a-266a-4923-9fe4-637635cb1cb3",
-          "width": 252,
+          "width": 294,
           "x": 719,
           "y": 347,
           "zOrder": 7,
