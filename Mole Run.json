@@ -527,6 +527,14 @@
         "name": "NewSprite16",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite17",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1285,6 +1293,852 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "MONTY2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "RemapForTopdown",
+          "type": "BehaviorRemapper::RemapForTopdown",
+          "Up": "w",
+          "Left": "a",
+          "Right": "d",
+          "Down": "s",
+          "Topdown": "TopDownMovement"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "deceleration": 500,
+          "maxSpeed": 75,
+          "rotateObject": false,
+          "acceleration": 50,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "ignoreDefaultControls": false,
+          "movementAngleOffset": 0,
+          "useLegacyTurnBack": false,
+          "viewpoint": "TopDown"
+        },
+        {
+          "name": "TopDownMultitouchMapper",
+          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
+          "TopDownMovement": "TopDownMovement",
+          "ControllerIdentifier": 1,
+          "JoystickIdentifier": "Primary",
+          "StickMode": "Analog"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16.5,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 22,
+                        "y": 8.5
+                      },
+                      {
+                        "x": 35,
+                        "y": 7.5
+                      },
+                      {
+                        "x": 46,
+                        "y": 22.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 36.5,
+                        "y": 45
+                      },
+                      {
+                        "x": 21.5,
+                        "y": 44.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MONTY DIES",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.09,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY DIES7",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 13,
+                        "y": 33
+                      },
+                      {
+                        "x": 14.5,
+                        "y": 19
+                      },
+                      {
+                        "x": 19,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 30,
+                        "y": 13
+                      },
+                      {
+                        "x": 36,
+                        "y": 20
+                      },
+                      {
+                        "x": 36.5,
+                        "y": 36.5
+                      },
+                      {
+                        "x": 34,
+                        "y": 46.5
+                      },
+                      {
+                        "x": 14.5,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY DIES8",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 13,
+                        "y": 33
+                      },
+                      {
+                        "x": 14.5,
+                        "y": 19
+                      },
+                      {
+                        "x": 19,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 30,
+                        "y": 13
+                      },
+                      {
+                        "x": 36,
+                        "y": 20
+                      },
+                      {
+                        "x": 36.5,
+                        "y": 36.5
+                      },
+                      {
+                        "x": 34,
+                        "y": 46.5
+                      },
+                      {
+                        "x": 14.5,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MONTY WALKING",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY WALKING3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14.5,
+                        "y": 32.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 27,
+                        "y": 21
+                      },
+                      {
+                        "x": 38,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 39,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY WALKING4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14.5,
+                        "y": 32.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 27,
+                        "y": 21
+                      },
+                      {
+                        "x": 38,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 39,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY WALKING5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14.5,
+                        "y": 32.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 27,
+                        "y": 21
+                      },
+                      {
+                        "x": 38,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 39,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MONTY STATIONARY",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY STATIONAL3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "MONTY3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "RemapForTopdown",
+          "type": "BehaviorRemapper::RemapForTopdown",
+          "Up": "w",
+          "Left": "a",
+          "Right": "d",
+          "Down": "s",
+          "Topdown": "TopDownMovement"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "deceleration": 500,
+          "maxSpeed": 75,
+          "rotateObject": false,
+          "acceleration": 50,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "ignoreDefaultControls": false,
+          "movementAngleOffset": 0,
+          "useLegacyTurnBack": false,
+          "viewpoint": "TopDown"
+        },
+        {
+          "name": "TopDownMultitouchMapper",
+          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
+          "TopDownMovement": "TopDownMovement",
+          "ControllerIdentifier": 1,
+          "JoystickIdentifier": "Primary",
+          "StickMode": "Analog"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16.5,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 22,
+                        "y": 8.5
+                      },
+                      {
+                        "x": 35,
+                        "y": 7.5
+                      },
+                      {
+                        "x": 46,
+                        "y": 22.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 36.5,
+                        "y": 45
+                      },
+                      {
+                        "x": 21.5,
+                        "y": 44.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MONTY DIES",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.09,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY DIES7",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 13,
+                        "y": 33
+                      },
+                      {
+                        "x": 14.5,
+                        "y": 19
+                      },
+                      {
+                        "x": 19,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 30,
+                        "y": 13
+                      },
+                      {
+                        "x": 36,
+                        "y": 20
+                      },
+                      {
+                        "x": 36.5,
+                        "y": 36.5
+                      },
+                      {
+                        "x": 34,
+                        "y": 46.5
+                      },
+                      {
+                        "x": 14.5,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY DIES8",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 13,
+                        "y": 33
+                      },
+                      {
+                        "x": 14.5,
+                        "y": 19
+                      },
+                      {
+                        "x": 19,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 30,
+                        "y": 13
+                      },
+                      {
+                        "x": 36,
+                        "y": 20
+                      },
+                      {
+                        "x": 36.5,
+                        "y": 36.5
+                      },
+                      {
+                        "x": 34,
+                        "y": 46.5
+                      },
+                      {
+                        "x": 14.5,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MONTY WALKING",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY WALKING3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14.5,
+                        "y": 32.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 27,
+                        "y": 21
+                      },
+                      {
+                        "x": 38,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 39,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY WALKING4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14.5,
+                        "y": 32.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 27,
+                        "y": 21
+                      },
+                      {
+                        "x": 38,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 39,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY WALKING5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14.5,
+                        "y": 32.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 27,
+                        "y": 21
+                      },
+                      {
+                        "x": 38,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 39,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MONTY STATIONARY",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MONTY STATIONAL3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1292,6 +2146,12 @@
     "children": [
       {
         "objectName": "MONTY"
+      },
+      {
+        "objectName": "MONTY3"
+      },
+      {
+        "objectName": "MONTY2"
       },
       {
         "objectName": "MAZE_WALLS_TUTORIAL"
@@ -1375,7 +2235,7 @@
           "name": "PLAY_BUTTON",
           "persistentUuid": "127ac389-48f4-4a81-9175-afb965443c8e",
           "width": 242,
-          "x": 509,
+          "x": 502,
           "y": 320,
           "zOrder": 3,
           "numberProperties": [],
@@ -1392,7 +2252,7 @@
           "name": "PLAY_TEXT",
           "persistentUuid": "2b933076-85f8-4557-b982-3448d5e0771f",
           "width": 152,
-          "x": 555,
+          "x": 545,
           "y": 356,
           "zOrder": 4,
           "numberProperties": [],
@@ -1480,6 +2340,23 @@
           "x": 89,
           "y": 308,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 243,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MONTY2",
+          "persistentUuid": "86ab11ed-4779-4a8d-9b00-127738bf4b2e",
+          "width": 246,
+          "x": 883,
+          "y": 296,
+          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1657,32 +2534,6 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "TUTORIAL_BUTTON",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"TUTORIAL LEVEL\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
                 "PLAY_BUTTON",
                 ""
               ]
@@ -1697,6 +2548,22 @@
                 "",
                 "\"LVLS OPTIONS\"",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "MONTY2",
+                "Flippable",
+                "yes"
               ]
             }
           ]
@@ -17807,7 +18674,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8416428125373109,
+        "zoomFactor": 0.6897782140104501,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -19306,7 +20173,7 @@
           "name": "RETRY_TEXT",
           "persistentUuid": "bc43c9fd-fbd1-4cab-b42e-308975344f99",
           "width": 0,
-          "x": 784,
+          "x": 779,
           "y": 354,
           "zOrder": 5,
           "numberProperties": [],
@@ -20210,8 +21077,8 @@
           "name": "QUIT_TEXT",
           "persistentUuid": "6f4aeece-e0a9-42ed-be89-0888217659c1",
           "width": 0,
-          "x": 36,
-          "y": 34,
+          "x": 39,
+          "y": 35,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -22140,7 +23007,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5653158055126306,
+        "zoomFactor": 0.5653158055126307,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -22271,7 +23138,7 @@
           "layer": "",
           "name": "MAIN_MENU_BUTTON_LVL_7_COMPLETED",
           "persistentUuid": "19d01d23-8e3f-4cfd-a346-574e40f60878",
-          "width": 261,
+          "width": 319,
           "x": 263,
           "y": 391,
           "zOrder": 6,
@@ -22288,7 +23155,7 @@
           "layer": "",
           "name": "NEXT_LVL_BUTTON_LVL_7_COMPLETED",
           "persistentUuid": "e82ab768-e6a9-4a09-9c49-2d7d19e672c7",
-          "width": 261,
+          "width": 307,
           "x": 689,
           "y": 391,
           "zOrder": 8,
@@ -22574,7 +23441,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5653158055126315,
+        "zoomFactor": 0.7876290101673762,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -22685,134 +23552,15 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 32,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAZE_WALLS_TUTORIAL",
-          "persistentUuid": "7f54a1ed-b8b0-4751-b6ef-ed4e2041c96f",
-          "width": 964,
-          "x": 265,
-          "y": 598,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAZE_WALLS_TUTORIAL",
-          "persistentUuid": "beb44ca3-6799-4ec6-8036-09548391e945",
-          "width": 945,
-          "x": 215,
-          "y": 507,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAZE_WALLS_TUTORIAL",
-          "persistentUuid": "e3f3bf7e-741e-491f-a618-6dd7897b1c12",
-          "width": 964,
-          "x": 259,
-          "y": 416,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAZE_WALLS_TUTORIAL",
-          "persistentUuid": "2a8df04e-8140-439e-b3d1-88765a7d0d24",
-          "width": 953,
-          "x": 208,
-          "y": 323,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAZE_WALLS_TUTORIAL",
-          "persistentUuid": "23b1b930-1a23-437a-b1ef-c3688bf68a79",
-          "width": 963,
-          "x": 261,
-          "y": 232,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAZE_WALLS_TUTORIAL",
-          "persistentUuid": "85e36b14-b54e-4254-9373-ade9e21309c3",
-          "width": 949,
-          "x": 208,
-          "y": 138,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 97,
+          "height": 94,
           "keepRatio": true,
           "layer": "",
           "name": "MONTY",
           "persistentUuid": "c32bb470-d472-42fd-873c-958c6c289757",
           "width": 95,
-          "x": 1116,
-          "y": 621,
+          "x": 1103,
+          "y": 561,
           "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MAZE_WALLS_TUTORIAL",
-          "persistentUuid": "bceed9af-9e88-499c-a937-0be1a4928fd5",
-          "width": 919,
-          "x": 299,
-          "y": 45,
-          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -22827,8 +23575,8 @@
           "name": "PORTAL",
           "persistentUuid": "b3b94dcf-2c9b-44b5-9882-88c3cbf958b1",
           "width": 120,
-          "x": 196,
-          "y": 8,
+          "x": 353,
+          "y": 127,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -22844,9 +23592,562 @@
           "name": "LAVA",
           "persistentUuid": "bbff4204-9acf-49cb-b12d-35d850752ef7",
           "width": 1037,
-          "x": 208,
-          "y": 738,
+          "x": 207,
+          "y": 793,
           "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 305,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "3c154d8a-3e67-4825-92e9-db2df592426c",
+          "width": 32,
+          "x": 1055,
+          "y": 385,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "c74e71dc-ead4-4cb3-acc1-7125792c7b2d",
+          "width": 80,
+          "x": 987,
+          "y": 388,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 200,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "fe001a7c-caf0-48f9-823a-1565a3d53bae",
+          "width": 32,
+          "x": 985,
+          "y": 413,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "c387a70e-90a8-44f8-a3ec-100ea75dbe4a",
+          "width": 565,
+          "x": 278,
+          "y": 582,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 188,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "b5840cc4-8f2e-4133-a8fe-126f682fe9eb",
+          "width": 32,
+          "x": 281,
+          "y": 451,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "83ebd8d9-93a9-4fc8-893d-c70d1701fa95",
+          "width": 400,
+          "x": 213,
+          "y": 307,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 168,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "a544c5ff-34cd-40e7-b383-297a914f4d61",
+          "width": 32,
+          "x": 505,
+          "y": 334,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "92089eeb-3ffb-4c75-9dc2-c4171d6cb1b7",
+          "width": 195,
+          "x": 516,
+          "y": 483,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 225,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "c6a3e7ce-c91f-4511-8fcf-53c96be526b4",
+          "width": 32,
+          "x": 842,
+          "y": 258,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "9afbf2ca-758f-43f5-87b0-cc42690f4559",
+          "width": 307,
+          "x": 779,
+          "y": 198,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 72,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "3b175c9f-2af6-44c1-a247-16b786b5dd03",
+          "width": 32,
+          "x": 1060,
+          "y": 208,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "60902b03-1d2d-4102-a4be-6836fde27e23",
+          "width": 481,
+          "x": 602,
+          "y": 110,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 227,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "65049d9c-a500-4f42-9758-78abda0b713e",
+          "width": 32,
+          "x": 458,
+          "y": 21,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "349f8816-8814-44be-95e2-2d3e974b4d57",
+          "width": 125,
+          "x": 343,
+          "y": 217,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 120,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "c1291d23-9886-4c3f-9030-24f592cda5a5",
+          "width": 32,
+          "x": 336,
+          "y": 128,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "fcb781a9-6500-4434-9871-df33cb688d28",
+          "width": 349,
+          "x": 873,
+          "y": 260,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 200,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "6f44f496-bc28-446d-9823-21f31d070b30",
+          "width": 32,
+          "x": 842,
+          "y": 421,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 207,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "00310bec-8a0a-4594-b80c-5f4aaf825b15",
+          "width": 32,
+          "x": 583,
+          "y": 122,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 152,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "f09a98ae-1165-44cd-b246-cf1b97d6f12c",
+          "width": 32,
+          "x": 240,
+          "y": 27,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "44aa0c79-2e2a-402b-8ce9-e2b72d36c5ca",
+          "width": 219,
+          "x": 654,
+          "y": 386,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "059c298d-4de2-4ccb-a97f-08dea68a8f83",
+          "width": 0,
+          "x": 613,
+          "y": 134,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "691a94ae-c386-40c2-a053-f8c3dadd4ac7",
+          "width": 0,
+          "x": 870,
+          "y": 285,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "36c3a7a1-0a83-4ad8-b773-c8d567609d6a",
+          "width": 0,
+          "x": 214,
+          "y": 287,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 187,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "3d3482ef-20bd-48d2-b7ae-0e95dc473c69",
+          "width": 32,
+          "x": 385,
+          "y": 326,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 160,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "d3a8f188-3689-41c4-97b4-782c69044049",
+          "width": 32,
+          "x": 1143,
+          "y": 290,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "c2380185-4450-4ed1-ae54-b1183e6275f1",
+          "width": 157,
+          "x": 589,
+          "y": 272,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 136,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "936f2465-55cc-4250-985a-7e8d5a1400bb",
+          "width": 32,
+          "x": 1138,
+          "y": 27,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "fa4cf0e7-654b-4cc1-98dd-399544112ab1",
+          "width": 0,
+          "x": 490,
+          "y": 27,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "3a380a30-4039-469b-bdff-8a1343e2c6b2",
+          "width": 0,
+          "x": 266,
+          "y": 27,
+          "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "d0fe2de0-99ec-46ea-920e-4e092d55193a",
+          "width": 0,
+          "x": 407,
+          "y": 333,
+          "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 94,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "3e67206f-7a59-49b7-91f9-7d36c362401e",
+          "width": 32,
+          "x": 205,
+          "y": 333,
+          "zOrder": 43,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "ca9e5723-7aed-4e9b-9e8d-394275e76998",
+          "width": 0,
+          "x": 1038,
+          "y": 410,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MONTY3",
+          "persistentUuid": "6a5246b6-7b5a-4ae2-b9a9-0e526700f792",
+          "width": 0,
+          "x": 841,
+          "y": 633,
+          "zOrder": 46,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -22979,7 +24280,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "PORTAL",
                 "",
                 "",
@@ -22994,7 +24295,7 @@
               },
               "parameters": [
                 "",
-                "\"LVL 8 CUTSCENE/ANIMATION\"",
+                "\"LVL 8 CUTSCENE\"",
                 ""
               ]
             }
@@ -23009,7 +24310,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "5"
+                "1"
               ]
             },
             {
@@ -23033,7 +24334,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "MAZE_WALLS_TUTORIAL",
                 "",
                 "",
@@ -23047,7 +24348,7 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "MAZE_WALLS_TUTORIAL",
                 ""
               ]
@@ -23055,6 +24356,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -23126,6 +24428,54 @@
           "conditions": [
             {
               "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MONTY3",
+                "LAVA",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+              },
+              "parameters": [
+                "MONTY",
+                "Animation",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"DIED LVL 8\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "KeyFromTextReleased"
               },
               "parameters": [
@@ -23140,7 +24490,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "Animation",
                 "=",
                 "\"MONTY STATIONARY\""
@@ -23167,7 +24517,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "Animation",
                 "=",
                 "\"MONTY STATIONARY\""
@@ -23194,7 +24544,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "Animation",
                 "=",
                 "\"MONTY STATIONARY\""
@@ -23221,7 +24571,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "Animation",
                 "=",
                 "\"MONTY STATIONARY\""
@@ -23237,7 +24587,7 @@
                 "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "TopDownMovement",
                 "\"Up\""
               ]
@@ -23249,7 +24599,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
@@ -23265,7 +24615,7 @@
                 "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "TopDownMovement",
                 "\"Down\""
               ]
@@ -23277,7 +24627,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
@@ -23293,7 +24643,7 @@
                 "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "TopDownMovement",
                 "\"Right\""
               ]
@@ -23305,7 +24655,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
@@ -23316,7 +24666,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "Flippable",
                 "no"
               ]
@@ -23331,7 +24681,7 @@
                 "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "TopDownMovement",
                 "\"Left\""
               ]
@@ -23343,7 +24693,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
@@ -23354,7 +24704,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "MONTY",
+                "MONTY3",
                 "Flippable",
                 "yes"
               ]
@@ -23508,7 +24858,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "FINAL_LEVEL_DIED_TEXT",
+          "name": "LEVEL_8_DIED_TEXT",
           "persistentUuid": "6d91801c-9ee7-4d3a-8c48-2e8a41dc3d6a",
           "width": 0,
           "x": 254,
@@ -23525,7 +24875,7 @@
           "height": 123,
           "keepRatio": true,
           "layer": "",
-          "name": "MAIN_MENU_BUTTON_DIED_FINAL_LEVEL",
+          "name": "MAIN_MENU_BUTTON_DIED_LEVEL_8",
           "persistentUuid": "313edb4e-a3e5-464a-98d3-15ff1dc54c8c",
           "width": 283,
           "x": 286,
@@ -23542,7 +24892,7 @@
           "height": 121,
           "keepRatio": true,
           "layer": "",
-          "name": "RETRY_LEVEL_BUTTON_DIED_FINAL_LEVEL",
+          "name": "RETRY_LEVEL_BUTTON_DIED_LEVEL_8",
           "persistentUuid": "3fcd671f-1599-460b-bd04-640502cb6385",
           "width": 283,
           "x": 695,
@@ -23658,7 +25008,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "FINAL_LEVEL_DIED_TEXT",
+          "name": "LEVEL_8_DIED_TEXT",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -23698,7 +25048,7 @@
         },
         {
           "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "MAIN_MENU_BUTTON_DIED_FINAL_LEVEL",
+          "name": "MAIN_MENU_BUTTON_DIED_LEVEL_8",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variant": "Black Square Decorated Button",
           "variables": [],
@@ -23716,7 +25066,7 @@
         },
         {
           "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "RETRY_LEVEL_BUTTON_DIED_FINAL_LEVEL",
+          "name": "RETRY_LEVEL_BUTTON_DIED_LEVEL_8",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variant": "Black Square Decorated Button",
           "variables": [],
@@ -23737,13 +25087,13 @@
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "FINAL_LEVEL_DIED_TEXT"
+            "objectName": "LEVEL_8_DIED_TEXT"
           },
           {
-            "objectName": "MAIN_MENU_BUTTON_DIED_FINAL_LEVEL"
+            "objectName": "MAIN_MENU_BUTTON_DIED_LEVEL_8"
           },
           {
-            "objectName": "RETRY_LEVEL_BUTTON_DIED_FINAL_LEVEL"
+            "objectName": "RETRY_LEVEL_BUTTON_DIED_LEVEL_8"
           }
         ]
       },
@@ -23756,7 +25106,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "MAIN_MENU_BUTTON_DIED_FINAL_LEVEL",
+                "MAIN_MENU_BUTTON_DIED_LEVEL_8",
                 ""
               ]
             }
@@ -23782,7 +25132,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "RETRY_LEVEL_BUTTON_DIED_FINAL_LEVEL",
+                "RETRY_LEVEL_BUTTON_DIED_LEVEL_8",
                 ""
               ]
             }
@@ -23913,8 +25263,8 @@
     {
       "b": 212,
       "disableInputWhenNotFocused": true,
-      "mangledName": "LVL_328_32CUTSCENE_47ANIMATION",
-      "name": "LVL 8 CUTSCENE/ANIMATION",
+      "mangledName": "LVL_328_32CUTSCENE",
+      "name": "LVL 8 CUTSCENE",
       "r": 160,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -24167,8 +25517,8 @@
           "name": "FLOWER_1",
           "persistentUuid": "9a0215ce-ca2a-4283-be3e-df6b08ad693f",
           "width": 149,
-          "x": 11,
-          "y": 376,
+          "x": 14,
+          "y": 383,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -24405,8 +25755,8 @@
           "name": "FLOWER_3",
           "persistentUuid": "66766161-4568-43a5-8f96-cbfcd7fee411",
           "width": 119,
-          "x": 1181,
-          "y": 391,
+          "x": 1177,
+          "y": 436,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -24459,6 +25809,262 @@
           "x": 66,
           "y": 594,
           "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "C_LEVEL_8_CUTSCENE",
+          "persistentUuid": "32e0fda6-7f31-49e4-b9e3-31b70e7bbeff",
+          "width": 0,
+          "x": 19,
+          "y": 395,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "O_LEVEL_8_CUTSCENE",
+          "persistentUuid": "718829da-8c19-4ba0-82b8-6e9decadb638",
+          "width": 0,
+          "x": 76,
+          "y": 325,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "N_LEVEL_8_CUTSCENE",
+          "persistentUuid": "53eea99c-e31e-4c04-9679-88e4880f0ecd",
+          "width": 0,
+          "x": 141,
+          "y": 252,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "G_LEVEL_8_CUTSCENE",
+          "persistentUuid": "db04a35e-243e-42f5-bc21-e70afca81c26",
+          "width": 0,
+          "x": 210,
+          "y": 199,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "R_LEVEL_8_CUTSCENE",
+          "persistentUuid": "3e81170e-87b5-4574-9a89-6c46067f0d2e",
+          "width": 0,
+          "x": 297,
+          "y": 154,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "A_LEVEL_8_CUTSCENE",
+          "persistentUuid": "dd518447-dcc4-4d7f-a66d-f68b7e91a872",
+          "width": 0,
+          "x": 382,
+          "y": 117,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "T_LEVEL_U8_CUTSCENE",
+          "persistentUuid": "09ca0292-662d-4b58-b542-1be29874e492",
+          "width": 0,
+          "x": 479,
+          "y": 94,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "U_LEVEL_8_CUTSCENE",
+          "persistentUuid": "0bc6dfc1-2c96-4ad5-a186-a53bd6af6f21",
+          "width": 0,
+          "x": 576,
+          "y": 79,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "L_LEVEL_8_CUTSCENE",
+          "persistentUuid": "0e227a61-39d0-4161-aeb6-7b08509d20d9",
+          "width": 0,
+          "x": 675,
+          "y": 80,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "A_LEVEL_8_CUTSCENE",
+          "persistentUuid": "40a23c45-63d7-42fd-a3c2-dc536ffb24a3",
+          "width": 0,
+          "x": 767,
+          "y": 107,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "T_LEVEL_U8_CUTSCENE",
+          "persistentUuid": "5b9ffc73-0337-4701-a8f0-960d9290e80e",
+          "width": 0,
+          "x": 851,
+          "y": 146,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "I_LEVEL_8_CUTSCENE",
+          "persistentUuid": "9aa7c3bc-d722-4f78-9981-e926938db6ba",
+          "width": 0,
+          "x": 917,
+          "y": 184,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "O_LEVEL_8_CUTSCENE2",
+          "persistentUuid": "9d78b8b2-75d0-497e-91fc-bb507fb83f09",
+          "width": 0,
+          "x": 989,
+          "y": 244,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "N_LEVEL_8_CUTSCENE",
+          "persistentUuid": "20aab0f4-171c-4d55-a95e-5c4c4c952f47",
+          "width": 0,
+          "x": 1071,
+          "y": 295,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "S_LEVEL_8_CUTSCENE",
+          "persistentUuid": "81a50fd2-cef9-4e62-98a1-f5ff8005dc5e",
+          "width": 0,
+          "x": 1137,
+          "y": 340,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "__LEVEL_8",
+          "persistentUuid": "670f8e31-86ae-4f51-8f64-1fdcfbe8b0ff",
+          "width": 0,
+          "x": 1196,
+          "y": 403,
+          "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -24849,6 +26455,552 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "C_LEVEL_8_CUTSCENE",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "C",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "C",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "O_LEVEL_8_CUTSCENE",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "O",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "O",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "N_LEVEL_8_CUTSCENE",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "N",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "N",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "G_LEVEL_8_CUTSCENE",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "G",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "G",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "R_LEVEL_8_CUTSCENE",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "R",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "R",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "A_LEVEL_8_CUTSCENE",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "A",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "A",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "T_LEVEL_U8_CUTSCENE",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "T",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "T",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "U_LEVEL_8_CUTSCENE",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "U",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "U",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "L_LEVEL_8_CUTSCENE",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "L",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "L",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "I_LEVEL_8_CUTSCENE",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "I",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "I",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "O_LEVEL_8_CUTSCENE2",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "O",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "O",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "S_LEVEL_8_CUTSCENE",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "S",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "S",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "__LEVEL_8",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "!",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "!",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -24874,6 +27026,45 @@
           },
           {
             "objectName": "FLOWER_3"
+          },
+          {
+            "objectName": "C_LEVEL_8_CUTSCENE"
+          },
+          {
+            "objectName": "O_LEVEL_8_CUTSCENE"
+          },
+          {
+            "objectName": "N_LEVEL_8_CUTSCENE"
+          },
+          {
+            "objectName": "G_LEVEL_8_CUTSCENE"
+          },
+          {
+            "objectName": "R_LEVEL_8_CUTSCENE"
+          },
+          {
+            "objectName": "A_LEVEL_8_CUTSCENE"
+          },
+          {
+            "objectName": "T_LEVEL_U8_CUTSCENE"
+          },
+          {
+            "objectName": "U_LEVEL_8_CUTSCENE"
+          },
+          {
+            "objectName": "L_LEVEL_8_CUTSCENE"
+          },
+          {
+            "objectName": "I_LEVEL_8_CUTSCENE"
+          },
+          {
+            "objectName": "O_LEVEL_8_CUTSCENE2"
+          },
+          {
+            "objectName": "S_LEVEL_8_CUTSCENE"
+          },
+          {
+            "objectName": "__LEVEL_8"
           }
         ]
       },
@@ -24887,7 +27078,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "3"
+                "4"
               ]
             },
             {
@@ -25060,7 +27251,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "COMPLETED_GAME_FINAL_LVL_TEXT",
+          "name": "COMPLETED_GAME_LEVEL_8_TEXT",
           "persistentUuid": "46e031f5-8159-42d8-8ab9-4362b2a32be2",
           "width": 0,
           "x": 139,
@@ -25077,9 +27268,9 @@
           "height": 120,
           "keepRatio": true,
           "layer": "",
-          "name": "RETURN_TO_MAIN_MENU_COMPLETED_GAME_FINAL_LEVEL",
+          "name": "MAIN_MENU_BUTTON_LEVEL_8",
           "persistentUuid": "f119dbad-5765-45f0-9ec4-5b7ba4386a2a",
-          "width": 269,
+          "width": 320,
           "x": 465,
           "y": 326,
           "zOrder": 2,
@@ -25193,7 +27384,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "COMPLETED_GAME_FINAL_LVL_TEXT",
+          "name": "COMPLETED_GAME_LEVEL_8_TEXT",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -25233,7 +27424,7 @@
         },
         {
           "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "RETURN_TO_MAIN_MENU_COMPLETED_GAME_FINAL_LEVEL",
+          "name": "MAIN_MENU_BUTTON_LEVEL_8",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variant": "Black Square Decorated Button",
           "variables": [],
@@ -25296,10 +27487,10 @@
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "COMPLETED_GAME_FINAL_LVL_TEXT"
+            "objectName": "COMPLETED_GAME_LEVEL_8_TEXT"
           },
           {
-            "objectName": "RETURN_TO_MAIN_MENU_COMPLETED_GAME_FINAL_LEVEL"
+            "objectName": "MAIN_MENU_BUTTON_LEVEL_8"
           },
           {
             "objectName": "CREDIT_TEXT"
@@ -25315,7 +27506,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "RETURN_TO_MAIN_MENU_COMPLETED_GAME_FINAL_LEVEL",
+                "MAIN_MENU_BUTTON_LEVEL_8",
                 ""
               ]
             }
