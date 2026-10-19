@@ -24,7 +24,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "C:\\Users\\2024camxan\\OneDrive - New Plymouth Girls' High School\\game\\Szdfguhijl;o\\SPRINT 1\\SPRINT 2",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -1716,429 +1716,6 @@
           ]
         }
       ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "MONTY3",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "RemapForTopdown",
-          "type": "BehaviorRemapper::RemapForTopdown",
-          "Up": "w",
-          "Left": "a",
-          "Right": "d",
-          "Down": "s",
-          "Topdown": "TopDownMovement"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "deceleration": 500,
-          "maxSpeed": 75,
-          "rotateObject": false,
-          "acceleration": 50,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "ignoreDefaultControls": false,
-          "movementAngleOffset": 0,
-          "useLegacyTurnBack": false,
-          "viewpoint": "TopDown"
-        },
-        {
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
-          "TopDownMovement": "TopDownMovement",
-          "ControllerIdentifier": 1,
-          "JoystickIdentifier": "Primary",
-          "StickMode": "Analog"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite3",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 16.5,
-                        "y": 24.5
-                      },
-                      {
-                        "x": 22,
-                        "y": 8.5
-                      },
-                      {
-                        "x": 35,
-                        "y": 7.5
-                      },
-                      {
-                        "x": 46,
-                        "y": 22.5
-                      },
-                      {
-                        "x": 40,
-                        "y": 42.5
-                      },
-                      {
-                        "x": 36.5,
-                        "y": 45
-                      },
-                      {
-                        "x": 21.5,
-                        "y": 44.5
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "MONTY DIES",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.09,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "MONTY DIES7",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 13,
-                        "y": 33
-                      },
-                      {
-                        "x": 14.5,
-                        "y": 19
-                      },
-                      {
-                        "x": 19,
-                        "y": 13.5
-                      },
-                      {
-                        "x": 30,
-                        "y": 13
-                      },
-                      {
-                        "x": 36,
-                        "y": 20
-                      },
-                      {
-                        "x": 36.5,
-                        "y": 36.5
-                      },
-                      {
-                        "x": 34,
-                        "y": 46.5
-                      },
-                      {
-                        "x": 14.5,
-                        "y": 47
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "MONTY DIES8",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 13,
-                        "y": 33
-                      },
-                      {
-                        "x": 14.5,
-                        "y": 19
-                      },
-                      {
-                        "x": 19,
-                        "y": 13.5
-                      },
-                      {
-                        "x": 30,
-                        "y": 13
-                      },
-                      {
-                        "x": 36,
-                        "y": 20
-                      },
-                      {
-                        "x": 36.5,
-                        "y": 36.5
-                      },
-                      {
-                        "x": 34,
-                        "y": 46.5
-                      },
-                      {
-                        "x": 14.5,
-                        "y": 47
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "MONTY WALKING",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "MONTY WALKING3",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 14.5,
-                        "y": 32.5
-                      },
-                      {
-                        "x": 16.5,
-                        "y": 24.5
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 20.5
-                      },
-                      {
-                        "x": 27,
-                        "y": 21
-                      },
-                      {
-                        "x": 38,
-                        "y": 25.5
-                      },
-                      {
-                        "x": 40,
-                        "y": 42.5
-                      },
-                      {
-                        "x": 39,
-                        "y": 55.5
-                      },
-                      {
-                        "x": 14,
-                        "y": 57
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "MONTY WALKING4",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 14.5,
-                        "y": 32.5
-                      },
-                      {
-                        "x": 16.5,
-                        "y": 24.5
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 20.5
-                      },
-                      {
-                        "x": 27,
-                        "y": 21
-                      },
-                      {
-                        "x": 38,
-                        "y": 25.5
-                      },
-                      {
-                        "x": 40,
-                        "y": 42.5
-                      },
-                      {
-                        "x": 39,
-                        "y": 55.5
-                      },
-                      {
-                        "x": 14,
-                        "y": 57
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "MONTY WALKING5",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 14.5,
-                        "y": 32.5
-                      },
-                      {
-                        "x": 16.5,
-                        "y": 24.5
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 20.5
-                      },
-                      {
-                        "x": 27,
-                        "y": 21
-                      },
-                      {
-                        "x": 38,
-                        "y": 25.5
-                      },
-                      {
-                        "x": 40,
-                        "y": 42.5
-                      },
-                      {
-                        "x": 39,
-                        "y": 55.5
-                      },
-                      {
-                        "x": 14,
-                        "y": 57
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "MONTY STATIONARY",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "MONTY STATIONAL3",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2146,9 +1723,6 @@
     "children": [
       {
         "objectName": "MONTY"
-      },
-      {
-        "objectName": "MONTY3"
       },
       {
         "objectName": "MONTY2"
@@ -2218,8 +1792,8 @@
           "name": "TITLE_TEXT",
           "persistentUuid": "9dac93ce-05da-4874-acff-f08bdc467a6f",
           "width": 475,
-          "x": 374,
-          "y": 207,
+          "x": 409,
+          "y": 190,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -2235,7 +1809,7 @@
           "name": "PLAY_BUTTON",
           "persistentUuid": "127ac389-48f4-4a81-9175-afb965443c8e",
           "width": 242,
-          "x": 502,
+          "x": 527,
           "y": 320,
           "zOrder": 3,
           "numberProperties": [],
@@ -2252,8 +1826,8 @@
           "name": "PLAY_TEXT",
           "persistentUuid": "2b933076-85f8-4557-b982-3448d5e0771f",
           "width": 152,
-          "x": 545,
-          "y": 356,
+          "x": 567,
+          "y": 358,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -2269,8 +1843,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "8f660fbe-d7c9-4236-8c02-bc3b848deefc",
           "width": 640,
-          "x": 759,
-          "y": -80,
+          "x": 793,
+          "y": -84,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -2320,8 +1894,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "1634687b-f1a0-4358-ad9b-733336e87e44",
           "width": 640,
-          "x": 723,
-          "y": 329,
+          "x": 751,
+          "y": 332,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -2337,8 +1911,8 @@
           "name": "MONTY",
           "persistentUuid": "d87798b2-896f-416f-98f6-018a08552616",
           "width": 241,
-          "x": 89,
-          "y": 308,
+          "x": 141,
+          "y": 275,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -2354,8 +1928,8 @@
           "name": "MONTY2",
           "persistentUuid": "86ab11ed-4779-4a8d-9b00-127738bf4b2e",
           "width": 246,
-          "x": 883,
-          "y": 296,
+          "x": 918,
+          "y": 271,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -2731,9 +2305,9 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "7d3de1aa-8d76-4a45-8cfc-37a7ed9eb708",
           "width": 486,
-          "x": 875,
-          "y": -70,
-          "zOrder": 1,
+          "x": 905,
+          "y": -67,
+          "zOrder": -8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2765,9 +2339,9 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "95fc9f62-2f3b-4310-9c45-787d8b64f066",
           "width": 486,
-          "x": 848,
-          "y": 365,
-          "zOrder": 1,
+          "x": 878,
+          "y": 367,
+          "zOrder": -9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2781,8 +2355,8 @@
           "name": "LVL_OPTIONS_TEXT",
           "persistentUuid": "9f0a71c0-780d-4c87-836c-7a58b86ee0a0",
           "width": 0,
-          "x": 260,
-          "y": 43,
+          "x": 286,
+          "y": 40,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -2797,8 +2371,8 @@
           "name": "TUTORIAL_BUTTON",
           "persistentUuid": "efc3381e-536f-43f2-9ee3-2cd13391324c",
           "width": 0,
-          "x": 521,
-          "y": 176,
+          "x": 543,
+          "y": 174,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -2813,8 +2387,8 @@
           "name": "TUTORIAL_TEXT",
           "persistentUuid": "48e1420e-2494-4230-a5d7-0950b1159ea2",
           "width": 0,
-          "x": 533,
-          "y": 198,
+          "x": 555,
+          "y": 196,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -2862,7 +2436,7 @@
           "name": "LVL_3_TEXT",
           "persistentUuid": "22a1e356-4e19-49ef-8f55-21dee2cdc930",
           "width": 0,
-          "x": 726,
+          "x": 752,
           "y": 319,
           "zOrder": 15,
           "numberProperties": [],
@@ -2878,8 +2452,8 @@
           "name": "LVL_4_TEXT",
           "persistentUuid": "13031ef5-ccaa-4e3d-a077-8f4d7a8526c7",
           "width": 0,
-          "x": 998,
-          "y": 318,
+          "x": 1022,
+          "y": 316,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -2926,8 +2500,8 @@
           "name": "LVL_7_TEXT",
           "persistentUuid": "0a06e2c7-908c-4e74-8f10-d100161fbf55",
           "width": 0,
-          "x": 730,
-          "y": 465,
+          "x": 757,
+          "y": 462,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -2942,7 +2516,7 @@
           "name": "LVL_8_TEXT",
           "persistentUuid": "81d1640c-4fec-4086-9d95-bfc5cee4e129",
           "width": 0,
-          "x": 1000,
+          "x": 1034,
           "y": 463,
           "zOrder": 20,
           "numberProperties": [],
@@ -2990,7 +2564,7 @@
           "name": "LVL_3_BUTTON",
           "persistentUuid": "d4ba3e51-de8b-4448-b5e5-334307aba9a9",
           "width": 0,
-          "x": 701,
+          "x": 728,
           "y": 296,
           "zOrder": -2,
           "numberProperties": [],
@@ -3006,8 +2580,8 @@
           "name": "LVL_4_BUTTON",
           "persistentUuid": "f1561380-522e-4200-9225-7dc0c9637668",
           "width": 0,
-          "x": 970,
-          "y": 296,
+          "x": 996,
+          "y": 294,
           "zOrder": -3,
           "numberProperties": [],
           "stringProperties": [],
@@ -3054,8 +2628,8 @@
           "name": "LVL_7_BUTTON",
           "persistentUuid": "3eef50b6-2494-4960-bf14-d6641110df0b",
           "width": 0,
-          "x": 702,
-          "y": 441,
+          "x": 731,
+          "y": 439,
           "zOrder": -6,
           "numberProperties": [],
           "stringProperties": [],
@@ -3070,8 +2644,8 @@
           "name": "LVL_8_BUTTON",
           "persistentUuid": "f1bbc7c2-8cb3-4fce-b671-9d5a3f3d9f92",
           "width": 0,
-          "x": 973,
-          "y": 440,
+          "x": 1007,
+          "y": 441,
           "zOrder": -7,
           "numberProperties": [],
           "stringProperties": [],
@@ -4105,7 +3679,7 @@
           "angle": 0,
           "customSize": true,
           "depth": 64,
-          "height": 64,
+          "height": 54,
           "keepRatio": true,
           "layer": "",
           "name": "QUIT_BUTTON",
@@ -4122,14 +3696,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 64,
-          "height": 64,
+          "height": 49,
           "keepRatio": true,
           "layer": "",
           "name": "TO_GAME_BUTTON",
           "persistentUuid": "887f6c84-a8ba-42c3-9809-e5fbb243bcf1",
           "width": 138,
-          "x": 10,
-          "y": 87,
+          "x": 11,
+          "y": 74,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -4144,7 +3718,7 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "40dabae6-1e78-4c5c-9f61-1dbcd32e2f3b",
-          "width": 775,
+          "width": 811,
           "x": 472,
           "y": -2,
           "zOrder": 4,
@@ -4161,7 +3735,7 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "e29db484-9147-410a-926b-3a93aa72f672",
-          "width": 56,
+          "width": 90,
           "x": 1192,
           "y": 33,
           "zOrder": 5,
@@ -5442,8 +5016,8 @@
           "name": "QUIT_TEXT",
           "persistentUuid": "58324b1b-85d7-4f46-8948-9784884ff314",
           "width": 0,
-          "x": 30,
-          "y": 30,
+          "x": 29,
+          "y": 24,
           "zOrder": 82,
           "numberProperties": [],
           "stringProperties": [],
@@ -5459,7 +5033,7 @@
           "persistentUuid": "edfadb6f-13fd-435e-99c4-658cc6858113",
           "width": 0,
           "x": 20,
-          "y": 110,
+          "y": 90,
           "zOrder": 83,
           "numberProperties": [],
           "stringProperties": [],
@@ -5475,8 +5049,8 @@
           "name": "TUTORIAL_TEXT2",
           "persistentUuid": "d19cf7e8-9266-4c81-93fe-0374a4a024ad",
           "width": 216,
-          "x": 8,
-          "y": 182,
+          "x": 7,
+          "y": 149,
           "zOrder": 84,
           "numberProperties": [],
           "stringProperties": [],
@@ -5632,10 +5206,10 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "TO PLAY: \nArrow \nkeys \nOR\nW,A,S,D\n\n\nReach \nthe blue \nportal \nto escape \nlevel!\n\n\nBe aware \nof the \nrising\nlava \nand go \nsave \nMonty \nthe \nMole!",
+          "string": "TO PLAY: \nArrow \nkeys \nOR\nW,A,S,D\n\n\nReach \nthe blue \nportal \nto escape \nlevel!\n\n\nBe aware \nof the \nrising\nlava \nand go \nsave \nMonty \nthe \nMole!\n\nIn \norder\nto die,\nyou \nmust\ncontinously\nmove \n(sorry!)",
           "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
           "textAlignment": "left",
-          "characterSize": 18,
+          "characterSize": 15,
           "color": {
             "b": 0,
             "g": 0,
@@ -5655,11 +5229,11 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "TO PLAY: \nArrow \nkeys \nOR\nW,A,S,D\n\n\nReach \nthe blue \nportal \nto escape \nlevel!\n\n\nBe aware \nof the \nrising\nlava \nand go \nsave \nMonty \nthe \nMole!",
+            "text": "TO PLAY: \nArrow \nkeys \nOR\nW,A,S,D\n\n\nReach \nthe blue \nportal \nto escape \nlevel!\n\n\nBe aware \nof the \nrising\nlava \nand go \nsave \nMonty \nthe \nMole!\n\nIn \norder\nto die,\nyou \nmust\ncontinously\nmove \n(sorry!)",
             "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
-            "characterSize": 18,
+            "characterSize": 15,
             "color": "0;0;0"
           }
         }
@@ -6268,8 +5842,8 @@
           "name": "DIED_TUTORIAL_LVL_TEXT",
           "persistentUuid": "2305a2ca-1771-4862-ac94-ce1e6e47f6b2",
           "width": 0,
-          "x": 245,
-          "y": 110,
+          "x": 271,
+          "y": 114,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -6285,7 +5859,7 @@
           "name": "MAIN_MENU_BUTTON_TUTORIAL_LVL",
           "persistentUuid": "05402632-e95c-4005-b982-c4594edfbe5d",
           "width": 280,
-          "x": 276,
+          "x": 296,
           "y": 286,
           "zOrder": 2,
           "numberProperties": [],
@@ -6302,8 +5876,8 @@
           "name": "RETRY_TUTORIAL_LVL_BUTTON",
           "persistentUuid": "c1e0ef39-f7f0-4e7d-bf4a-1d7cc5d648f0",
           "width": 280,
-          "x": 711,
-          "y": 286,
+          "x": 742,
+          "y": 288,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -6318,8 +5892,8 @@
           "name": "MAIN_MENU_TEXT",
           "persistentUuid": "a9f17d06-d608-4c3b-ab29-a0464d46c1c0",
           "width": 0,
-          "x": 302,
-          "y": 334,
+          "x": 320,
+          "y": 343,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -6334,8 +5908,8 @@
           "name": "RETRY_TEXT",
           "persistentUuid": "080e03b7-917a-4503-b4e6-d8c4ea83b5a7",
           "width": 0,
-          "x": 780,
-          "y": 330,
+          "x": 807,
+          "y": 339,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -6385,8 +5959,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "f3d98dfe-8531-4283-ab89-6a4cff894632",
           "width": 607,
-          "x": 794,
-          "y": -75,
+          "x": 818,
+          "y": -73,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -6402,8 +5976,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "c0043e34-810a-4cb0-ae2b-66ca95ba6ba2",
           "width": 607,
-          "x": 751,
-          "y": 302,
+          "x": 778,
+          "y": 306,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -6702,8 +6276,8 @@
           "name": "COMPLETED_TUTORIAL_LVL_TEXT",
           "persistentUuid": "0eb13f3d-0426-4568-b92b-6ccf898cefce",
           "width": 0,
-          "x": 199,
-          "y": 140,
+          "x": 210,
+          "y": 137,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -6736,7 +6310,7 @@
           "name": "TO_LEVEL_1_BUTTON_COMPLETED_TUTORAL_LEVEL",
           "persistentUuid": "3c76bf3b-98f1-4936-8d2a-8152ef749dba",
           "width": 258,
-          "x": 710,
+          "x": 724,
           "y": 381,
           "zOrder": 3,
           "numberProperties": [],
@@ -6768,7 +6342,7 @@
           "name": "NEXT_LEVEL_TEXT",
           "persistentUuid": "71f6b9a3-d217-4847-b0e2-c399fd408e23",
           "width": 0,
-          "x": 728,
+          "x": 744,
           "y": 411,
           "zOrder": 5,
           "numberProperties": [],
@@ -6819,8 +6393,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "3255fc98-fb97-4d08-a2cf-1bfa3fbdccc3",
           "width": 589,
-          "x": 798,
-          "y": -75,
+          "x": 831,
+          "y": -71,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -6836,8 +6410,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "a2c11768-a628-4cf6-ab74-4f15b7d053b8",
           "width": 589,
-          "x": 765,
-          "y": 304,
+          "x": 790,
+          "y": 307,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -7663,7 +7237,7 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "b8c598af-6827-4a1d-a377-881081199ea1",
-          "width": 32,
+          "width": 68,
           "x": 1222,
           "y": 31,
           "zOrder": 39,
@@ -7765,7 +7339,7 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "61114b78-b711-433e-92c3-44950c0b3418",
-          "width": 1039,
+          "width": 1072,
           "x": 214,
           "y": -1,
           "zOrder": 45,
@@ -8593,8 +8167,8 @@
           "name": "DIED_TEXT_LVL_1",
           "persistentUuid": "bf900988-bc96-4149-a7b3-ed69748172dc",
           "width": 0,
-          "x": 235,
-          "y": 146,
+          "x": 262,
+          "y": 124,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -8693,8 +8267,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "775404b0-5ad5-4f4b-8227-8d67f354190c",
           "width": 821,
-          "x": 639,
-          "y": -79,
+          "x": 665,
+          "y": -75,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -8727,8 +8301,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "babf3a17-8337-42c0-975d-1df3f23ae0cf",
           "width": 821,
-          "x": 573,
-          "y": 178,
+          "x": 606,
+          "y": 182,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -9027,8 +8601,8 @@
           "name": "LVL_1_COMPLETED_TEXT",
           "persistentUuid": "749aa969-0562-4427-bbab-2a353ba7731f",
           "width": 0,
-          "x": 196,
-          "y": 182,
+          "x": 223,
+          "y": 136,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -9043,7 +8617,7 @@
           "name": "MAIN_MENU_TEXT",
           "persistentUuid": "81c8ecb4-e83a-4ef8-b1dc-649076ddcfb0",
           "width": 0,
-          "x": 297,
+          "x": 312,
           "y": 354,
           "zOrder": 4,
           "numberProperties": [],
@@ -9059,7 +8633,7 @@
           "name": "NEXT_LEVEL_TEXT",
           "persistentUuid": "193afba8-cdcd-4b81-bb75-c0debaf70c73",
           "width": 0,
-          "x": 772,
+          "x": 776,
           "y": 354,
           "zOrder": 5,
           "numberProperties": [],
@@ -9093,8 +8667,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "02e7cb48-78da-4471-b2a8-ff621225090d",
           "width": 556,
-          "x": 823,
-          "y": -68,
+          "x": 855,
+          "y": -64,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -9127,8 +8701,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "bdcc442f-1a31-43bf-9a72-db14bec0189d",
           "width": 556,
-          "x": 785,
-          "y": 329,
+          "x": 822,
+          "y": 333,
           "zOrder": -2,
           "numberProperties": [],
           "stringProperties": [],
@@ -9144,7 +8718,7 @@
           "name": "NEXT_LVL_BUTTON",
           "persistentUuid": "ad034f9c-36f1-4b6c-ab94-33ad00350494",
           "width": 267,
-          "x": 745,
+          "x": 752,
           "y": 314,
           "zOrder": 0,
           "numberProperties": [],
@@ -9161,7 +8735,7 @@
           "name": "MAIN_MENU_BUTTON",
           "persistentUuid": "6ad1617b-a505-4b5c-b0a3-d15c4fea5d76",
           "width": 309,
-          "x": 252,
+          "x": 267,
           "y": 318,
           "zOrder": -1,
           "numberProperties": [],
@@ -9478,7 +9052,7 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "1d84f934-2dc9-4e22-9830-953f69c95759",
-          "width": 55,
+          "width": 85,
           "x": 1196,
           "y": -3,
           "zOrder": 2,
@@ -10929,8 +10503,8 @@
           "name": "DIED_TEXT_LVL_2",
           "persistentUuid": "dc64a022-8477-4d03-b81c-a3fd17b14e00",
           "width": 0,
-          "x": 251,
-          "y": 171,
+          "x": 278,
+          "y": 147,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -10963,7 +10537,7 @@
           "name": "RETRY_BUTTON_LVL_2",
           "persistentUuid": "9a1c3fd6-92c2-4bad-aebb-9d57fee4253c",
           "width": 276,
-          "x": 711,
+          "x": 727,
           "y": 341,
           "zOrder": 3,
           "numberProperties": [],
@@ -10995,7 +10569,7 @@
           "name": "RETRY_TEXT",
           "persistentUuid": "21ed80d0-ba9d-45b1-ae21-bf9eeb6f3441",
           "width": 0,
-          "x": 782,
+          "x": 795,
           "y": 381,
           "zOrder": 5,
           "numberProperties": [],
@@ -11046,7 +10620,7 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "3a1b35bc-455b-4548-86fa-efc85102e681",
           "width": 842,
-          "x": 553,
+          "x": 590,
           "y": 126,
           "zOrder": 0,
           "numberProperties": [],
@@ -11063,8 +10637,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "4e560c1c-170c-4c92-9814-a535ffecda48",
           "width": 842,
-          "x": 605,
-          "y": -113,
+          "x": 647,
+          "y": -111,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -11363,8 +10937,8 @@
           "name": "LVL_2_COMPLETED_TEXT",
           "persistentUuid": "718579e9-a209-4e0c-a377-16637cff05b7",
           "width": 0,
-          "x": 200,
-          "y": 196,
+          "x": 229,
+          "y": 183,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -11395,8 +10969,8 @@
           "name": "NEXT_LEVEL_TEXT",
           "persistentUuid": "c987b76c-f89a-498b-b14b-aa1057ec4d8f",
           "width": 0,
-          "x": 739,
-          "y": 369,
+          "x": 770,
+          "y": 368,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -11446,7 +11020,7 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "f531d715-92fc-4f51-8b36-5a28a838dd34",
           "width": 601,
-          "x": 748,
+          "x": 783,
           "y": 282,
           "zOrder": -4,
           "numberProperties": [],
@@ -11463,8 +11037,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "54e019c8-789d-4f8c-a9c1-57c682d9492d",
           "width": 601,
-          "x": 785,
-          "y": -86,
+          "x": 820,
+          "y": -84,
           "zOrder": -5,
           "numberProperties": [],
           "stringProperties": [],
@@ -11480,8 +11054,8 @@
           "name": "NEXT_LVL_BUTTON_LVL_2",
           "persistentUuid": "5deba634-f5c9-458c-ac5f-8f415372b39e",
           "width": 289,
-          "x": 704,
-          "y": 330,
+          "x": 733,
+          "y": 328,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -11848,7 +11422,7 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "51a73694-d5f4-4c9f-85dd-c1523934dec5",
-          "width": 49,
+          "width": 74,
           "x": 1210,
           "y": -6,
           "zOrder": 2,
@@ -13150,8 +12724,8 @@
           "name": "DIED_TXT_LVL_3",
           "persistentUuid": "395da5b3-6bde-4ed9-aa62-245232a650bb",
           "width": 0,
-          "x": 252,
-          "y": 174,
+          "x": 265,
+          "y": 139,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -13184,7 +12758,7 @@
           "name": "RETRY_BUTTON_LVL_3",
           "persistentUuid": "4e2fb44f-9718-4548-aaea-fc1d58dded05",
           "width": 280,
-          "x": 715,
+          "x": 735,
           "y": 348,
           "zOrder": 3,
           "numberProperties": [],
@@ -13216,7 +12790,7 @@
           "name": "RETRY_TEXT",
           "persistentUuid": "c7792347-80db-4319-ac1c-2cc1df000843",
           "width": 0,
-          "x": 784,
+          "x": 804,
           "y": 392,
           "zOrder": 5,
           "numberProperties": [],
@@ -13267,8 +12841,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "36a9800d-f65a-4478-a9c3-ff623b401fc9",
           "width": 783,
-          "x": 599,
-          "y": 181,
+          "x": 636,
+          "y": 176,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -13284,8 +12858,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "df2cea61-5db3-418d-a395-1e1fd034b5f9",
           "width": 783,
-          "x": 655,
-          "y": -93,
+          "x": 686,
+          "y": -95,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -13584,8 +13158,8 @@
           "name": "COMPLETED_LVL_3_TEXT",
           "persistentUuid": "7be016f5-c8a3-48cc-adf1-e832c0c98cfa",
           "width": 0,
-          "x": 190,
-          "y": 180,
+          "x": 219,
+          "y": 176,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -13617,8 +13191,8 @@
           "name": "NEXT_LEVEL_TEXT",
           "persistentUuid": "6b122db9-3c0d-40c9-9b76-44c50c46dbb8",
           "width": 261,
-          "x": 735,
-          "y": 372,
+          "x": 748,
+          "y": 374,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -13651,7 +13225,7 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "0613f10a-6357-48da-a3d3-024a094dee3d",
           "width": 640,
-          "x": 747,
+          "x": 784,
           "y": -103,
           "zOrder": -1,
           "numberProperties": [],
@@ -13685,8 +13259,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "bd7c218b-d765-4ed4-86e8-5092412e7b50",
           "width": 640,
-          "x": 721,
-          "y": 229,
+          "x": 752,
+          "y": 230,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -13702,7 +13276,7 @@
           "name": "NEXT_LEVEL_BUTTON_LVL_3",
           "persistentUuid": "503723bd-2ef9-4615-904c-f75735da8fc7",
           "width": 265,
-          "x": 729,
+          "x": 742,
           "y": 331,
           "zOrder": 6,
           "numberProperties": [],
@@ -14337,14 +13911,14 @@
           "angle": 90,
           "customSize": true,
           "depth": 1,
-          "height": 804,
+          "height": 865,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "0d65fad7-0d9a-4a62-b269-67f6c88474ea",
           "width": 54,
-          "x": 717,
-          "y": 297,
+          "x": 748,
+          "y": 267,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -14354,14 +13928,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 733,
+          "height": 755,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "2deeec19-ba8a-4554-9b33-8301488e07d2",
-          "width": 54,
-          "x": 1110,
-          "y": 3,
+          "width": 115,
+          "x": 1185,
+          "y": -19,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -14371,14 +13945,14 @@
           "angle": 90,
           "customSize": true,
           "depth": 1,
-          "height": 954,
+          "height": 1018,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "51be10f8-e36a-46c9-95fb-7fe870f18123",
           "width": 54,
-          "x": 662,
-          "y": -458,
+          "x": 694,
+          "y": -490,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -14541,14 +14115,14 @@
           "angle": 270,
           "customSize": true,
           "depth": 1,
-          "height": 172,
+          "height": 285,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "23791ff1-1a07-4953-98d3-9719c1d9f0ac",
           "width": 32,
-          "x": 1010,
-          "y": 455,
+          "x": 1067,
+          "y": 399,
           "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
@@ -14649,8 +14223,8 @@
           "name": "MONTY",
           "persistentUuid": "b23ceb82-abb4-41ae-9c7c-e65c92b9b11e",
           "width": 77,
-          "x": 244,
-          "y": 655,
+          "x": 245,
+          "y": 644,
           "zOrder": 33,
           "numberProperties": [],
           "stringProperties": [],
@@ -14997,6 +14571,56 @@
           "x": 223,
           "y": 717,
           "zOrder": 50,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 90,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "c1ddcb14-d609-4def-b0e2-fa80d5b1bc31",
+          "width": 32,
+          "x": 1071,
+          "y": 138,
+          "zOrder": 51,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "91038d3f-6ce1-4175-910d-389b2609e4c0",
+          "width": 160,
+          "x": 987,
+          "y": 262,
+          "zOrder": 52,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MAZE_WALLS_TUTORIAL",
+          "persistentUuid": "b8712c1c-61f6-4552-ae7b-1e3a522211e7",
+          "width": 0,
+          "x": 1166,
+          "y": 41,
+          "zOrder": 53,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15588,8 +15212,8 @@
           "name": "DIED_TEXT_LVL_4",
           "persistentUuid": "e7093871-3e4b-4289-b295-8411fff8fd51",
           "width": 0,
-          "x": 269,
-          "y": 176,
+          "x": 278,
+          "y": 143,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -15622,8 +15246,8 @@
           "name": "RETRY_LVL_4_BUTTON",
           "persistentUuid": "2c62ad28-a888-4553-ace0-ee050570c24c",
           "width": 258,
-          "x": 705,
-          "y": 363,
+          "x": 721,
+          "y": 359,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -15654,8 +15278,8 @@
           "name": "RETRY_TEXT",
           "persistentUuid": "f8a3643f-cc1b-4690-90c6-804e6617a90a",
           "width": 0,
-          "x": 762,
-          "y": 406,
+          "x": 782,
+          "y": 404,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -15705,8 +15329,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "67de6875-bd25-41ed-b004-9892fa51e0b1",
           "width": 677,
-          "x": 713,
-          "y": -130,
+          "x": 744,
+          "y": -128,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -15722,8 +15346,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "41ed21f0-365c-4499-8f74-77b4ddcafef4",
           "width": 677,
-          "x": 685,
-          "y": 183,
+          "x": 722,
+          "y": 187,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -16022,7 +15646,7 @@
           "name": "LVL_4_COMPLETED_TEXT",
           "persistentUuid": "f75c3fa0-be3e-4ed4-a32e-382680ff239f",
           "width": 0,
-          "x": 200,
+          "x": 233,
           "y": 178,
           "zOrder": 1,
           "numberProperties": [],
@@ -16054,8 +15678,8 @@
           "name": "NEXT_LEVEL_TEXT",
           "persistentUuid": "244d4106-d8e1-461a-88da-bdeeffcc4b02",
           "width": 0,
-          "x": 727,
-          "y": 366,
+          "x": 760,
+          "y": 373,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -16088,7 +15712,7 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "504f10ed-761e-45e7-9aee-b84f163ce2dc",
           "width": 572,
-          "x": 804,
+          "x": 832,
           "y": -89,
           "zOrder": 6,
           "numberProperties": [],
@@ -16122,7 +15746,7 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "f551db16-1b23-452f-9d36-23326fd4360f",
           "width": 572,
-          "x": 779,
+          "x": 812,
           "y": 296,
           "zOrder": 6,
           "numberProperties": [],
@@ -16156,8 +15780,8 @@
           "name": "NEXT_LVL_BUTTON_LVL_4",
           "persistentUuid": "a2ef9eb5-1305-4982-8d79-bea51f122230",
           "width": 293,
-          "x": 692,
-          "y": 327,
+          "x": 723,
+          "y": 329,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -16489,8 +16113,8 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "b1d220b5-ca0a-462d-9de7-3e4cafc99195",
-          "width": 67,
-          "x": 1186,
+          "width": 71,
+          "x": 1219,
           "y": -19,
           "zOrder": 3,
           "numberProperties": [],
@@ -16535,14 +16159,14 @@
           "angle": 90,
           "customSize": true,
           "depth": 1,
-          "height": 946,
+          "height": 977,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "41fd901f-64d8-471e-af49-f71c4d11e521",
           "width": 67,
-          "x": 698,
-          "y": -449,
+          "x": 712,
+          "y": -463,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -16925,7 +16549,7 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "cb213441-a3a1-4b46-a529-12f0bed36873",
-          "width": 186,
+          "width": 216,
           "x": 1010,
           "y": 334,
           "zOrder": 25,
@@ -17821,8 +17445,8 @@
           "name": "DIED_TEXT_LVL_5",
           "persistentUuid": "8ad3be77-4906-46d1-b881-9152fad52f99",
           "width": 0,
-          "x": 254,
-          "y": 134,
+          "x": 274,
+          "y": 116,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -17855,7 +17479,7 @@
           "name": "RETRY_LVL_5_BUTTON",
           "persistentUuid": "3924c67e-16f4-4706-bd32-7f60d3cbc2fd",
           "width": 276,
-          "x": 675,
+          "x": 708,
           "y": 324,
           "zOrder": 3,
           "numberProperties": [],
@@ -17887,7 +17511,7 @@
           "name": "RETRY_TEXT",
           "persistentUuid": "5252655a-0d03-4b1e-adbe-458cf12e3a04",
           "width": 0,
-          "x": 743,
+          "x": 769,
           "y": 373,
           "zOrder": 5,
           "numberProperties": [],
@@ -17938,7 +17562,7 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "8d57fc95-766a-46e8-b0e6-1370899e1be3",
           "width": 719,
-          "x": 656,
+          "x": 691,
           "y": 200,
           "zOrder": 0,
           "numberProperties": [],
@@ -17955,7 +17579,7 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "dfeb8944-7cc2-4551-8b9a-989f997d9b4f",
           "width": 719,
-          "x": 695,
+          "x": 728,
           "y": -101,
           "zOrder": 0,
           "numberProperties": [],
@@ -18255,7 +17879,7 @@
           "name": "COMPLETED_LVL_5_TEXT",
           "persistentUuid": "414ac885-30a2-4d05-baf5-51bd6833f1a9",
           "width": 0,
-          "x": 181,
+          "x": 207,
           "y": 180,
           "zOrder": 1,
           "numberProperties": [],
@@ -18287,7 +17911,7 @@
           "name": "NEXT_LEVEL_TEXT",
           "persistentUuid": "c7dbf0eb-e6c9-481f-b197-3dc5ef47f64d",
           "width": 0,
-          "x": 722,
+          "x": 762,
           "y": 384,
           "zOrder": 9,
           "numberProperties": [],
@@ -18321,8 +17945,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "de49789b-f300-4433-b644-565e31f8f967",
           "width": 730,
-          "x": 711,
-          "y": -59,
+          "x": 746,
+          "y": -61,
           "zOrder": -3,
           "numberProperties": [],
           "stringProperties": [],
@@ -18338,8 +17962,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "244d29d5-a410-4dbf-8995-ab67345e0fdc",
           "width": 730,
-          "x": 644,
-          "y": 256,
+          "x": 681,
+          "y": 263,
           "zOrder": -2,
           "numberProperties": [],
           "stringProperties": [],
@@ -18389,7 +18013,7 @@
           "name": "NEXT_LVL_BUTTON_LVL_5",
           "persistentUuid": "05478f11-4353-4f1e-921a-4323b2fea898",
           "width": 269,
-          "x": 699,
+          "x": 739,
           "y": 343,
           "zOrder": 8,
           "numberProperties": [],
@@ -20107,8 +19731,8 @@
           "name": "DIED_LVL_6_TEXT",
           "persistentUuid": "5a0db696-23a1-4087-9376-c17a7c555a6c",
           "width": 0,
-          "x": 253,
-          "y": 118,
+          "x": 280,
+          "y": 111,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -20141,7 +19765,7 @@
           "name": "RETRY_BUTTON_LVL_6_DIED",
           "persistentUuid": "c3ba0a38-b336-4648-813a-c7d206ca47b4",
           "width": 283,
-          "x": 708,
+          "x": 726,
           "y": 306,
           "zOrder": 3,
           "numberProperties": [],
@@ -20173,8 +19797,8 @@
           "name": "RETRY_TEXT",
           "persistentUuid": "bc43c9fd-fbd1-4cab-b42e-308975344f99",
           "width": 0,
-          "x": 779,
-          "y": 354,
+          "x": 799,
+          "y": 352,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -20224,8 +19848,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "cb0397fd-6833-4cfd-8e56-726fdcd44521",
           "width": 662,
-          "x": 725,
-          "y": -127,
+          "x": 759,
+          "y": -130,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -20241,7 +19865,7 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "3f49b9a7-aa10-446d-9433-e828e58d3ce3",
           "width": 662,
-          "x": 705,
+          "x": 741,
           "y": 196,
           "zOrder": 0,
           "numberProperties": [],
@@ -20526,7 +20150,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6897782140104495,
+        "zoomFactor": 0.5843784410740926,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -20541,8 +20165,8 @@
           "name": "TEXT_LVL_6_COMPLETED",
           "persistentUuid": "a86a38fc-288c-4e6f-b547-bc5d6bbf9ad3",
           "width": 0,
-          "x": 175,
-          "y": 182,
+          "x": 206,
+          "y": 158,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -20573,8 +20197,8 @@
           "name": "NEXT_LEVEL_TEXT",
           "persistentUuid": "f30e5c06-3fbd-4260-9b5f-56681ff81d4f",
           "width": 0,
-          "x": 760,
-          "y": 396,
+          "x": 769,
+          "y": 393,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -20624,8 +20248,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "71a0c115-c121-4b71-9bfa-4014b06d9819",
           "width": 789,
-          "x": 663,
-          "y": -73,
+          "x": 691,
+          "y": -71,
           "zOrder": -2,
           "numberProperties": [],
           "stringProperties": [],
@@ -20641,8 +20265,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "4d23224c-b579-42d3-ad44-3fa9f5bd7cc5",
           "width": 794,
-          "x": 591,
-          "y": 207,
+          "x": 627,
+          "y": 205,
           "zOrder": -2,
           "numberProperties": [],
           "stringProperties": [],
@@ -20675,7 +20299,7 @@
           "name": "NEXT_LVL_BUTTON_LVL_6_COMPLETED",
           "persistentUuid": "15cdd01a-266a-4923-9fe4-637635cb1cb3",
           "width": 294,
-          "x": 719,
+          "x": 731,
           "y": 347,
           "zOrder": 7,
           "numberProperties": [],
@@ -20992,7 +20616,7 @@
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "e120098b-54f9-43aa-b280-e0b196c3222a",
-          "width": 50,
+          "width": 103,
           "x": 1198,
           "y": -11,
           "zOrder": 2,
@@ -22605,8 +22229,8 @@
           "name": "MAIN_MENU_BUTTON_DIED_LVL_7",
           "persistentUuid": "f75fa56b-06b0-4531-9812-5d9307798c76",
           "width": 294,
-          "x": 304,
-          "y": 341,
+          "x": 269,
+          "y": 339,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -22622,7 +22246,7 @@
           "name": "RETRY_BUTTON_DIED_LVL_7",
           "persistentUuid": "f3c4abbe-70f9-48f9-af99-a43e1c8aca61",
           "width": 292,
-          "x": 726,
+          "x": 748,
           "y": 343,
           "zOrder": 3,
           "numberProperties": [],
@@ -22638,8 +22262,8 @@
           "name": "MAIN_MENU_TEXT",
           "persistentUuid": "d3772c80-d89c-4be0-9552-64fbc95b9c38",
           "width": 0,
-          "x": 341,
-          "y": 396,
+          "x": 301,
+          "y": 391,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -22654,8 +22278,8 @@
           "name": "RETRY_TEXT",
           "persistentUuid": "eca30c93-2c4d-40d6-b51f-0dbd535cf3a9",
           "width": 0,
-          "x": 800,
-          "y": 395,
+          "x": 826,
+          "y": 391,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -22705,7 +22329,7 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "24a67a16-2901-44c9-9285-e0a73e7e6d02",
           "width": 656,
-          "x": 737,
+          "x": 770,
           "y": -108,
           "zOrder": 0,
           "numberProperties": [],
@@ -22722,8 +22346,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "2dbfc371-1047-4879-a0aa-b88fc3f7f67d",
           "width": 656,
-          "x": 709,
-          "y": 236,
+          "x": 747,
+          "y": 234,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -23022,8 +22646,8 @@
           "name": "COMPLETED_LVL_7_TEXT",
           "persistentUuid": "3e27ef65-6cff-44f1-9888-c9a331adabc0",
           "width": 0,
-          "x": 198,
-          "y": 183,
+          "x": 225,
+          "y": 162,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -23039,7 +22663,7 @@
           "persistentUuid": "67cfd507-8ff1-4f5c-b3f5-15d85ff5d4a3",
           "width": 0,
           "x": 307,
-          "y": 432,
+          "y": 407,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -23054,8 +22678,8 @@
           "name": "NEXT_LEVEL_TEXT",
           "persistentUuid": "acd823e1-8ee6-46f0-a6e6-9540ee8a19df",
           "width": 0,
-          "x": 731,
-          "y": 428,
+          "x": 756,
+          "y": 403,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -23105,7 +22729,7 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "0a947de1-9a80-49a3-be5f-9860d1dcbe24",
           "width": 784,
-          "x": 601,
+          "x": 643,
           "y": 186,
           "zOrder": 0,
           "numberProperties": [],
@@ -23122,8 +22746,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "715b83ab-90fb-418e-bea2-fd877a5fb70b",
           "width": 784,
-          "x": 659,
-          "y": -87,
+          "x": 691,
+          "y": -91,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -23139,8 +22763,8 @@
           "name": "MAIN_MENU_BUTTON_LVL_7_COMPLETED",
           "persistentUuid": "19d01d23-8e3f-4cfd-a346-574e40f60878",
           "width": 319,
-          "x": 263,
-          "y": 391,
+          "x": 261,
+          "y": 359,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -23156,8 +22780,8 @@
           "name": "NEXT_LVL_BUTTON_LVL_7_COMPLETED",
           "persistentUuid": "e82ab768-e6a9-4a09-9c49-2d7d19e672c7",
           "width": 307,
-          "x": 689,
-          "y": 391,
+          "x": 717,
+          "y": 363,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -23485,14 +23109,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 702,
+          "height": 744,
           "keepRatio": true,
           "layer": "",
           "name": "MAZE_WALLS_TUTORIAL",
           "persistentUuid": "3b29c11e-342c-4f21-8cc7-bc1dbfa2b64d",
-          "width": 32,
+          "width": 66,
           "x": 1216,
-          "y": 13,
+          "y": -11,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -23558,8 +23182,8 @@
           "name": "MONTY",
           "persistentUuid": "c32bb470-d472-42fd-873c-958c6c289757",
           "width": 95,
-          "x": 1103,
-          "y": 561,
+          "x": 1108,
+          "y": 590,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -24135,22 +23759,6 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MONTY3",
-          "persistentUuid": "6a5246b6-7b5a-4ae2-b9a9-0e526700f792",
-          "width": 0,
-          "x": 841,
-          "y": 633,
-          "zOrder": 46,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         }
       ],
       "objects": [
@@ -24280,7 +23888,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "PORTAL",
                 "",
                 "",
@@ -24334,7 +23942,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "MAZE_WALLS_TUTORIAL",
                 "",
                 "",
@@ -24348,7 +23956,7 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "MAZE_WALLS_TUTORIAL",
                 ""
               ]
@@ -24356,7 +23964,6 @@
           ]
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -24428,54 +24035,6 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "MONTY3",
-                "LAVA",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-              },
-              "parameters": [
-                "MONTY",
-                "Animation",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"DIED LVL 8\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
                 "value": "KeyFromTextReleased"
               },
               "parameters": [
@@ -24490,7 +24049,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "Animation",
                 "=",
                 "\"MONTY STATIONARY\""
@@ -24517,7 +24076,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "Animation",
                 "=",
                 "\"MONTY STATIONARY\""
@@ -24544,7 +24103,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "Animation",
                 "=",
                 "\"MONTY STATIONARY\""
@@ -24571,7 +24130,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "Animation",
                 "=",
                 "\"MONTY STATIONARY\""
@@ -24587,7 +24146,7 @@
                 "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "TopDownMovement",
                 "\"Up\""
               ]
@@ -24599,7 +24158,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
@@ -24615,7 +24174,7 @@
                 "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "TopDownMovement",
                 "\"Down\""
               ]
@@ -24627,7 +24186,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
@@ -24643,7 +24202,7 @@
                 "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "TopDownMovement",
                 "\"Right\""
               ]
@@ -24655,7 +24214,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
@@ -24666,7 +24225,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "Flippable",
                 "no"
               ]
@@ -24681,7 +24240,7 @@
                 "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "TopDownMovement",
                 "\"Left\""
               ]
@@ -24693,7 +24252,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "Animation",
                 "=",
                 "\"MONTY WALKING\""
@@ -24704,7 +24263,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "MONTY3",
+                "MONTY",
                 "Flippable",
                 "yes"
               ]
@@ -24861,8 +24420,8 @@
           "name": "LEVEL_8_DIED_TEXT",
           "persistentUuid": "6d91801c-9ee7-4d3a-8c48-2e8a41dc3d6a",
           "width": 0,
-          "x": 254,
-          "y": 123,
+          "x": 253,
+          "y": 97,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -24878,8 +24437,8 @@
           "name": "MAIN_MENU_BUTTON_DIED_LEVEL_8",
           "persistentUuid": "313edb4e-a3e5-464a-98d3-15ff1dc54c8c",
           "width": 283,
-          "x": 286,
-          "y": 312,
+          "x": 251,
+          "y": 308,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -24895,8 +24454,8 @@
           "name": "RETRY_LEVEL_BUTTON_DIED_LEVEL_8",
           "persistentUuid": "3fcd671f-1599-460b-bd04-640502cb6385",
           "width": 283,
-          "x": 695,
-          "y": 313,
+          "x": 744,
+          "y": 306,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -24911,8 +24470,8 @@
           "name": "MAIN_MENU_TEXT",
           "persistentUuid": "c12a2777-a392-4c02-9858-f3ccfb0f2b68",
           "width": 0,
-          "x": 318,
-          "y": 364,
+          "x": 285,
+          "y": 359,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -24927,8 +24486,8 @@
           "name": "RETRY_TEXT",
           "persistentUuid": "b5bb2da6-ffd4-447d-993b-65186b153550",
           "width": 0,
-          "x": 765,
-          "y": 358,
+          "x": 814,
+          "y": 360,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -24978,8 +24537,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "f81c2b5f-85e8-42ac-b4a1-6f4d19c71347",
           "width": 633,
-          "x": 779,
-          "y": -66,
+          "x": 808,
+          "y": -61,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -24995,8 +24554,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "4fe87c5d-12f6-43b4-8dbb-ff7675e3f0a4",
           "width": 633,
-          "x": 726,
-          "y": 305,
+          "x": 768,
+          "y": 301,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -27254,8 +26813,8 @@
           "name": "COMPLETED_GAME_LEVEL_8_TEXT",
           "persistentUuid": "46e031f5-8159-42d8-8ab9-4362b2a32be2",
           "width": 0,
-          "x": 139,
-          "y": 164,
+          "x": 163,
+          "y": 162,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -27303,8 +26862,8 @@
           "name": "CREDIT_TEXT",
           "persistentUuid": "ab4235d6-8b16-4f96-bb4e-416df243ffc1",
           "width": 0,
-          "x": 159,
-          "y": 683,
+          "x": 161,
+          "y": 664,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -27337,8 +26896,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "947af549-58b4-4d3b-9544-08b0f8d2061f",
           "width": 832,
-          "x": 638,
-          "y": -77,
+          "x": 664,
+          "y": -80,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -27371,8 +26930,8 @@
           "name": "MAIN_MENU_DECORATION",
           "persistentUuid": "1081d8b1-8486-455d-8816-87a66c971b25",
           "width": 832,
-          "x": 562,
-          "y": 177,
+          "x": 595,
+          "y": 179,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -27451,10 +27010,10 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Credits:\nXanthe Campbell-Smart (Annimation, Art, Design, Ideas, Code)\n",
+          "string": "Credits:\nXanthe Campbell-Smart (Annimation, Art, Design, \nIdeas, Code, LITERALLY EVERYTHING)\n",
           "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
           "textAlignment": "left",
-          "characterSize": 15,
+          "characterSize": 16,
           "color": {
             "b": 0,
             "g": 0,
@@ -27474,11 +27033,11 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Credits:\nXanthe Campbell-Smart (Annimation, Art, Design, Ideas, Code)\n",
+            "text": "Credits:\nXanthe Campbell-Smart (Annimation, Art, Design, \nIdeas, Code, LITERALLY EVERYTHING)\n",
             "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
-            "characterSize": 15,
+            "characterSize": 16,
             "color": "0;0;0"
           }
         }
